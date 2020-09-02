@@ -14,3 +14,76 @@
     border-radius: 10px;
     box-shadow: -5px 10px 15px 4px rgba(0,0,0,0.5);
 }
+
+.boxLogin > form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imgLogo {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: -70px;
+    background-color: #1f0763;
+    border-radius: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+form label input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.inputGradient {
+    padding: 2px;
+    background: linear-gradient(270deg, #8c3e7b,#8c3e7b, #3b3fb3);
+    border-radius: 7px;
+    width: 100%;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin: 5px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.button:hover{
+    opacity: 0.8;
+}
+
+.btnEntrar {
+    background-color: #6d3f91;
+}
+
+.btnCadastrar {
+    background-color: #553fa1;
+}
+
+.esqueci{
+    display: block;
+    position: absolute;
+    bottom: 10px;
+}
