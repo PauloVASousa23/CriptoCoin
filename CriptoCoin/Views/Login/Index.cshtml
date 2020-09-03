@@ -1,47 +1,66 @@
 ﻿
 @{
     ViewBag.Title = "Index";
-    Layout = "";
+    Layout = "~/Views/Shared/_LayoutVazio.cshtml";
+    ViewBag.Css = "/Content/css/Login.css";
 }
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CriptoCoin &copy;</title>
-    <link href="~/Content/css/Login.css" rel="stylesheet" />
-    <link href="~/Content/css/bootstrap-grid.min.css" rel="stylesheet" />
-    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="containerLogin d-flex justify-content-center align-items-center">
-        <div class="boxLogin">
-            <form method="post">
-                <div class="imgLogo">IMG</div>
-                <label>
-                    <h4>Usuário:</h4>
-                    <div class="inputGradient">
-                        <input type="text" />
+
+<div class="containerLogin d-flex justify-content-center align-items-center">
+    <div class="boxLogin">
+        <form method="post" onsubmit="return false;">
+            <div class="imgLogo">IMG</div>
+            <label>
+                <h4>Usuário:</h4>
+                <div class="inputGradient">
+                    <input type="text" id="usuario"/>
+                    <div class="erroInput" id="erroUsuario">
+                        <label id="lblErroUsuario">Porfavor digite um usuario!</label>
                     </div>
-                </label>
-                <label>
-                    <h4>Senha:</h4>
-                    <div class="inputGradient">
-                        <input type="password" />
-                    </div>
-                </label>
-                <div class="d-flex flex-column">
-                    <button class="button btnEntrar">Entrar</button>
-                    <button class="button btnCadastrar">Cadastrar-se</button>
                 </div>
-                <a class="esqueci">Esqueci minha senha!</a>
-            </form>
-        </div>
+            </label>
+            <label>
+                <h4>Senha:</h4>
+                <div class="inputGradient">
+                    <input type="password" id="senha"/>
+                    <div class="erroInput" id="erroSenha">
+                        <label id="lblErroSenha">Porfavor digite uma senha!</label>
+                    </div>
+                </div>
+            </label>
+            <div class="d-flex flex-column mt-2">
+                <button class="button btnEntrar" onclick="validaForm()">Entrar</button>
+                <button class="button btnCadastrar" onclick="cadastro()">Cadastrar-se</button>
+            </div>
+            @Html.ActionLink("Esqueci minha senha!", "Index", "Home", new { @class = "esqueci", Href="javascript:void(0)"})
+        </form>
     </div>
+</div>
+<script>
+    function cadastro() {
+        location.href = '@Url.Action("Index","Cadastro")';
+    }
 
-    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
-    <script src="~/Content/js/bootstrap.bundle.min.js"></script>
-    <script src="~/Content/js/bootstrap.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
-</body>
-</html>
+    function validaForm() {
+        let usuario = $("#usuario").val();
+        let senha = $("#senha").val();
+        if (usuario.trim().length == 0) {
+            $("#erroUsuario").css("height", "25px");
+            $("#lblErroUsuario").html("Porfavor digite um usuario!");
+        } else if (usuario.trim().length < 5) {
+            $("#erroUsuario").css("height", "25px");
+            $("#lblErroUsuario").html("Deve ter pelo menos 5 caracteres");
+        } else {
+            $("#erroUsuario").css("height", "0px");
+        }
 
+        if (senha.trim().length == 0) {
+            $("#erroSenha").css("height", "25px");
+            $("#lblErroSenha").html("Porfavor digite um senha!");
+        } else if (senha.trim().length < 5) {
+            $("#erroSenha").css("height", "25px");
+            $("#lblErroSenha").html("Deve ter pelo menos 5 caracteres");
+        } else {
+            $("#erroSenha").css("height", "0px");
+        }
+    }
+</script>

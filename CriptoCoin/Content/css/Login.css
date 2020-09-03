@@ -1,9 +1,9 @@
-﻿body{
+﻿body {
     height: 100vh;
+    background: linear-gradient(45deg, #8c3e7b, #3b3fb3);
 }
 
 .containerLogin {
-    background: linear-gradient(45deg, #8c3e7b, #3b3fb3);
     height: 100vh;
 }
 
@@ -28,7 +28,7 @@
     height: 120px;
     width: 120px;
     position: absolute;
-    top: -70px;
+    top: -80px;
     background-color: #1f0763;
     border-radius: 100%;
     color: #fff;
@@ -38,7 +38,7 @@
     font-size: 25px;
 }
 
-form label {
+form > label {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,4 +86,18 @@ form label input {
     display: block;
     position: absolute;
     bottom: 10px;
+}
+
+.erroInput {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    height: 0px;
+    transition: 0.5s;
+}
+
+.erroInput label {
+    text-align: center;
+    width: 100%;
+    margin: 3px;
 }

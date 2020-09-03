@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutVazio.cshtml";
+    ViewBag.Css = "/Content/css/Cadastro.css";
+}
+
+<div class="containerCadastro">
+    <div class="boxCadastroFundo fundo1"></div>
+    <div class="boxCadastroFundo fundo2"></div>
+    <div class="boxCadastro">
+        <h1 class="tituloCadastro">Crie sua conta aqui:</h1>
+        <div class="row">
+
+            <div class="col-12">
+                Nome completo:
+                <div class="inputGradient">
+                    <input type="text" />
+                </div>
+            </div>
+
+            <div class="col-6">
+                Email:
+                <div class="inputGradient">
+                    <input type="text" />
+                </div>
+            </div>
+
+            <div class="col-6">
+                Repita o email:
+                <div class="inputGradient">
+                    <input type="text" />
+                </div>
+            </div>
+
+            <div class="col-6">
+                Telefone:
+                <div class="inputGradient">
+                    <input type="text" />
+                </div>
+            </div>
+
+            <div class="col-6">
+                Celular:
+                <div class="inputGradient">
+                    <input type="text" />
+                </div>
+            </div>
+
+            <div class="col-3">
+                CEP:
+                <div class="inputGradient">
+                    <input type="text" />
+                </div>
+            </div>
+
+            <div class="col-7">
+                Bairro:
+                <div class="inputGradient">
+                    <input type="text" />
+                </div>
+            </div>
+
+            <div class="col-2">
+                Cidade:
+                <div class="inputGradient">
+                    <input type="text" />
+                </div>
+            </div>
+
+            <div class="col-12">
+                Logradouro:
+                <div class="inputGradient">
+                    <input type="text" />
+                </div>
+            </div>
+
+            <div class="col-12 mt-4">
+                <button class="col-3 offset-3 button btnVoltar" onclick="location.href='@Url.Action("Index","Login")'">Voltar</button>
+                <button class="col-3 button btnCadastrar">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+

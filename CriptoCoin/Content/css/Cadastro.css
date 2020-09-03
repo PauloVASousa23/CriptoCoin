@@ -1,0 +1,87 @@
+﻿body {
+    height: 100vh;
+    background: linear-gradient(45deg, #8c3e7b, #3b3fb3);
+}
+
+.containerCadastro{
+    display: flex;
+    justify-content: center; 
+    align-items:center;
+    height: 100%;
+}
+
+.boxCadastroFundo {
+    background-color: #fff;
+    height: 450px;
+    width: 600px;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,1);
+}
+
+.fundo1 {
+    transform: skew(0deg, -5deg);
+}
+
+.fundo2 {
+    transform: skew(0deg, 5deg);
+}
+
+.boxCadastro {
+    background-color: #fff;
+    height: 450px;
+    width: 600px;
+    position: absolute;
+    padding: 0px 25px;
+    font-weight: bolder;
+    box-shadow: 0px 12px 6px -5px rgba(255,255,255,1);
+}
+
+.inputGradient {
+    padding: 2px;
+    background: linear-gradient(270deg, #8c3e7b,#8c3e7b, #3b3fb3);
+    border-radius: 7px;
+    width: 100%;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.btnVoltar {
+    background-color: #bf4a4a;
+}
+
+.btnCadastrar {
+    background-color: #553fa1;
+}
+
+.tituloCadastro {
+    text-align: center;
+    color: #3d40b3;
+}
+
+.tituloCadastro::after {
+    content: '';
+    height: 3px;
+    width: 30%;
+    background-color: #8c3e7c;
+    display: block;
+    margin: auto;
+}
