@@ -85,3 +85,28 @@ input {
     display: block;
     margin: auto;
 }
+
+@media (max-width: 442px){
+    .tituloCadastro {
+        text-align: center;
+        color: #3d40b3;
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .boxCadastroFundo {
+        height: 450px;
+        width: 350px;
+    }
+
+    .boxCadastro {
+        height: 450px;
+        width: 350px;
+    }
+}
+
+@media (min-width: 640px) and (max-height: 442px) {
+    .containerCadastro {
+        margin-top: 100px;
+    }
+}

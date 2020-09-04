@@ -41,26 +41,40 @@
     }
 
     function validaForm() {
+        $("#usuario").keyup(function () {
+            validaForm();
+        });
+
+        $("#senha").keyup(function () {
+            validaForm();
+        });
+
         let usuario = $("#usuario").val();
         let senha = $("#senha").val();
         if (usuario.trim().length == 0) {
+            $("#usuario").css("background-color", "#ffb3b3");
             $("#erroUsuario").css("height", "25px");
             $("#lblErroUsuario").html("Porfavor digite um usuario!");
         } else if (usuario.trim().length < 5) {
+            $("#usuario").css("background-color", "#ffb3b3");
             $("#erroUsuario").css("height", "25px");
             $("#lblErroUsuario").html("Deve ter pelo menos 5 caracteres");
         } else {
             $("#erroUsuario").css("height", "0px");
+            $("#usuario").css("background-color", "#fff");
         }
 
         if (senha.trim().length == 0) {
+            $("#senha").css("background-color", "#ffb3b3");
             $("#erroSenha").css("height", "25px");
             $("#lblErroSenha").html("Porfavor digite um senha!");
         } else if (senha.trim().length < 5) {
+            $("#senha").css("background-color", "#ffb3b3");
             $("#erroSenha").css("height", "25px");
             $("#lblErroSenha").html("Deve ter pelo menos 5 caracteres");
         } else {
             $("#erroSenha").css("height", "0px");
+            $("#senha").css("background-color", "#fff");
         }
     }
 </script>

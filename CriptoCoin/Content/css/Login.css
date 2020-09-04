@@ -52,6 +52,7 @@ form label input {
     padding: 5px 10px;
     text-align: center;
     width: 100%;
+    transition: 0.4s;
 }
 
 .inputGradient {
