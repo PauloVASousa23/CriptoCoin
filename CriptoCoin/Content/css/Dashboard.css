@@ -1,0 +1,230 @@
+﻿.menu div:hover {
+    background-color: #0000004a;
+}
+
+@media (max-width: 768px) {
+
+    .menu {
+        width: 100%;
+        height: 60px;
+        background-color: #6f42c1;
+        position: fixed;
+        bottom: 0px;
+        background: linear-gradient(45deg, #8c3e7b, #3b3fb3);
+        overflow: hidden;
+        display: flex;
+        z-index: 9999;
+    }
+
+    .menu div {
+        width: calc(100vw / 5 );
+        margin: 0px 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .menu div::after {
+        content: '';
+        width: 1px;
+        height: 70%;
+        background-color: #fff;
+        position: absolute;
+        right: 0px;
+    }
+
+    .menu div:last-child::after{
+        content: '';
+        width: 0px;
+    }
+
+    .menu div i {
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .menu div label {
+        display: none;
+    }
+
+    .menuExpandido div i {
+        transition: 0.5s;
+    }
+
+    #btnHamburguer {
+        display: none;
+    }
+
+    .hamburguer {
+        width: 40px;
+        height: 5px;
+        background-color: #fff;
+        margin: 4px 0px;
+        border-radius: 5px;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .menu {
+        width: 80px;
+        min-height: 100vh;
+        background-color: #6f42c1;
+        position: fixed;
+        background: linear-gradient(45deg, #8c3e7b, #3b3fb3);
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 9999;
+    }
+
+    .menuExpandido {
+        width: 250px;
+    }
+
+    .menu div {
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    .menuExpandido div {
+    }
+
+    .menu div i {
+        color: #fff;
+        font-size: 30px;
+        margin: 15px 35px 15px 25px;
+    }
+
+    .menu div label {
+        display: inline-block;
+        margin-bottom: .5rem;
+        color: #fff;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .menuExpandido div i {
+        transition: 0.5s;
+    }
+
+    #btnHamburguer {
+        background-color: transparent;
+        border: none;
+        margin: 10px auto 30px auto;
+        display: block;
+        outline: none !important;
+        color: #fff;
+        font-size: 30px;
+        transition: 0.5s;
+    }
+
+    .menuExpandido #btnHamburguer {
+        text-align: right;
+        margin: 10px 0px 30px auto;
+        padding-left: 15px;
+    }
+
+    .hamburguer {
+        width: 40px;
+        height: 5px;
+        background-color: #fff;
+        margin: 4px 0px;
+        border-radius: 5px;
+    }
+
+    #configuracao {
+        bottom: 0px;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.conteudo{
+    height: 1000px;
+    padding-left: 80px;
+    background-color: #f3f3f3;
+}
+
+.infos div div{
+    background-color: #fff;
+}
+
+.cardInfo {
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+h3 {
+    text-align: center;
+}
+
+h3::after {
+    content: '';
+    width: 20%;
+    height: 2px;
+    background-color: #443fad;
+    position: relative;
+    display: block;
+    margin: 10px auto;
+}
+
+h6 {
+    text-align: center;
+    border-bottom: 1px solid #443fad;
+    padding: 5px;
+}
+
+.saldoTopo {
+    height: 50%;
+    margin: 0px -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.saldoBottom {
+    height: 50%;
+    margin: 0px -15px;
+    background: linear-gradient(45deg, #8c3e7b, #3b3fb3);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+thead {
+    background-color: #433fad;
+    color: #fff;
+}
+
+thead tr td{
+    padding: 5px;
+}
+
+thead tr td:first-child{
+    border-radius: 30px 0px 0px 0px;
+}
+
+thead tr td:last-child{
+    border-radius: 0px 30px 0px 0px;
+}
+
+tfoot tr td {
+    background-color: #8b3e7b;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0px 0px 30px 30px;
+    padding: 5px;
+}
+
+td{
+    padding: 5px;
+}
