@@ -1,284 +1,113 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_LayoutVazio.cshtml";
+    ViewBag.Title = "Historico";
     ViewBag.Css = "/Content/css/Dashboard.css";
 }
 
-<div class="menu">
-    <button id="btnHamburguer"><i class="fas fa-chevron-right"></i></button>
-    <div><i class="fas fa-user-circle"></i><label>Perfil</label></div>
-    <div><i class="fas fa-wallet"></i><label>Conta</label></div>
-    <div><i class="far fa-chart-bar"></i><label>Histórico</label></div>
-    <div><i class="fas fa-hand-holding-usd"></i><label>Mercado</label></div>
-    <div id="configuracao"><i class="fas fa-cogs"></i><label>Configuração</label></div>
-</div>
-
-<div class="conteudo">
-    <div class="infos col-12">
-        <div class="row justify-content-center">
-            <div class="col-4 m-4 cardInfo">
-                <h6>Conta para transferencia</h6>
-                <strong>Agência:</strong> <label>001</label>
-                <br />
-                <strong>Conta:</strong> <label>00013212f-11411</label>
-            </div>
-            <div class="col-4 m-4 cardInfo">
-                <div class="saldoTopo">Paulo victor</div>
-                <div class="saldoBottom">R$ 3.700,00</div>
-            </div>
+<div class="col-12">
+    <div class="row justify-content-center">
+        <div class="card col-sm-4 m-sm-4 my-2">
+            <h6>Paulo victor</h6>
+            <div class="mb-3"><i class="far fa-money-bill-alt"></i> R$ 3.700,00</div>
+            <div>&nbsp;<i class="far fa-calendar-alt"></i> Ultimo acesso: 15/04</div>
+            <div class="cardBottom">Acessar conta</div>
         </div>
-        <h3>Histórico</h3>
-
-        <div class="col-12">
-            <table style="width: 100%;">
-                <thead>
-                    <tr>
-                        <td>
-                            Sifra
-                        </td>
-                        <td>
-                            Tipo
-                        </td>
-                        <td>
-                            Banco
-                        </td>
-                        <td>
-                            Valor
-                        </td>
-                        <td>
-                            Operação
-                        </td>
-                        <td>
-                            Data
-                        </td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            Sifra
-                        </td>
-                        <td>
-                            Tipo
-                        </td>
-                        <td>
-                            Banco
-                        </td>
-                        <td>
-                            Valor
-                        </td>
-                        <td>
-                            Operação
-                        </td>
-                        <td>
-                            Data
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Sifra
-                        </td>
-                        <td>
-                            Tipo
-                        </td>
-                        <td>
-                            Banco
-                        </td>
-                        <td>
-                            Valor
-                        </td>
-                        <td>
-                            Operação
-                        </td>
-                        <td>
-                            Data
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Sifra
-                        </td>
-                        <td>
-                            Tipo
-                        </td>
-                        <td>
-                            Banco
-                        </td>
-                        <td>
-                            Valor
-                        </td>
-                        <td>
-                            Operação
-                        </td>
-                        <td>
-                            Data
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Sifra
-                        </td>
-                        <td>
-                            Tipo
-                        </td>
-                        <td>
-                            Banco
-                        </td>
-                        <td>
-                            Valor
-                        </td>
-                        <td>
-                            Operação
-                        </td>
-                        <td>
-                            Data
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Sifra
-                        </td>
-                        <td>
-                            Tipo
-                        </td>
-                        <td>
-                            Banco
-                        </td>
-                        <td>
-                            Valor
-                        </td>
-                        <td>
-                            Operação
-                        </td>
-                        <td>
-                            Data
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Sifra
-                        </td>
-                        <td>
-                            Tipo
-                        </td>
-                        <td>
-                            Banco
-                        </td>
-                        <td>
-                            Valor
-                        </td>
-                        <td>
-                            Operação
-                        </td>
-                        <td>
-                            Data
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Sifra
-                        </td>
-                        <td>
-                            Tipo
-                        </td>
-                        <td>
-                            Banco
-                        </td>
-                        <td>
-                            Valor
-                        </td>
-                        <td>
-                            Operação
-                        </td>
-                        <td>
-                            Data
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Sifra
-                        </td>
-                        <td>
-                            Tipo
-                        </td>
-                        <td>
-                            Banco
-                        </td>
-                        <td>
-                            Valor
-                        </td>
-                        <td>
-                            Operação
-                        </td>
-                        <td>
-                            Data
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Sifra
-                        </td>
-                        <td>
-                            Tipo
-                        </td>
-                        <td>
-                            Banco
-                        </td>
-                        <td>
-                            Valor
-                        </td>
-                        <td>
-                            Operação
-                        </td>
-                        <td>
-                            Data
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Sifra
-                        </td>
-                        <td>
-                            Tipo
-                        </td>
-                        <td>
-                            Banco
-                        </td>
-                        <td>
-                            Valor
-                        </td>
-                        <td>
-                            Operação
-                        </td>
-                        <td>
-                            Data
-                        </td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="6">
-                            Acessar histórico
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
+        <div class="card col-sm-4 m-sm-4 my-2">
+            <h6>Favoritos</h6>
+            <div><i class="fas fa-star"></i> Bitcoin<div class="valorFavorita">R$ 1195,00</div></div>
+            <div><i class="fas fa-star"></i> Bitcoin Gold<div class="valorFavorita">R$ 54155,13</div></div>
+            <div><i class="fas fa-star"></i> Altcoin<div class="valorFavorita">R$ 0,06</div></div>
+            <div class="cardBottom">Acessar mercado</div>
         </div>
     </div>
 </div>
 
-<script type="text/javascript">
-    var btnMenu = false;
+<h3>Top 5 criptomoedas</h3>
+<div class="col-12 topCripto">
+    <div class="cardCripto" id="criptoBCH">
+        <div class="volume">vol ---</div>
+        <label class="moeda">BCH</label>
+        <hr />
+        <label class="valor">R$ ----</label>
+    </div>
+    <div class="cardCripto" id="criptoBTC">
+        <div class="volume">vol ---</div>
+        <label class="moeda">BTC</label>
+        <hr />
+        <label class="valor">R$ ----</label>
+    </div>
+    <div class="cardCripto" id="criptoCHZ">
+        <div class="volume">vol ---</div>
+        <label class="moeda">CHZ</label>
+        <hr />
+        <label class="valor">R$ ----</label>
+    </div>
+    <div class="cardCripto" id="criptoETH">
+        <div class="volume">vol ---</div>
+        <label class="moeda">ETH</label>
+        <hr />
+        <label class="valor">R$ ----</label>
+    </div>
+    <div class="cardCripto" id="criptoLTC">
+        <div class="volume">vol ---</div>
+        <label class="moeda">LTC</label>
+        <hr />
+        <label class="valor">R$ ----</label>
+    </div>
+</div>
 
-    $("#btnHamburguer").on("click", function () {
-        if (btnMenu) {
-            $("#btnHamburguer").css("transform", "rotate(0deg)");
-            $(".menu").removeClass("menuExpandido");
-        } else {
-            $("#btnHamburguer").css("transform", "rotate(180deg)");
-            $(".menu").addClass("menuExpandido");
-        }
-        btnMenu = !btnMenu;
+<script>
+    $(document).ready(function () {
+
+        let bch = $("#criptoBCH");
+        let btc = $("#criptoBTC");
+        let chz = $("#criptoCHZ");
+        let eth = $("#criptoETH");
+        let ltc = $("#criptoLTC");
+
+        $.ajax({
+            url: "https://www.mercadobitcoin.net/api/BCH/ticker/",
+            type: "GET",
+            complete: function (data) {
+                bch.children().eq(0).html("vol " + parseFloat(data.responseJSON["ticker"]["vol"]).toFixed(2));
+                bch.children().eq(3).html("R$ " + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
+            }
+        });
+
+        $.ajax({
+            url: "https://www.mercadobitcoin.net/api/BTC/ticker/",
+            type: "GET",
+            complete: function (data) {
+                btc.children().eq(0).html("vol " + parseFloat(data.responseJSON["ticker"]["vol"]).toFixed(2));
+                btc.children().eq(3).html("R$ " + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
+            }
+        });
+
+        $.ajax({
+            url: "https://www.mercadobitcoin.net/api/CHZ/ticker/",
+            type: "GET",
+            complete: function (data) {
+                chz.children().eq(0).html("vol " + parseFloat(data.responseJSON["ticker"]["vol"]).toFixed(2));
+                chz.children().eq(3).html("R$ " + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
+            }
+        });
+
+        $.ajax({
+            url: "https://www.mercadobitcoin.net/api/ETH/ticker/",
+            type: "GET",
+            complete: function (data) {
+                eth.children().eq(0).html("vol " + parseFloat(data.responseJSON["ticker"]["vol"]).toFixed(2));
+                eth.children().eq(3).html("R$ " + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
+            }
+        });
+
+        $.ajax({
+            url: "https://www.mercadobitcoin.net/api/LTC/ticker/",
+            type: "GET",
+            complete: function (data) {
+                ltc.children().eq(0).html("vol " + parseFloat(data.responseJSON["ticker"]["vol"]).toFixed(2));
+                ltc.children().eq(3).html("R$ " + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
+            }
+        });
     });
 </script>

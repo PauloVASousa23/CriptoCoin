@@ -1,0 +1,213 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    ViewBag.Css = "/Content/css/Dashboard.css";
+}
+
+<div class="infos col-12">
+    <div class="row justify-content-center">
+        <div class="col-sm-4 m-sm-4 my-2 cardInfo">
+            <h6>Conta para transferencia</h6>
+            <strong>Agência:</strong> <label>001</label>
+            <br />
+            <strong>Conta:</strong> <label>00013212f-11411</label>
+        </div>
+        <div class="col-sm-4 m-sm-4 my-2 cardInfo">
+            <div class="saldoTopo">Paulo victor</div>
+            <div class="saldoBottom">R$ -.---,--</div>
+        </div>
+    </div>
+</div>
+
+<h3>Histórico</h3>
+
+<div>
+    <table style="width: 100%;">
+        <thead>
+            <tr>
+                <td>
+                    Sifra
+                </td>
+                <td>
+                    Tipo
+                </td>
+                <td>
+                    Banco
+                </td>
+                <td>
+                    Valor
+                </td>
+                <td>
+                    Operação
+                </td>
+                <td>
+                    Data
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="badgeSifra badgeDinheiro">
+                        <i class="far fa-money-bill-alt"></i>
+                    </div>
+                </td>
+                <td>
+                    Tipo
+                </td>
+                <td>
+                    Banco
+                </td>
+                <td>
+                    Valor
+                </td>
+                <td>
+                    Operação
+                </td>
+                <td>
+                    Data
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="badgeSifra badgeDinheiro">
+                        <i class="far fa-money-bill-alt"></i>
+                    </div>
+                </td>
+                <td>
+                    Tipo
+                </td>
+                <td>
+                    Banco
+                </td>
+                <td>
+                    Valor
+                </td>
+                <td>
+                    Operação
+                </td>
+                <td>
+                    Data
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="badgeSifra badgeCriptomoeda">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                </td>
+                <td>
+                    Tipo
+                </td>
+                <td>
+                    Banco
+                </td>
+                <td>
+                    Valor
+                </td>
+                <td>
+                    Operação
+                </td>
+                <td>
+                    Data
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="badgeSifra badgeCriptomoeda">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                </td>
+                <td>
+                    Tipo
+                </td>
+                <td>
+                    Banco
+                </td>
+                <td>
+                    Valor
+                </td>
+                <td>
+                    Operação
+                </td>
+                <td>
+                    Data
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="badgeSifra badgeCriptomoeda">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                </td>
+                <td>
+                    Tipo
+                </td>
+                <td>
+                    Banco
+                </td>
+                <td>
+                    Valor
+                </td>
+                <td>
+                    Operação
+                </td>
+                <td>
+                    Data
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="badgeSifra badgeDinheiro">
+                        <i class="far fa-money-bill-alt"></i>
+                    </div>
+                </td>
+                <td>
+                    Tipo
+                </td>
+                <td>
+                    Banco
+                </td>
+                <td>
+                    Valor
+                </td>
+                <td>
+                    Operação
+                </td>
+                <td>
+                    Data
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="badgeSifra badgeDinheiro">
+                        <i class="far fa-money-bill-alt"></i>
+                    </div>
+                </td>
+                <td>
+                    Tipo
+                </td>
+                <td>
+                    Banco
+                </td>
+                <td>
+                    Valor
+                </td>
+                <td>
+                    Operação
+                </td>
+                <td>
+                    Data
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">
+                    @Html.ActionLink("Acessar histórico", "Index", "Historico", new { @area = "" }, new { @class = "acessarHistorico" })
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<script src="~/Content/js/util.js"></script>

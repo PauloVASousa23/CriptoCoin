@@ -1,0 +1,232 @@
+﻿.menu div:hover {
+    background-color: #0000004a;
+}
+
+@media (max-width: 767px) {
+
+    .menu {
+        width: 100%;
+        height: 60px;
+        background-color: #6f42c1;
+        position: fixed;
+        bottom: 0px;
+        background: linear-gradient(45deg, #8c3e7b, #3b3fb3);
+        overflow: hidden;
+        display: flex;
+        z-index: 9999;
+    }
+
+        .menu div {
+            width: calc(100vw / 5 );
+            margin: 0px 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            position: relative;
+        }
+
+            .menu div::after {
+                content: '';
+                width: 1px;
+                height: 70%;
+                background-color: #fff;
+                position: absolute;
+                right: 0px;
+            }
+
+            .menu div:last-child::after {
+                content: '';
+                width: 0px;
+            }
+
+            .menu div i {
+                color: #fff;
+                font-size: 25px;
+            }
+
+            .menu div label {
+                display: none;
+            }
+
+    .menuExpandido div i {
+        transition: 0.5s;
+    }
+
+    #btnHamburguer {
+        display: none;
+    }
+
+    .hamburguer {
+        width: 40px;
+        height: 5px;
+        background-color: #fff;
+        margin: 4px 0px;
+        border-radius: 5px;
+    }
+
+    .conteudo {
+        padding: 5px;
+        background-color: #f3f3f3;
+        padding-bottom: 85px;
+    }
+
+    table {
+        font-size: 0.6rem;
+    }
+
+    td {
+        padding: 5px 10px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .menu {
+        width: 80px;
+        min-height: 100vh;
+        background-color: #6f42c1;
+        position: fixed;
+        background: linear-gradient(45deg, #8c3e7b, #3b3fb3);
+        transition: 0.5s;
+        z-index: 9999;
+    }
+
+    .menuExpandido {
+        width: 250px;
+        box-shadow: -8px 0px 8px 10px #000;
+    }
+
+    .menu div {
+        white-space: nowrap;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .menuExpandido div {
+    }
+
+    .menu div i {
+        color: #fff;
+        font-size: 30px;
+        margin: 15px 35px 15px 25px;
+    }
+
+    .menu div label {
+        display: none;
+        margin-bottom: .5rem;
+        color: #fff;
+        font-weight: bolder;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .menuExpandido div label {
+        display: inline-block;
+        opacity: 1;
+    }
+
+    .menuExpandido div i {
+        transition: 0.5s;
+    }
+
+    #btnHamburguer {
+        background-color: transparent;
+        border: none;
+        margin: 10px auto 30px auto;
+        display: block;
+        outline: none !important;
+        color: #fff;
+        font-size: 30px;
+        transition: 0.5s;
+    }
+
+    .menuExpandido #btnHamburguer {
+        text-align: right;
+        margin: 10px 0px 30px auto;
+        padding-left: 15px;
+    }
+
+    .hamburguer {
+        width: 40px;
+        height: 5px;
+        background-color: #fff;
+        margin: 4px 0px;
+        border-radius: 5px;
+    }
+
+    #btnConfiguracao {
+        bottom: 0px;
+        position: absolute;
+        width: 100%;
+    }
+
+    .conteudo {
+        padding-left: 80px;
+        background-color: #f3f3f3;
+    }
+
+    td {
+        padding: 5px 15px;
+    }
+
+    table > tbody > tr > td:nth-child(1) {
+        width: 50px;
+    }
+}
+
+.menu div i:hover + .tint {
+    display: block;
+    animation: opacidade 5s;
+}
+
+@keyframes opacidade {
+    0% {
+        opacity: 0.2;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.menu div .tint {
+    position: absolute !important;
+    background-color: #000000ba;
+    transform: translate(0%, -50%);
+    top: 50%;
+    left: 110%;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    width: max-content;
+    white-space: initial !important;
+    border-radius: 5px;
+    display: none;
+    opacity: 0;
+    transition: 1s;
+}
+
+.tint::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    padding: 0px;
+    transform: translate(-100%, 60%);
+    border-top: 10px solid transparent;
+    border-right: 10px solid #000000ba;
+    border-bottom: 10px solid transparent;
+}
+
+.menuExpandido div .tint {
+    left: 30%;
+}

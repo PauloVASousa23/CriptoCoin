@@ -13,5 +13,10 @@ namespace CriptoCoin.Controllers
         {
             return View();
         }
+
+        public ActionResult Historico()
+        {
+            return View();
+        }
     }
 }

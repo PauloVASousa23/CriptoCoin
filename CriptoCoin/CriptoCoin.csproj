@@ -145,10 +145,13 @@
     <Content Include="Content\css\Cadastro.css" />
     <Content Include="Content\css\Dashboard.css" />
     <Content Include="Content\css\Login.css" />
+    <Content Include="Content\css\Shared.css" />
     <Content Include="Content\js\bootstrap.bundle.js" />
     <Content Include="Content\js\bootstrap.bundle.min.js" />
     <Content Include="Content\js\bootstrap.js" />
     <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\Shared.js" />
+    <Content Include="Content\js\util.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -192,6 +195,7 @@
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Cadastro\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutVazio.cshtml" />
+    <Content Include="Views\Dashboard\Historico.cshtml" />
     <Content Include="Views\Dashboard\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>

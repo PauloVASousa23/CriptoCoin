@@ -1,154 +1,138 @@
-﻿.menu div:hover {
+﻿/*******      Index      ********/
+
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 10px 40px 10px;
+}
+
+.card h6{
+    text-align: left;
+}
+
+.card > div > .fa-money-bill-alt {
+    color: #85d674;
+}
+
+.card > div > .fa-calendar-alt {
+    color: #433fad;
+}
+
+.cardBottom {
+    height: 34px;
+    width: 100%;
+    background: linear-gradient(45deg, #8c3e7b, #3b3fb3);
+    margin: 0px -10px;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-star {
+    color: #f7e355;
+}
+
+.topCripto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cardCripto {
+    display: inline-block;
+    margin: 15px;
+    background-color: #fff;
+    padding: 20px 35px 15px 35px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 2px 2px 6px -3px #000;
+    cursor: pointer;
+}
+
+.cardCripto > label {
+    cursor: pointer;
+}
+
+.cardCripto:hover {
+    background-color: #443fad36;
+}
+
+.moeda {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.volume {
+    color: #9a9a9a;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.valor {
+    color: #443fac;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.valorFavorita {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    color: #443fac;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*******      Historico      ********/
+.menu div:hover {
     background-color: #0000004a;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
-    .menu {
-        width: 100%;
-        height: 60px;
-        background-color: #6f42c1;
-        position: fixed;
-        bottom: 0px;
-        background: linear-gradient(45deg, #8c3e7b, #3b3fb3);
-        overflow: hidden;
-        display: flex;
-        z-index: 9999;
+    .conteudo {
+        padding: 5px;
+        background-color: #f3f3f3;
+        padding-bottom: 85px;
     }
 
-    .menu div {
-        width: calc(100vw / 5 );
-        margin: 0px 2px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        cursor: pointer;
+    table {
+        font-size: 0.6rem;
     }
 
-    .menu div::after {
-        content: '';
-        width: 1px;
-        height: 70%;
-        background-color: #fff;
-        position: absolute;
-        right: 0px;
+    td {
+        padding: 5px 10px;
     }
-
-    .menu div:last-child::after{
-        content: '';
-        width: 0px;
-    }
-
-    .menu div i {
-        color: #fff;
-        font-size: 25px;
-    }
-
-    .menu div label {
-        display: none;
-    }
-
-    .menuExpandido div i {
-        transition: 0.5s;
-    }
-
-    #btnHamburguer {
-        display: none;
-    }
-
-    .hamburguer {
-        width: 40px;
-        height: 5px;
-        background-color: #fff;
-        margin: 4px 0px;
-        border-radius: 5px;
-    }
-
 }
 
 @media (min-width: 768px) {
 
-    .menu {
-        width: 80px;
-        min-height: 100vh;
-        background-color: #6f42c1;
-        position: fixed;
-        background: linear-gradient(45deg, #8c3e7b, #3b3fb3);
-        transition: 0.5s;
-        overflow: hidden;
-        z-index: 9999;
+    .conteudo {
+        padding-left: 80px;
+        background-color: #f3f3f3;
     }
 
-    .menuExpandido {
-        width: 250px;
+    td {
+        padding: 5px 15px;
     }
 
-    .menu div {
-        white-space: nowrap;
-        cursor: pointer;
-    }
-
-    .menuExpandido div {
-    }
-
-    .menu div i {
-        color: #fff;
-        font-size: 30px;
-        margin: 15px 35px 15px 25px;
-    }
-
-    .menu div label {
-        display: inline-block;
-        margin-bottom: .5rem;
-        color: #fff;
-        font-weight: bolder;
-        font-size: 20px;
-    }
-
-    .menuExpandido div i {
-        transition: 0.5s;
-    }
-
-    #btnHamburguer {
-        background-color: transparent;
-        border: none;
-        margin: 10px auto 30px auto;
-        display: block;
-        outline: none !important;
-        color: #fff;
-        font-size: 30px;
-        transition: 0.5s;
-    }
-
-    .menuExpandido #btnHamburguer {
-        text-align: right;
-        margin: 10px 0px 30px auto;
-        padding-left: 15px;
-    }
-
-    .hamburguer {
-        width: 40px;
-        height: 5px;
-        background-color: #fff;
-        margin: 4px 0px;
-        border-radius: 5px;
-    }
-
-    #configuracao {
-        bottom: 0px;
-        position: absolute;
-        width: 100%;
+    table > tbody > tr > td:nth-child(1) {
+        width: 50px;
     }
 }
 
-.conteudo{
-    height: 1000px;
-    padding-left: 80px;
-    background-color: #f3f3f3;
-}
-
-.infos div div{
+.infos > div > div{
     background-color: #fff;
 }
 
@@ -205,7 +189,7 @@ thead {
 }
 
 thead tr td{
-    padding: 5px;
+    font-weight: bold;
 }
 
 thead tr td:first-child{
@@ -216,15 +200,58 @@ thead tr td:last-child{
     border-radius: 0px 30px 0px 0px;
 }
 
+tbody tr td {
+    border: 1px solid #433fad;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
 tfoot tr td {
     background-color: #8b3e7b;
     color: #fff;
     text-align: center;
     font-weight: bold;
     border-radius: 0px 0px 30px 30px;
+    padding: 0px !important;
+    overflow: hidden;
+}
+
+tr td:first-child {
+    padding-left: 15px;
+}
+
+tr td:last-child {
+    padding-right: 15px;
+}
+
+.acessarHistorico {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    height: 100%;
     padding: 5px;
 }
 
-td{
+.acessarHistorico:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.badgeSifra {
+    width: 35px;
+    height: 35px;
     padding: 5px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.badgeDinheiro {
+    background-color: #85d674;
+}
+
+.badgeCriptomoeda {
+    background-color: #dace60;
 }
