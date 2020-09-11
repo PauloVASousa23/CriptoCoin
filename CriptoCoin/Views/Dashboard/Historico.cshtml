@@ -21,7 +21,7 @@
 
 <h3>Histórico</h3>
 
-<div>
+<div class="tableHistorico">
     <table style="width: 100%;">
         <thead>
             <tr>
@@ -204,7 +204,10 @@
         <tfoot>
             <tr>
                 <td colspan="6">
-                    @Html.ActionLink("Acessar histórico", "Index", "Historico", new { @area = "" }, new { @class = "acessarHistorico" })
+                    <a href="javascript:void(0)" class="acessarHistorico" style="cursor: default"></a>
+                    @*
+                        @Html.ActionLink("Acessar histórico", "Index", "Historico", new { @area = "" }, new { @class = "acessarHistorico" })
+                    *@
                 </td>
             </tr>
         </tfoot>

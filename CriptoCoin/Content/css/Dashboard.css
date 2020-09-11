@@ -8,10 +8,6 @@
     padding: 10px 10px 40px 10px;
 }
 
-.card h6{
-    text-align: left;
-}
-
 .card > div > .fa-money-bill-alt {
     color: #85d674;
 }
@@ -42,17 +38,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.cardCripto {
-    display: inline-block;
-    margin: 15px;
-    background-color: #fff;
-    padding: 20px 35px 15px 35px;
-    border-radius: 10px;
-    position: relative;
-    box-shadow: 2px 2px 6px -3px #000;
-    cursor: pointer;
 }
 
 .cardCripto > label {
@@ -94,6 +79,46 @@
     font-size: 14px;
 }
 
+@media (max-width: 767px){
+    .cardCripto {
+        display: inline-block;
+        width: 130px;
+        margin: 15px;
+        background-color: #fff;
+        padding: 20px 35px 15px 35px;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: 2px 2px 6px -3px #000;
+        cursor: pointer;
+        transition: .4s;
+    }
+
+    .card h6 {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .cardCripto {
+        display: inline-block;
+        width: 150px;
+        margin: 15px;
+        background-color: #fff;
+        padding: 20px 35px 15px 35px;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: 2px 2px 6px -3px #000;
+        cursor: pointer;
+        transition: .4s;
+    }
+
+    .card h6 {
+        text-align: left;
+    }
+
+}
+
 /*******      Historico      ********/
 .menu div:hover {
     background-color: #0000004a;
@@ -107,6 +132,23 @@
         padding-bottom: 85px;
     }
 
+    .infos{
+        margin-bottom: 15px;
+        padding: 15px 30px;
+    }
+
+    .infos > div > div:first-child {
+        order: 2;
+    }
+
+    .infos > div > div:last-child {
+        order: 1;
+    }
+
+    .tableHistorico {
+        padding: 0px 15px;
+    }
+
     table {
         font-size: 0.6rem;
     }
@@ -114,6 +156,57 @@
     td {
         padding: 5px 10px;
     }
+
+    .badgeSifra {
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+        border-radius: 100%;
+        text-align: center;
+    }
+
+    table > tbody > tr > td:nth-child(1) {
+        width: 40px;
+    }
+
+    thead tr td:first-child {
+        border-radius: 30px 0px 0px 0px;
+    }
+
+    thead tr td:last-child {
+        border-radius: 0px 30px 0px 0px;
+    }
+
+    tbody tr td {
+        border: 1px solid #433fad;
+    }
+
+    tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+    tfoot tr td {
+        background-color: #8b3e7b;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 0px 0px 30px 30px;
+        padding: 0px !important;
+        overflow: hidden;
+    }
+
+    tr td:first-child {
+        padding-left: 11px;
+    }
+
+    tr td:last-child {
+        width: 50px;
+    }
+
+    tr td:last-child {
+        padding-right: 15px;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -130,6 +223,53 @@
     table > tbody > tr > td:nth-child(1) {
         width: 50px;
     }
+
+    .tableHistorico {
+        padding: 0px 30px 30px 30px;
+    }
+
+    .badgeSifra {
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        border-radius: 100%;
+        text-align: center;
+    }
+
+    thead tr td:first-child {
+        border-radius: 30px 0px 0px 0px;
+    }
+
+    thead tr td:last-child {
+        border-radius: 0px 30px 0px 0px;
+    }
+
+    tbody tr td {
+        border: 1px solid #433fad;
+    }
+
+    tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+    tfoot tr td {
+        background-color: #8b3e7b;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 0px 0px 30px 30px;
+        padding: 0px !important;
+        overflow: hidden;
+    }
+
+    tr td:first-child {
+        padding-left: 15px;
+    }
+
+    tr td:last-child {
+        padding-right: 15px;
+    }
+
 }
 
 .infos > div > div{
@@ -192,40 +332,6 @@ thead tr td{
     font-weight: bold;
 }
 
-thead tr td:first-child{
-    border-radius: 30px 0px 0px 0px;
-}
-
-thead tr td:last-child{
-    border-radius: 0px 30px 0px 0px;
-}
-
-tbody tr td {
-    border: 1px solid #433fad;
-}
-
-tbody tr:last-child td {
-    border-bottom: none;
-}
-
-tfoot tr td {
-    background-color: #8b3e7b;
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 0px 0px 30px 30px;
-    padding: 0px !important;
-    overflow: hidden;
-}
-
-tr td:first-child {
-    padding-left: 15px;
-}
-
-tr td:last-child {
-    padding-right: 15px;
-}
-
 .acessarHistorico {
     color: #fff;
     text-decoration: none;
@@ -238,14 +344,6 @@ tr td:last-child {
 .acessarHistorico:hover{
     color: #fff;
     text-decoration: none;
-}
-
-.badgeSifra {
-    width: 35px;
-    height: 35px;
-    padding: 5px;
-    border-radius: 100%;
-    text-align: center;
 }
 
 .badgeDinheiro {

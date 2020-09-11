@@ -8,15 +8,15 @@
     <div class="row justify-content-center">
         <div class="card col-sm-4 m-sm-4 my-2">
             <h6>Paulo victor</h6>
-            <div class="mb-3"><i class="far fa-money-bill-alt"></i> R$ 3.700,00</div>
+            <div class="mb-3"><i class="far fa-money-bill-alt"></i> R$ -.---,--</div>
             <div>&nbsp;<i class="far fa-calendar-alt"></i> Ultimo acesso: 15/04</div>
             <div class="cardBottom">Acessar conta</div>
         </div>
         <div class="card col-sm-4 m-sm-4 my-2">
             <h6>Favoritos</h6>
-            <div><i class="fas fa-star"></i> Bitcoin<div class="valorFavorita">R$ 1195,00</div></div>
-            <div><i class="fas fa-star"></i> Bitcoin Gold<div class="valorFavorita">R$ 54155,13</div></div>
-            <div><i class="fas fa-star"></i> Altcoin<div class="valorFavorita">R$ 0,06</div></div>
+            <div><i class="fas fa-star"></i> Bitcoin Cash<div class="valorFavorita">R$ ---,--</div></div>
+            <div><i class="fas fa-star"></i> Bitcoin Gold<div class="valorFavorita">R$ ---,--</div></div>
+            <div><i class="fas fa-star"></i> Ethereum<div class="valorFavorita">R$ ---,--</div></div>
             <div class="cardBottom">Acessar mercado</div>
         </div>
     </div>
@@ -65,12 +65,15 @@
         let eth = $("#criptoETH");
         let ltc = $("#criptoLTC");
 
+        let favoritas = $(".valorFavorita");
+
         $.ajax({
             url: "https://www.mercadobitcoin.net/api/BCH/ticker/",
             type: "GET",
             complete: function (data) {
                 bch.children().eq(0).html("vol " + parseFloat(data.responseJSON["ticker"]["vol"]).toFixed(2));
-                bch.children().eq(3).html("R$ " + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
+                bch.children().eq(3).html("R$ <br/>" + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
+                favoritas.eq(0).html("R$ " + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
             }
         });
 
@@ -79,7 +82,8 @@
             type: "GET",
             complete: function (data) {
                 btc.children().eq(0).html("vol " + parseFloat(data.responseJSON["ticker"]["vol"]).toFixed(2));
-                btc.children().eq(3).html("R$ " + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
+                btc.children().eq(3).html("R$ <br/>" + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
+                favoritas.eq(1).html("R$ " + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
             }
         });
 
@@ -88,7 +92,7 @@
             type: "GET",
             complete: function (data) {
                 chz.children().eq(0).html("vol " + parseFloat(data.responseJSON["ticker"]["vol"]).toFixed(2));
-                chz.children().eq(3).html("R$ " + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
+                chz.children().eq(3).html("R$ <br/>" + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
             }
         });
 
@@ -97,7 +101,8 @@
             type: "GET",
             complete: function (data) {
                 eth.children().eq(0).html("vol " + parseFloat(data.responseJSON["ticker"]["vol"]).toFixed(2));
-                eth.children().eq(3).html("R$ " + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
+                eth.children().eq(3).html("R$ <br/>" + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
+                favoritas.eq(2).html("R$ " + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
             }
         });
 
@@ -106,7 +111,7 @@
             type: "GET",
             complete: function (data) {
                 ltc.children().eq(0).html("vol " + parseFloat(data.responseJSON["ticker"]["vol"]).toFixed(2));
-                ltc.children().eq(3).html("R$ " + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
+                ltc.children().eq(3).html("R$ <br/>" + parseFloat(data.responseJSON["ticker"]["last"]).toFixed(2).replace('.', ','));
             }
         });
     });

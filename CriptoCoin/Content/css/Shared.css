@@ -135,7 +135,7 @@
     #btnHamburguer {
         background-color: transparent;
         border: none;
-        margin: 10px auto 30px auto;
+        margin: 10px auto 0px auto;
         display: block;
         outline: none !important;
         color: #fff;
@@ -145,7 +145,7 @@
 
     .menuExpandido #btnHamburguer {
         text-align: right;
-        margin: 10px 0px 30px auto;
+        margin: 10px 0px 0px auto;
         padding-left: 15px;
     }
 
@@ -175,11 +175,12 @@
     table > tbody > tr > td:nth-child(1) {
         width: 50px;
     }
-}
 
-.menu div i:hover + .tint {
-    display: block;
-    animation: opacidade 5s;
+    .menu div i:hover + .tint {
+        display: block;
+        animation: opacidade 5s;
+    }
+
 }
 
 @keyframes opacidade {
