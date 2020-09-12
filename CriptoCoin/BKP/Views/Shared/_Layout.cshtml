@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Meu Aplicativo ASP.NET</title>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="~/Content/css/Shared.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    @if (ViewBag.Css != null)
+    {
+        <link href="@ViewBag.Css" rel="stylesheet" />
+    }
+</head>
+<body>
+
+    <div class="menu">
+        <button id="btnHamburguer"><i class="fas fa-chevron-right"></i></button>
+        <div id="btnHome">
+            <i class="fas fa-home"></i>
+            <div class="tint">Acesse tela inicial.</div>
+            <label>Home</label>
+        </div>
+        <div id="btnPerfil">
+            <i class="fas fa-user-circle"></i>
+            <div class="tint">Acesse para ver ou alterar seus dados.</div>
+            <label>Perfil</label>
+        </div>
+        <div id="btnConta">
+            <i class="fas fa-wallet"></i>
+            <div class="tint">Acesse para verificar sua conta, efetuar deposito, saque entre outros...</div>
+            <label>Conta</label>
+        </div>
+        <div id="btnHistorico">
+            <i class="far fa-chart-bar"></i>
+            <div class="tint">Acesse para verificar o histórico de movimentação de sua conta.</div>
+            <label>Histórico</label>
+        </div>
+        <div id="btnMercado">
+            <i class="fas fa-hand-holding-usd"></i>
+            <div class="tint">Acesse para ver o mercado, comprar ou vender criptomoedas</div>
+            <label>Mercado</label>
+        </div>
+        <div id="btnConfiguracao">
+            <i class="fas fa-cogs"></i>
+            <div class="tint">Acesse para configurar sua conta.</div>
+            <label>Configuração</label>
+        </div>
+    </div>
+    <div class="conteudo">
+        @RenderBody()
+    </div>
+    <script src="https://kit.fontawesome.com/f38600d786.js" crossorigin="anonymous"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/Shared.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

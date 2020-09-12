@@ -126,10 +126,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CadastroController.cs" />
-    <Compile Include="Controllers\DashboardController.cs" />
+    <Compile Include="BKP\Controllers\CadastroController.cs" />
+    <Compile Include="BKP\Controllers\DashboardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="BKP\Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -188,15 +188,16 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="BKP\Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Login\Index.cshtml" />
-    <Content Include="Views\Cadastro\Index.cshtml" />
-    <Content Include="Views\Shared\_LayoutVazio.cshtml" />
-    <Content Include="Views\Dashboard\Historico.cshtml" />
-    <Content Include="Views\Dashboard\Index.cshtml" />
+    <Content Include="BKP\Views\Login\Index.cshtml" />
+    <Content Include="BKP\Views\Cadastro\Index.cshtml" />
+    <Content Include="BKP\Views\Shared\_LayoutVazio.cshtml" />
+    <Content Include="BKP\Views\Dashboard\Historico.cshtml" />
+    <Content Include="BKP\Views\Dashboard\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
