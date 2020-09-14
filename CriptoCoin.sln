@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriptoCoin", "CriptoCoin\CriptoCoin.csproj", "{3FDECA22-81F8-47DE-8624-C7B19ADD8B69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriptoCoinSistem", "CriptoCoinSistem\CriptoCoinSistem.csproj", "{FC2C6D58-5C28-4317-8C43-B8C8123D0763}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3FDECA22-81F8-47DE-8624-C7B19ADD8B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FDECA22-81F8-47DE-8624-C7B19ADD8B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FDECA22-81F8-47DE-8624-C7B19ADD8B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC2C6D58-5C28-4317-8C43-B8C8123D0763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC2C6D58-5C28-4317-8C43-B8C8123D0763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC2C6D58-5C28-4317-8C43-B8C8123D0763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC2C6D58-5C28-4317-8C43-B8C8123D0763}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
