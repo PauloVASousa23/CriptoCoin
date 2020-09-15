@@ -15,7 +15,6 @@ Atividades a serem realizadas até o momento:<br/>
     <li>Planejamento do banco</li>
   </ul>
 
-#Planejamento
 <h2><b>Menus/Funções</b></h2>
 
 
