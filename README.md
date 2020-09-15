@@ -1,2 +1,2 @@
 # CriptoCoin
-Projeto do curso de Analise e desenvolvimento de sistemas, realização de um sistema de gerenciamento administrativo para uma empresa do ramo de criptomoedas.
+Projeto do 4° semestre do curso de Analise e desenvolvimento de sistemas da Universidade Paulista, onde a proposta é a realização de um sistema de gerenciamento administrativo para uma empresa do ramo de criptomoedas.
