@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriptoCoin", "CriptoCoin\CriptoCoin.csproj", "{3FDECA22-81F8-47DE-8624-C7B19ADD8B69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriptoCoinDesktop", "CriptoCoinSistem\CriptoCoinDesktop.csproj", "{FC2C6D58-5C28-4317-8C43-B8C8123D0763}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriptoCoinSistem", "CriptoCoinSistem\CriptoCoinSistem.csproj", "{FC2C6D58-5C28-4317-8C43-B8C8123D0763}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriptoCoinApi", "CriptoCoinApi\CriptoCoinApi.csproj", "{0DD9C709-1108-40E0-AD0D-4E94257CE6BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriptoCoinApi.Tests", "CriptoCoinApi.Tests\CriptoCoinApi.Tests.csproj", "{FEB1DD8A-AC95-45F2-BF1F-D8C1DE82F2F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriptoCoinWeb", "CriptoCoinWeb\CriptoCoinWeb.csproj", "{DCBCBC6F-6BB4-4DF7-8A71-231B5D597855}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3FDECA22-81F8-47DE-8624-C7B19ADD8B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3FDECA22-81F8-47DE-8624-C7B19ADD8B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3FDECA22-81F8-47DE-8624-C7B19ADD8B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3FDECA22-81F8-47DE-8624-C7B19ADD8B69}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FC2C6D58-5C28-4317-8C43-B8C8123D0763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FC2C6D58-5C28-4317-8C43-B8C8123D0763}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC2C6D58-5C28-4317-8C43-B8C8123D0763}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC2C6D58-5C28-4317-8C43-B8C8123D0763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD9C709-1108-40E0-AD0D-4E94257CE6BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD9C709-1108-40E0-AD0D-4E94257CE6BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD9C709-1108-40E0-AD0D-4E94257CE6BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD9C709-1108-40E0-AD0D-4E94257CE6BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB1DD8A-AC95-45F2-BF1F-D8C1DE82F2F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB1DD8A-AC95-45F2-BF1F-D8C1DE82F2F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB1DD8A-AC95-45F2-BF1F-D8C1DE82F2F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB1DD8A-AC95-45F2-BF1F-D8C1DE82F2F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCBCBC6F-6BB4-4DF7-8A71-231B5D597855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCBCBC6F-6BB4-4DF7-8A71-231B5D597855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCBCBC6F-6BB4-4DF7-8A71-231B5D597855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCBCBC6F-6BB4-4DF7-8A71-231B5D597855}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
