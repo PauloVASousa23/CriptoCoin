@@ -1,42 +1,44 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CriptoCoinWeb._Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CriptoCoinWeb.Default" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<!DOCTYPE html>
 
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Content/css/Login.css" />
+</head>
+<body>
+    <form class="formLogin" id="form1" runat="server">
+        <div class="boxLogin">
+            
+          <div class="Logo">
+              CriptoCoin
+         </div>
+         
+         <div class="Acesse">
+                Acesse<br />
+                <div class="inputGrupo">
+                    <div class="inputIcone">
 
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
+                    </div>
+                    <input name="Usuário" type="text" value="Usuário" id="Usuário">
+                </div>          
+                <div class="inputGrupo">
+                    <div class="inputIcone">
+
+                    </div>
+                    <input name="Senha" type="text" id="Senha">
+                </div>                             
+                <input class="btnEntrar" type="submit" name="Button1" value="Entrar" id="Button1">
+         </div>
+
+         <div class="Cadastrar">
+                Não tem uma conta, cadastre-se<br/>
+                <input class="btnCadastrar" type="submit" name="Button2" value="Cadastrar-se" id="Button2">
+         </div>						
+       
         </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
-    </div>
-
-</asp:Content>
+    </form>
+</body>
+</html>

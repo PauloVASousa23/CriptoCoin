@@ -1,0 +1,98 @@
+﻿body {
+    background-color: #0f0227;
+}
+.boxLogin {
+    border-radius: 15px;
+    background-color: #000;
+    width: 290px;
+    height: 330px;
+    margin-top: 40px;
+}
+
+.Logo {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+.Acesse {
+    border-radius: 15px;
+    background-color: #ffffff;
+    height: 220px;
+    text-align: center;
+    padding-top: 1px;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.Cadastrar {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #000000;
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: -30px;
+    font-weight: 700;
+}
+
+.btnEntrar {
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    padding: 5px 20px;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
+    margin-top: 10px;
+}
+
+.btnCadastrar {
+    background-color: #400909;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    padding: 5px 20px;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
+    margin-top: 10px;
+}
+
+.formLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputGrupo {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 15px;
+    height: 30px;
+}
+.inputIcone {
+    width: 50px;
+    height: 30px;
+    background-color: #4c0303;
+    display: inline-block;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.Acesse > .inputGrupo > input {
+    background-color: White;
+    width: 150px;
+    display: inline-block;
+    height: 30px;
+    border: none;
+    padding-left: 10px;
+}
