@@ -1,0 +1,40 @@
+﻿body {
+    background-color:#ff0000;
+}
+
+.formCadastrar{
+
+}
+
+/*.formCadastrar {      vou validar depois se vai entrar ou não
+    border-radius: 15px;
+    background-color: #7b7777;
+    width: 290px;
+    height: 40px;
+    margin-top: 90px;
+    font-size: 25px;
+    font-style: italic;
+    font-family: sans-serif;
+}*/
+
+.boxCriptoCoin {
+    border-radius: 15px;
+    background-color: #7b7777;
+    width: 290px;
+    height: 40px;
+    margin-top: 90px;
+    font-size: 25px;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+.boxCadastro {
+    border-radius: 15px;
+    background-color: #7b7777;
+    width: 288px;
+    height: 400px;
+    font-size: 15px;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
