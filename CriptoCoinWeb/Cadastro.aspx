@@ -16,19 +16,75 @@
             </div>
             <div class="boxCadastro">
                 Cadastre-se
-                <input name="Nome" type="text" id="Nome">
-                <input name="RG" type="text" id="RG">
-                <input name="CPF" type="text" id="CPF">
-                <input name="Telefone" type="text" id="Telefone">
-                <input name="E-mail" type="text" id="E-mail">
-                <input name="CEP" type="text" id="CEP">
-                <input name="Cidade" type="text" id="Cidade">
-                <input name="Estado" type="text" id="Estado">
-                <input name="Rua" type="text" id="Rua">
-                <input name="Senha" type="text" id="Senha">
-                <input name="confirmarSenha" type="text" id="ConfirmarSenha">
-                <input class="btnLimpar" type="submit" name="Button2" value="Limpar" id="Button2">
-                <input class="btnCadastrar1" type="submit" name="Button2" value="Cadastrar" id="Button2">
+                <div class="inputGrupo">
+                    <div class="inputIcone">
+
+                    </div>
+                    <input name="Nome" type="text" value="" id="Nome">
+                </div>          
+                <div class="inputGrupo">
+                    <div class="inputIcone">
+
+                    </div>
+                    <input name="Rg" type="text" id="Rg">
+                </div>
+                <div class="inputGrupo">
+                    <div class="inputIcone">
+
+                    </div>
+                    <input name="Cpf" type="text" id="Cpf">
+                </div> 
+                <div class="inputGrupo">
+                    <div class="inputIcone">
+
+                    </div>
+                    <input name="Telefone" type="text" id="Telefone">
+                </div> 
+                 <div class="inputGrupo">
+                    <div class="inputIcone">
+
+                    </div>
+                    <input name="E-mail" type="text" id="E-mail">
+                </div> 
+                 <div class="inputGrupo">
+                    <div class="inputIcone">
+
+                    </div>
+                    <input name="Cep" type="text" id="Cep">
+                </div> 
+                 <div class="inputGrupo">
+                    <div class="inputIcone">
+
+                    </div>
+                    <input name="Cidade" type="text" id="Cidade">
+                </div> 
+                 <div class="inputGrupo">
+                    <div class="inputIcone">
+
+                    </div>
+                    <input name="Estado" type="text" id="Estado">
+                </div> 
+                 <div class="inputGrupo">
+                    <div class="inputIcone">
+
+                    </div>
+                    <input name="Rua" type="text" id="Rua">
+                </div> 
+                 <div class="inputGrupo">
+                    <div class="inputIcone">
+
+                    </div>
+                    <input name="Senha" type="text" id="Senha">
+                </div> 
+                 <div class="inputGrupo">
+                    <div class="inputIcone">
+
+                    </div>
+                    <input name="confirmaSenha" type="text" id="confirmaSenha">                  
+                </div> 
+                <input class="btnLimpar" type="submit" name="Button1" value="Limpar" id="Button1">
+                <input class="btnCadastrar" type="submit" name="Button1" value="Cadastrar" id="Button1">
+                         
             </div>
         </div>
     </form>

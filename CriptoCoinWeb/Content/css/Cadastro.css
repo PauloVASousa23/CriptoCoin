@@ -19,7 +19,7 @@
 
 .boxCriptoCoin {
     border-radius: 15px;
-    background-color: #7b7777;
+    background-color: #888888;
     width: 290px;
     height: 40px;
     margin-top: 90px;
@@ -30,11 +30,31 @@
 
 .boxCadastro {
     border-radius: 15px;
-    background-color: #7b7777;
+    background-color: #909090;
     width: 288px;
-    height: 400px;
+    height: 600px;
     font-size: 15px;
     font-style: italic;
     font-family: sans-serif;
 }
+
+.inputGrupo {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 15px;
+    height: 30px;
+}
+
+.inputIcone {
+    width: 50px;
+    height: 30px;
+    background-color: #4c0303;
+    display: inline-block;
+    border-radius: 0px 50px 50px 0px;
+}
+
+
 
