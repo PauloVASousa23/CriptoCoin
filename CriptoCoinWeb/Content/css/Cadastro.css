@@ -1,5 +1,5 @@
 ﻿body {
-    background-color:#ff0000;
+    background-color: #1d0202;
 }
 
 .formCadastrar{
@@ -19,7 +19,8 @@
 
 .boxCriptoCoin {
     border-radius: 15px;
-    background-color: #888888;
+    background-color: #000000;
+    color: #fff;
     width: 290px;
     height: 40px;
     margin-top: 90px;
@@ -30,11 +31,11 @@
 
 .boxCadastro {
     border-radius: 15px;
-    background-color: #909090;
+    background-color: #000000;
+    color: #fff;
     width: 288px;
     height: 600px;
     font-size: 15px;
-    font-style: italic;
     font-family: sans-serif;
 }
 
@@ -42,18 +43,29 @@
     display: flex;
     flex-wrap: wrap;
     border: 1px solid;
-    border-radius: 5px;
+    border-radius: 15px;
     overflow: hidden;
-    margin: 15px;
+    margin: 10px;
     height: 30px;
 }
 
 .inputIcone {
     width: 50px;
     height: 30px;
-    background-color: #4c0303;
+    background-color: #1d0202;
     display: inline-block;
     border-radius: 0px 50px 50px 0px;
+}
+.btnLimpar {
+    color: #fff;
+    background-color: #1d0202;
+    border-radius: 15px;
+}
+
+.btnCadastrar {
+    color: #fff;
+    background-color: #1d0202;
+    border-radius: 15px;
 }
 
 
