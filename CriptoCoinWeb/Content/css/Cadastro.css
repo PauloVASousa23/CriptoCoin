@@ -2,8 +2,10 @@
     background-color: #1d0202;
 }
 
-.formCadastrar{
-
+.formCadastrar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 /*.formCadastrar {      vou validar depois se vai entrar ou não
@@ -23,7 +25,7 @@
     color: #fff;
     width: 290px;
     height: 40px;
-    margin-top: 90px;
+    margin-top: 30px;
     font-size: 25px;
     font-style: italic;
     font-family: sans-serif;
@@ -34,7 +36,7 @@
     background-color: #000000;
     color: #fff;
     width: 288px;
-    height: 600px;
+    height: 520px;
     font-size: 15px;
     font-family: sans-serif;
 }
