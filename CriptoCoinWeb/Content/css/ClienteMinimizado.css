@@ -23,26 +23,15 @@
     top: 50px;
     left: 0px;
 }
-.btnClientes {
+
+.btnConta {
     background-color: #400909;
     color: #fff;
     border-radius: 50px;
     border: none;
-    padding: 5px 90px;
+    padding: 5px 98px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
     margin-top: 70px;
-    font-family: sans-serif;
-    font-size: larger;
-}
-
-.btnTransações {
-    background-color: #400909;
-    color: #fff;
-    border-radius: 50px;
-    border: none;
-    padding: 5px 75px;
-    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
-    margin-top: 15px;
     font-family: sans-serif;
     font-size: larger;
 }
@@ -89,4 +78,3 @@
     justify-content: center;
     align-items: flex-start;
 }
-

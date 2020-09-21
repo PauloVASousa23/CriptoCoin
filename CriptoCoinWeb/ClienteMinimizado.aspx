@@ -6,11 +6,11 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>CriptoCoin</title>
-     <link rel="stylesheet" type="text/css" href="Content/css/AgenciaMinimizado.css" />
+     <link rel="stylesheet" type="text/css" href="Content/css/ClienteMinimizado.css" />
 </head>
 <body>
     <div class="conteudo">
-            Colocar o perfil agencia minimizado neste campo
+            Colocar o perfil cliente minimizado aqui
         </div> 
     <form class="formPerfis" id="form1" runat="server">         
         <div class="imagem">
@@ -18,8 +18,7 @@
               <!--colocar o logo CriptoCoin depois aqui!-->
          </div>
          <div class="perfis">
-             <input class="btnClientes" type="submit" name="Button2" value="Clientes" id="Button2"/> 
-             <input class="btnTransações" type="submit" name="Button2" value="Transações" id="Button2"/> 
+             <input class="btnConta" type="submit" name="Button2" value="Conta" id="Button2"/>             
              <input class="btnRelatórios" type="submit" name="Button2" value="Relatórios" id="Button2">             
              <input class="btnIndicações" type="submit" name="Button2" value="Indicações" id="Button2"/>  
              <input class="btnMonitoramento" type="submit" name="Button2" value="Monitoramento" id="Button2"/> 

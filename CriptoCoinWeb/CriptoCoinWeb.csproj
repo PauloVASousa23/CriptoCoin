@@ -105,13 +105,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminMaximizado.aspx" />
+    <Content Include="AdminMinimizado.aspx" />
+    <Content Include="AgenciaMaximizado.aspx" />
     <Content Include="AgenciaMinimizado.aspx" />
     <Content Include="Cadastro.aspx" />
+    <Content Include="ClienteMaximizado.aspx" />
+    <Content Include="ClienteMinimizado.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\AdminMaximizado.css" />
+    <Content Include="Content\css\AdminMinimizado.css" />
+    <Content Include="Content\css\AgenciaMaximizado.css" />
     <Content Include="Content\css\AgenciaMinimizado.css" />
+    <Content Include="Content\css\ClienteMaximizado.css" />
+    <Content Include="Content\css\ClienteMinimizado.css" />
     <Content Include="Content\css\Login.css" />
     <Content Include="Content\css\Cadastro.css" />
     <Content Include="Content\Site.css" />
@@ -163,6 +173,27 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMaximizado.aspx.cs">
+      <DependentUpon>AdminMaximizado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMaximizado.aspx.designer.cs">
+      <DependentUpon>AdminMaximizado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMinimizado.aspx.cs">
+      <DependentUpon>AdminMinimizado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMinimizado.aspx.designer.cs">
+      <DependentUpon>AdminMinimizado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgenciaMaximizado.aspx.cs">
+      <DependentUpon>AgenciaMaximizado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenciaMaximizado.aspx.designer.cs">
+      <DependentUpon>AgenciaMaximizado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AgenciaMinimizado.aspx.cs">
       <DependentUpon>AgenciaMinimizado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -178,6 +209,20 @@
     </Compile>
     <Compile Include="Cadastro.aspx.designer.cs">
       <DependentUpon>Cadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteMaximizado.aspx.cs">
+      <DependentUpon>ClienteMaximizado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClienteMaximizado.aspx.designer.cs">
+      <DependentUpon>ClienteMaximizado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteMinimizado.aspx.cs">
+      <DependentUpon>ClienteMinimizado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClienteMinimizado.aspx.designer.cs">
+      <DependentUpon>ClienteMinimizado.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

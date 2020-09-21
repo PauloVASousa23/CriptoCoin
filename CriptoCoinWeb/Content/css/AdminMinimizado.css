@@ -23,12 +23,13 @@
     top: 50px;
     left: 0px;
 }
-.btnClientes {
+
+.btnGerenciarConta {
     background-color: #400909;
     color: #fff;
     border-radius: 50px;
     border: none;
-    padding: 5px 90px;
+    padding: 5px 49px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
     margin-top: 70px;
     font-family: sans-serif;
@@ -83,10 +84,21 @@
     font-size: larger;
 }
 
+.btnGerenciarPerfil {
+    background-color: #400909;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    padding: 5px 54px;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: larger;
+}
+
 .conteudo {
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
-
