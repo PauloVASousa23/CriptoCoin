@@ -56,5 +56,10 @@ namespace CriptoCoinSistem
         {
 
         }
+
+        private void textBox22_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
