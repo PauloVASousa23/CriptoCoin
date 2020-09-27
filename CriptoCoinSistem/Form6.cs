@@ -10,27 +10,11 @@ using System.Windows.Forms;
 
 namespace CriptoCoinSistem
 {
-    public partial class Form4 : Form
+    public partial class Form6 : Form
     {
-        public Form4()
+        public Form6()
         {
             InitializeComponent();
-        }
-
-        private void label20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form4_Load(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

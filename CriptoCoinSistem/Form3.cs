@@ -66,5 +66,20 @@ namespace CriptoCoinSistem
         {
 
         }
+
+        private void label26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

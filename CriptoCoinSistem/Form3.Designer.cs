@@ -162,19 +162,19 @@
             // textBox24
             // 
             this.textBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox24.Location = new System.Drawing.Point(416, 305);
+            this.textBox24.Location = new System.Drawing.Point(422, 289);
             this.textBox24.Name = "textBox24";
             this.textBox24.PasswordChar = '*';
-            this.textBox24.Size = new System.Drawing.Size(100, 23);
+            this.textBox24.Size = new System.Drawing.Size(176, 23);
             this.textBox24.TabIndex = 32;
             // 
             // textBox23
             // 
             this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox23.Location = new System.Drawing.Point(189, 308);
+            this.textBox23.Location = new System.Drawing.Point(76, 289);
             this.textBox23.Name = "textBox23";
             this.textBox23.PasswordChar = '*';
-            this.textBox23.Size = new System.Drawing.Size(100, 23);
+            this.textBox23.Size = new System.Drawing.Size(214, 23);
             this.textBox23.TabIndex = 31;
             // 
             // label28
@@ -183,7 +183,7 @@
             this.label28.BackColor = System.Drawing.SystemColors.Highlight;
             this.label28.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(295, 307);
+            this.label28.Location = new System.Drawing.Point(302, 291);
             this.label28.Name = "label28";
             this.label28.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label28.Size = new System.Drawing.Size(115, 21);
@@ -196,7 +196,7 @@
             this.label27.BackColor = System.Drawing.SystemColors.Highlight;
             this.label27.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(128, 310);
+            this.label27.Location = new System.Drawing.Point(18, 288);
             this.label27.Name = "label27";
             this.label27.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label27.Size = new System.Drawing.Size(54, 21);
@@ -218,30 +218,30 @@
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(473, 225);
+            this.textBox14.Location = new System.Drawing.Point(473, 221);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(125, 20);
             this.textBox14.TabIndex = 24;
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(310, 184);
+            this.textBox15.Location = new System.Drawing.Point(402, 184);
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(369, 20);
+            this.textBox15.Size = new System.Drawing.Size(196, 20);
             this.textBox15.TabIndex = 22;
             // 
             // textBox16
             // 
-            this.textBox16.Location = new System.Drawing.Point(258, 222);
+            this.textBox16.Location = new System.Drawing.Point(314, 220);
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(128, 20);
+            this.textBox16.Size = new System.Drawing.Size(97, 20);
             this.textBox16.TabIndex = 21;
             // 
             // textBox17
             // 
-            this.textBox17.Location = new System.Drawing.Point(78, 181);
+            this.textBox17.Location = new System.Drawing.Point(78, 184);
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(166, 20);
+            this.textBox17.Size = new System.Drawing.Size(256, 20);
             this.textBox17.TabIndex = 20;
             // 
             // label17
@@ -250,12 +250,13 @@
             this.label17.BackColor = System.Drawing.SystemColors.Highlight;
             this.label17.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(412, 222);
+            this.label17.Location = new System.Drawing.Point(418, 220);
             this.label17.Name = "label17";
             this.label17.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label17.Size = new System.Drawing.Size(54, 21);
             this.label17.TabIndex = 19;
             this.label17.Text = "Bairro";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label18
             // 
@@ -263,18 +264,19 @@
             this.label18.BackColor = System.Drawing.SystemColors.Highlight;
             this.label18.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(192, 221);
+            this.label18.Location = new System.Drawing.Point(254, 221);
             this.label18.Name = "label18";
             this.label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label18.Size = new System.Drawing.Size(61, 21);
             this.label18.TabIndex = 18;
             this.label18.Text = "Cidade";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(54, 221);
+            this.textBox18.Location = new System.Drawing.Point(78, 220);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(128, 20);
+            this.textBox18.Size = new System.Drawing.Size(158, 20);
             this.textBox18.TabIndex = 17;
             // 
             // label19
@@ -283,7 +285,7 @@
             this.label19.BackColor = System.Drawing.SystemColors.Highlight;
             this.label19.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(6, 255);
+            this.label19.Location = new System.Drawing.Point(-4, 253);
             this.label19.Name = "label19";
             this.label19.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label19.Size = new System.Drawing.Size(79, 21);
@@ -296,7 +298,7 @@
             this.label20.BackColor = System.Drawing.SystemColors.Highlight;
             this.label20.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(17, 220);
+            this.label20.Location = new System.Drawing.Point(35, 220);
             this.label20.Name = "label20";
             this.label20.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label20.Size = new System.Drawing.Size(37, 21);
@@ -306,9 +308,9 @@
             // 
             // textBox19
             // 
-            this.textBox19.Location = new System.Drawing.Point(90, 258);
+            this.textBox19.Location = new System.Drawing.Point(78, 253);
             this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(504, 20);
+            this.textBox19.Size = new System.Drawing.Size(520, 20);
             this.textBox19.TabIndex = 14;
             // 
             // label21
@@ -317,7 +319,7 @@
             this.label21.BackColor = System.Drawing.SystemColors.Highlight;
             this.label21.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(254, 181);
+            this.label21.Location = new System.Drawing.Point(346, 184);
             this.label21.Name = "label21";
             this.label21.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label21.Size = new System.Drawing.Size(54, 21);
@@ -326,9 +328,9 @@
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(237, 143);
+            this.textBox20.Location = new System.Drawing.Point(402, 145);
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(128, 20);
+            this.textBox20.Size = new System.Drawing.Size(196, 20);
             this.textBox20.TabIndex = 12;
             // 
             // label22
@@ -337,7 +339,7 @@
             this.label22.BackColor = System.Drawing.SystemColors.Highlight;
             this.label22.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(17, 142);
+            this.label22.Location = new System.Drawing.Point(33, 146);
             this.label22.Name = "label22";
             this.label22.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label22.Size = new System.Drawing.Size(31, 21);
@@ -346,9 +348,9 @@
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(54, 142);
+            this.textBox21.Location = new System.Drawing.Point(76, 147);
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(128, 20);
+            this.textBox21.Size = new System.Drawing.Size(258, 20);
             this.textBox21.TabIndex = 10;
             // 
             // label23
@@ -366,9 +368,8 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button5.Location = new System.Drawing.Point(360, 354);
+            this.button5.Location = new System.Drawing.Point(350, 347);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(92, 30);
             this.button5.TabIndex = 8;
@@ -404,7 +405,7 @@
             // 
             this.button6.BackColor = System.Drawing.Color.Brown;
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(229, 355);
+            this.button6.Location = new System.Drawing.Point(221, 346);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(94, 28);
             this.button6.TabIndex = 6;
@@ -425,12 +426,13 @@
             this.label26.BackColor = System.Drawing.SystemColors.Highlight;
             this.label26.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(199, 143);
+            this.label26.Location = new System.Drawing.Point(356, 149);
             this.label26.Name = "label26";
             this.label26.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label26.Size = new System.Drawing.Size(37, 21);
             this.label26.TabIndex = 5;
             this.label26.Text = "CPF";
+            this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // textBox11
             // 
