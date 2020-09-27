@@ -130,7 +130,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.groupBox2.BackColor = System.Drawing.SystemColors.Highlight;
             this.groupBox2.Controls.Add(this.textBox24);
             this.groupBox2.Controls.Add(this.textBox23);
             this.groupBox2.Controls.Add(this.label28);
@@ -370,6 +370,7 @@
             // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.Color.Yellow;
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.button6.Location = new System.Drawing.Point(350, 347);
             this.button6.Name = "button6";
