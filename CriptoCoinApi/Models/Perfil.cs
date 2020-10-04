@@ -7,18 +7,19 @@ namespace CriptoCoinApi.Models
 {
     public class Perfil
     {
-        int Id;
+        public int Id { get; set; }
         public String Nome { get; set; }
-        public String Email;
+        public String Senha { get; set; }
+        public String Email { get; set; }
         public String Rg{ get; set; }
         public String Cpf{ get; set; }
-        int Cep{ get; set; }
+        public String Cep{ get; set; }
         public String Cidade{ get; set; }
         public String Bairro{ get; set; }
         public String Endereco{ get; set; }
-        int Conta{ get; set; }
+        public int Conta{ get; set; }
         public String Agencia{ get; set; }
-        public String Permissao{ get; set; }
+        public int Permissao{ get; set; }
 
         
     }

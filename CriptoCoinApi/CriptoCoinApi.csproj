@@ -133,9 +133,14 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\CriptocoinController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="DAO\connection.cs" />
-    <Compile Include="DAO\DAOPerfil.cs" />
+    <Compile Include="Repositorio\CarteiraRepositorio.cs" />
+    <Compile Include="Repositorio\DAO.cs" />
+    <Compile Include="Repositorio\ContaRepositorio.cs" />
+    <Compile Include="Repositorio\IndicacoesRepositorio.cs" />
+    <Compile Include="Repositorio\PerfilRepositorio.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -145,6 +150,7 @@
     <Compile Include="Models\Perfil.cs" />
     <Compile Include="Models\Permissao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio\PermissaoRepositorio.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -182,9 +188,13 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\testeBd.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Permissao.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Api\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
