@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AgenciaMinimizado.aspx.cs" Inherits="CriptoCoinWeb.AgenciaMinimizado" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ClienteMaximizado.aspx.cs" Inherits="CriptoCoinWeb.ClienteMaximizado" %>
 
 <!DOCTYPE html>
 
@@ -19,9 +19,8 @@
          </div>
          <div class="perfis">
              <input class="btnConta" type="submit" name="Button2" value="Conta" id="Button2"/> 
-             <input class="btnConsultar" type="submit" name="Button2" value="Consultar" id="Button2"/>
-             <input class="btnCadastrar" type="submit" name="Button2" value="Cadastrar" id="Button2"/>
-             <input class="btnAlterar" type="submit" name="Button2" value="Alterar" id="Button2"/>           
+             <input class="btnMovimentar" type="submit" name="Button2" value="Movimentar" id="Button2"/> 
+             <input class="btnConsultar" type="submit" name="Button2" value="Consultar" id="Button2"/>               
              <input class="btnRelatórios" type="submit" name="Button2" value="Relatórios" id="Button2">             
              <input class="btnIndicações" type="submit" name="Button2" value="Indicações" id="Button2"/>  
              <input class="btnMonitoramento" type="submit" name="Button2" value="Monitoramento" id="Button2"/> 

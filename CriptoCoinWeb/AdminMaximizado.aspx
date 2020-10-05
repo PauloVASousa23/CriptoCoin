@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AgenciaMinimizado.aspx.cs" Inherits="CriptoCoinWeb.AgenciaMinimizado" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminMaximizado.aspx.cs" Inherits="CriptoCoinWeb.AdminMaximizado" %>
 
 <!DOCTYPE html>
 
@@ -14,7 +14,7 @@
         </div> 
     <form class="formPerfis" id="form1" runat="server">         
         <div class="imagem">
-            <img src="C:\Users\Washington\Documents\Materias\GitPim4°\CriptoCoin\.png" alt="Moeda Criptocoin" style="width:200px;height:200px;" />
+            <img src="C:\Users\Washington\Documents\Materias\GitPim4°\CriptoCoin\images\Logo_CriptoCoin_transp_branco.png" alt="Moeda Criptocoin" style="width:200px;height:200px;" />
               <!--colocar o logo CriptoCoin depois aqui!-->
          </div>
          <div class="perfis">

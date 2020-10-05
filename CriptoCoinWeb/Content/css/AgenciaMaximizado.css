@@ -61,19 +61,6 @@
     width: 220px;
 }
 
-.btnAlterar {
-    background-color: #270202;
-    color: #fff;
-    border-radius: 50px;
-    border: none;
-    padding: 5px 90px;
-    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
-    margin-top: 5px;
-    font-family: sans-serif;
-    font-size: larger;
-    width: 220px;
-}
-
 .btnTransações {
     background-color: #270202;
     color: #fff;
