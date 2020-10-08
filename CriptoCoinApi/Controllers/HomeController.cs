@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
+using CriptoCoinApi.Models;
+using CriptoCoinApi.Repositorio;
 
 namespace CriptoCoinApi.Controllers
 {
@@ -26,5 +29,11 @@ namespace CriptoCoinApi.Controllers
 
             return View();
         }
+
+        public ActionResult testeBd()
+        {      
+            return View();
+        }
+        
     }
 }
