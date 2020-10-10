@@ -365,13 +365,14 @@
             this.label26.TabIndex = 5;
             this.label26.Text = "CPF";
             // 
-            // Form3
+            // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.groupBox2);
-            this.Name = "Form3";
+            this.Name = "Cadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

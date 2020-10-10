@@ -36,5 +36,12 @@ namespace CriptoCoinSistem
         {
             textBox1.Text = "Funcionou o clique";
         }
+
+        private void panel7_Click(object sender, EventArgs e)
+        {
+            Cadastro cadastro = new Cadastro();
+            cadastro.Visible = true;
+            this.Visible = false;
+        }
     }
 }
