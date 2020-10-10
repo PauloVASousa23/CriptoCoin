@@ -38,8 +38,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.button3 = new System.Windows.Forms.Button();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,12 +128,12 @@
             this.label5.BackColor = System.Drawing.SystemColors.HotTrack;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Yellow;
-            this.label5.Location = new System.Drawing.Point(26, 210);
+            this.label5.Location = new System.Drawing.Point(10, 210);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(156, 28);
+            this.label5.Size = new System.Drawing.Size(202, 28);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Não tem conta?";
+            this.label5.Text = "Não tem uma conta?";
             // 
             // button2
             // 
