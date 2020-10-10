@@ -18,7 +18,7 @@ namespace CriptoCoinApi.Controllers
 
             PermissaoRepositorio permissaoRepos = new PermissaoRepositorio();
             Permissao permissao = permissaoRepos.selecionarPermissao(id);
-            return Json(new JavaScriptSerializer().Serialize(permissao), JsonRequestBehavior.AllowGet);
+            return Json(permissao, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -28,8 +28,7 @@ namespace CriptoCoinApi.Controllers
 
             PermissaoRepositorio permissaoRepos = new PermissaoRepositorio();
             List<Permissao> permissoes = permissaoRepos.selecionarPermissoes();
-            return Json(new JavaScriptSerializer().Serialize(permissoes), JsonRequestBehavior.AllowGet);
-
+            return Json(permissoes, JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
@@ -38,7 +37,7 @@ namespace CriptoCoinApi.Controllers
 
             PermissaoRepositorio permissaoRepos = new PermissaoRepositorio();
             bool result = permissaoRepos.inserirPermissao(permissao);
-            return Json(new JavaScriptSerializer().Serialize(result), JsonRequestBehavior.AllowGet);
+            return Json(result, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -48,7 +47,7 @@ namespace CriptoCoinApi.Controllers
 
             PermissaoRepositorio permissaoRepos = new PermissaoRepositorio();
             bool resultado = permissaoRepos.deletarPermissao(id);
-            return Json(new JavaScriptSerializer().Serialize(resultado), JsonRequestBehavior.AllowGet);
+            return Json(resultado, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -58,7 +57,7 @@ namespace CriptoCoinApi.Controllers
 
             ContaRepositorio contaRepos = new ContaRepositorio();
             Conta conta = contaRepos.selecionarConta(id);
-            return Json(new JavaScriptSerializer().Serialize(conta), JsonRequestBehavior.AllowGet);
+            return Json(conta, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -68,7 +67,7 @@ namespace CriptoCoinApi.Controllers
 
             ContaRepositorio contaRepos = new ContaRepositorio();
             List<Conta> contas = contaRepos.selecionarContas();
-            return Json(new JavaScriptSerializer().Serialize(contas), JsonRequestBehavior.AllowGet);
+            return Json(contas, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -78,7 +77,7 @@ namespace CriptoCoinApi.Controllers
 
             ContaRepositorio contaRepos = new ContaRepositorio();
             bool result = contaRepos.inserirConta(conta);
-            return Json(new JavaScriptSerializer().Serialize(result), JsonRequestBehavior.AllowGet);
+            return Json(result, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -88,7 +87,7 @@ namespace CriptoCoinApi.Controllers
 
             ContaRepositorio contaRepos = new ContaRepositorio();
             bool result = contaRepos.deletarConta(id);
-            return Json(new JavaScriptSerializer().Serialize(result), JsonRequestBehavior.AllowGet);
+            return Json(result, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -97,7 +96,7 @@ namespace CriptoCoinApi.Controllers
 
             PerfilRepositorio perfilRepos = new PerfilRepositorio();
             Perfil perfil = perfilRepos.selecionarPerfil(id);
-            return Json(new JavaScriptSerializer().Serialize(perfil), JsonRequestBehavior.AllowGet);
+            return Json(perfil, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -107,7 +106,7 @@ namespace CriptoCoinApi.Controllers
 
             PerfilRepositorio perfilRepos = new PerfilRepositorio();
             List<Perfil> perfis = perfilRepos.selecionarPerfis();
-            return Json(new JavaScriptSerializer().Serialize(perfis), JsonRequestBehavior.AllowGet);
+            return Json(perfis, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -117,7 +116,7 @@ namespace CriptoCoinApi.Controllers
 
             PerfilRepositorio perfilRepos = new PerfilRepositorio();
             bool result = perfilRepos.inserirPerfil(perfil);
-            return Json(new JavaScriptSerializer().Serialize(result), JsonRequestBehavior.AllowGet);
+            return Json(result, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -127,7 +126,7 @@ namespace CriptoCoinApi.Controllers
 
             PerfilRepositorio perfilRepos = new PerfilRepositorio();
             bool result = perfilRepos.deletarPerfil(id);
-            return Json(new JavaScriptSerializer().Serialize(result), JsonRequestBehavior.AllowGet);
+            return Json(result, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -136,7 +135,7 @@ namespace CriptoCoinApi.Controllers
 
             CarteiraRepositorio carteiraRepos = new CarteiraRepositorio();
             Carteira carteira = carteiraRepos.selecionarCarteira(id);
-            return Json(new JavaScriptSerializer().Serialize(carteira), JsonRequestBehavior.AllowGet);
+            return Json(carteira, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -146,7 +145,7 @@ namespace CriptoCoinApi.Controllers
 
             CarteiraRepositorio carteiraRepos = new CarteiraRepositorio();
             List<Carteira> carteira = carteiraRepos.selecionarCarteiras();
-            return Json(new JavaScriptSerializer().Serialize(carteira), JsonRequestBehavior.AllowGet);
+            return Json(carteira, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -156,7 +155,7 @@ namespace CriptoCoinApi.Controllers
 
             CarteiraRepositorio carteiraRepos = new CarteiraRepositorio();
             bool result = carteiraRepos.inserirCarteira(carteira);
-            return Json(new JavaScriptSerializer().Serialize(result), JsonRequestBehavior.AllowGet);
+            return Json(result, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -166,7 +165,7 @@ namespace CriptoCoinApi.Controllers
 
             CarteiraRepositorio carteiraRepos = new CarteiraRepositorio();
             bool result = carteiraRepos.deletarCarteira(id);
-            return Json(new JavaScriptSerializer().Serialize(result), JsonRequestBehavior.AllowGet);
+            return Json(result, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -175,7 +174,7 @@ namespace CriptoCoinApi.Controllers
 
             IndicacoesRepositorio indicacaoRepos = new IndicacoesRepositorio();
             Indicacoes indicacao = indicacaoRepos.selecionarIndicacao(id);
-            return Json(new JavaScriptSerializer().Serialize(indicacao), JsonRequestBehavior.AllowGet);
+            return Json(indicacao, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -185,7 +184,7 @@ namespace CriptoCoinApi.Controllers
 
             IndicacoesRepositorio indicacaoRepos = new IndicacoesRepositorio();
             List<Indicacoes> indicacoes = indicacaoRepos.selecionarIndicacoes();
-            return Json(new JavaScriptSerializer().Serialize(indicacoes), JsonRequestBehavior.AllowGet);
+            return Json(indicacoes, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -195,7 +194,7 @@ namespace CriptoCoinApi.Controllers
 
             IndicacoesRepositorio indicacaoRepos = new IndicacoesRepositorio();
             bool result = indicacaoRepos.inserirIndicacoes(indicacoes);
-            return Json(new JavaScriptSerializer().Serialize(result), JsonRequestBehavior.AllowGet);
+            return Json(result, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -205,7 +204,7 @@ namespace CriptoCoinApi.Controllers
 
             IndicacoesRepositorio indicacaoRepos = new IndicacoesRepositorio();
             bool result = indicacaoRepos.deletarIndicacao(id);
-            return Json(new JavaScriptSerializer().Serialize(result), JsonRequestBehavior.AllowGet);
+            return Json(result, JsonRequestBehavior.AllowGet);
 
         }
     }
