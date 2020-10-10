@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.label1 = new System.Windows.Forms.Label();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -44,6 +43,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -51,29 +51,16 @@
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semibold", 30F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(29, 4);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(217, 54);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CriptoCoin";
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.panel10);
             this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(263, 62);
+            this.panel2.Location = new System.Drawing.Point(263, 15);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(275, 337);
+            this.panel2.Size = new System.Drawing.Size(275, 384);
             this.panel2.TabIndex = 18;
             // 
             // panel1
@@ -86,7 +73,7 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(0, 63);
+            this.panel1.Location = new System.Drawing.Point(0, 108);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(275, 274);
             this.panel1.TabIndex = 11;
@@ -216,6 +203,16 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "Não tem uma conta?";
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Transparent;
+            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
+            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel10.Location = new System.Drawing.Point(44, 6);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(195, 90);
+            this.panel10.TabIndex = 19;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,7 +228,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -245,8 +241,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
@@ -261,6 +255,7 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Panel panel10;
     }
 }
 

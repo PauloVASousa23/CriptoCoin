@@ -17,21 +17,6 @@ namespace CriptoCoinSistem
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            this.BackColor = ColorTranslator.FromHtml("#ffd945");
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel6_Click(object sender, EventArgs e)
         {
             textBox1.Text = "Funcionou o clique";
