@@ -1,6 +1,6 @@
 ﻿namespace CriptoCoinSistem
 {
-    partial class Form3
+    partial class Cadastro
     {
         /// <summary>
         /// Required designer variable.

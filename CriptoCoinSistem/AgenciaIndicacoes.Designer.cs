@@ -1,6 +1,6 @@
 ﻿namespace CriptoCoinSistem
 {
-    partial class Form9
+    partial class AgenciaIndicacoes
     {
         /// <summary>
         /// Required designer variable.
@@ -51,7 +51,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(36)))), ((int)(((byte)(0)))), ((int)(((byte)(31)))));
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
@@ -239,7 +239,7 @@
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.Yellow;
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(73)))), ((int)(((byte)(0)))));
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.button7.Location = new System.Drawing.Point(529, 371);
             this.button7.Name = "button7";

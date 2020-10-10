@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace CriptoCoinSistem
 {
-    public partial class Form5 : Form
+    public partial class AgenciaIndicacoes : Form
     {
-        public Form5()
+        public AgenciaIndicacoes()
         {
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void Form9_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void Form5_Load(object sender, EventArgs e)
-        {
-
+            this.BackColor = ColorTranslator.FromHtml("#626262");
         }
     }
 }

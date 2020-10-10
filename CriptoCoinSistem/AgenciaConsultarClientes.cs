@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CriptoCoinSistem
 {
-    public partial class Form4 : Form
+    public partial class AgenciaConsultarClientes : Form
     {
-        public Form4()
+        public AgenciaConsultarClientes()
         {
             InitializeComponent();
         }

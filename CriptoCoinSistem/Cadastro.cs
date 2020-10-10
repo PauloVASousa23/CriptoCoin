@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CriptoCoinSistem
 {
-    public partial class Form3 : Form
+    public partial class Cadastro : Form
     {
-        public Form3()
+        public Cadastro()
         {
             InitializeComponent();
         }
@@ -29,7 +29,6 @@ namespace CriptoCoinSistem
 
         private void label3_Click(object sender, EventArgs e)
         {
-            Nome Completo
         }
 
         private void label2_Click(object sender, EventArgs e)

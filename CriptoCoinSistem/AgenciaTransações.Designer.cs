@@ -1,6 +1,6 @@
 ﻿namespace CriptoCoinSistem
 {
-    partial class Form5
+    partial class AgenciaTransações
     {
         /// <summary>
         /// Required designer variable.
