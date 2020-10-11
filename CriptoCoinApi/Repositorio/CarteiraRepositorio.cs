@@ -12,16 +12,15 @@ namespace CriptoCoinApi.Repositorio
         DAO dao = new DAO();
         public bool inserirCarteira(Carteira carteira)
         {
-            String query = "INSERT INTO Carteira VALUES(@Perfil,@Criptomoeda,@ValorCompra,@ValorVenda,@DataCompra,@DataVenda)";
+            String query = "INSERT INTO Carteira VALUES(@Perfil,@Criptomoeda,@Valor,@Data,@Operacao)";
             using (SqlConnection cnx = dao.getConnection())
             {
                 SqlCommand cmd = new SqlCommand(query, cnx);
                 cmd.Parameters.AddWithValue("@Perfil", carteira.Perfil);
                 cmd.Parameters.AddWithValue("@Criptomoeda", carteira.Criptomoeda);
-                cmd.Parameters.AddWithValue("@ValorCompra", carteira.Valor_Compra);
-                cmd.Parameters.AddWithValue("@ValorVenda", carteira.Valor_Venda);
-                cmd.Parameters.AddWithValue("@DataCompra", carteira.Data_Compra);
-                cmd.Parameters.AddWithValue("@DataVenda", carteira.Data_Venda);
+                cmd.Parameters.AddWithValue("@Valor", carteira.Valor);
+                cmd.Parameters.AddWithValue("@Data", carteira.Data);
+                cmd.Parameters.AddWithValue("@Operacao", carteira.Operacao);
 
                 try
                 {
@@ -65,10 +64,9 @@ namespace CriptoCoinApi.Repositorio
                         carteira.Id = (int)reader[0];
                         carteira.Perfil= (int) reader[1];
                         carteira.Criptomoeda = reader[2].ToString();
-                        carteira.Valor_Compra = float.Parse(reader[3].ToString());
-                        carteira.Valor_Venda = float.Parse(reader[4].ToString());
-                        carteira.Data_Compra = (DateTime) reader[5];
-                        carteira.Data_Venda = (DateTime)reader[6];
+                        carteira.Valor = float.Parse(reader[3].ToString());
+                        carteira.Data = reader[4].ToString();
+                        carteira.Operacao = reader[5].ToString();
                     }
 
                     return carteira;
@@ -106,10 +104,9 @@ namespace CriptoCoinApi.Repositorio
                         carteira.Id = (int)reader[0];
                         carteira.Perfil = (int)reader[1];
                         carteira.Criptomoeda = reader[2].ToString();
-                        carteira.Valor_Compra = float.Parse(reader[3].ToString());
-                        carteira.Valor_Venda = float.Parse(reader[4].ToString());
-                        carteira.Data_Compra = (DateTime)reader[5];
-                        carteira.Data_Venda = (DateTime)reader[6];
+                        carteira.Valor = float.Parse(reader[3].ToString());
+                        carteira.Data = reader[4].ToString();
+                        carteira.Operacao = reader[5].ToString();
                         listaCarteira.Add(carteira);
                     }
 

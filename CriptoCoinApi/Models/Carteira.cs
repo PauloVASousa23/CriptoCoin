@@ -10,9 +10,8 @@ namespace CriptoCoinApi.Models
         public int Id { get; set; }
         public int Perfil { get; set; }
         public String Criptomoeda { get; set; }
-        public float Valor_Compra { get; set; }
-        public float Valor_Venda { get; set; }
-        public DateTime Data_Compra { get; set; }
-        public DateTime Data_Venda { get; set; }
+        public float Valor { get; set; }
+        public String Data { get; set; }
+        public String Operacao { get; set; }
     }
 }
