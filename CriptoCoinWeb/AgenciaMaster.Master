@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AgenciaMaster.master.cs" Inherits="CriptoCoinWeb.AgenciaMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="Content/css/Agencia.css" />
+</head>
+<body>
+    <div class="menuAgencia">      
+        <div class="imagem">
+            <img src="Content/Img/Logo_CriptoCoin_transp_branco.png" alt="Moeda Criptocoin" style="height: 120px; margin-top: auto;" />
+                <!--colocar o logo CriptoCoin depois aqui!-->
+            </div>
+            <div class="perfis">
+                <div class="sombreado">
+                    <input class="btnClientes" type="submit" name="Button2" value="Clientes" id="Button2"/> 
+                <input class="btnConsultar" type="submit" name="Button2" value="Consultar" id="Button2"/>
+                <input class="btnCadastrar" type="submit" name="Button2" value="Cadastrar" id="Button2"/> 
+                </div>        
+                <input class="btnTransações" type="submit" name="Button2" value="Transações" id="Button2"/> 
+                <input class="btnRelatórios" type="submit" name="Button2" value="Relatórios" id="Button2">             
+                <input class="btnIndicações" type="submit" name="Button2" value="Indicações" id="Button2"/>  
+                <input class="btnMonitoramento" type="submit" name="Button2" value="Monitoramento" id="Button2"/> 
+            </div>
+    </div>
+   <div class="conteudo">
+        <form id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+  </div>
+</body>
+</html>

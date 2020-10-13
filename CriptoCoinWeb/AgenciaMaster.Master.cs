@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace CriptoCoinWeb
 {
-    public partial class AgenciaMaximizado : System.Web.UI.Page
+    public partial class AgenciaMaster : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -18,20 +18,20 @@
                 Cadastre-se
                 <div class="inputGrupo">
                     <div class="inputIcone">
-
+                        <img class="person" src="Content/Img/icone_person.png"/>
                     </div>
                     <input name="Nome" type="text" value="" id="Nome" placeholder ="Nome Completo">
                 </div>
                 <div class="campos">
                     <div class="inputGrupo" style="width:50%">
                         <div class="inputIcone">
-
+                             <img class="person" src="Content/Img/icone_person.png"/>
                         </div>
                         <input name="Rg" type="text" id="Rg" placeholder="RG">
                     </div>
                     <div class="inputGrupo" style="width:50%">
                         <div class="inputIcone">
-
+                             <img class="person" src="Content/Img/icone_person.png"/>
                         </div>
                         <input name="Cpf" type="text" id="Cpf" placeholder="CPF">
                     </div> 
@@ -39,13 +39,13 @@
                 <div class="campos">
                     <div class="inputGrupo" style="width:50%" >
                         <div class="inputIcone">
-    
+                             <img class="Telefone" src="Content/Img/icone_telefone.png"/>                             
                         </div>
                         <input name="Telefone" type="text" id="Telefone" placeholder="Telefone">
                     </div> 
                      <div class="inputGrupo" style="width:50%">
                         <div class="inputIcone">
-
+                            <img class="Email" src="Content/Img/icone_email.png"/> 
                         </div>
                         <input name="E-mail" type="text" id="E-mail" placeholder="E-mail">
                     </div> 
@@ -53,39 +53,39 @@
                 <div class="campos">
                      <div class="inputGrupo" style="width:35%">
                         <div class="inputIcone">
-
+                            <img class="Cep" src="Content/Img/icone_cep.png"/> 
                         </div>
                         <input name="Cep" type="text" id="Cep" placeholder="CEP">
                     </div> 
                      <div class="inputGrupo" style="width:25%">
                         <div class="inputIcone">
-
+                             <img class="Cidade" src="Content/Img/icone_cidade.png"/> 
                         </div>
                         <input name="Cidade" type="text" id="Cidade" placeholder="Cidade">
                     </div> 
                      <div class="inputGrupo" style="width:50%">
                         <div class="inputIcone">
-
+                            <img class="Cidade" src="Content/Img/icone_cidade.png"/> 
                         </div>
                         <input name="Estado" type="text" id="Estado" placeholder="Estado">
                     </div>
                 </div>    
                  <div class="inputGrupo" >
                     <div class="inputIcone">
-
+                        <img class="Logradouro" src="Content/Img/icone_endereco.png"/> 
                     </div>
                     <input name="Rua" type="text" id="Rua" placeholder="Logradouro">
                 </div> 
                 <div class="campos">
                      <div class="inputGrupo" style="width:50%">
                         <div class="inputIcone">
-
+                            <img class="Senha" src="Content/Img/icone_cadeado.png"/> 
                         </div>
                         <input name="Senha" type="text" id="Senha" placeholder="Senha">
                     </div> 
                      <div class="inputGrupo" style="width:50%">
                         <div class="inputIcone">
-
+                            <img class="Senha" src="Content/Img/icone_cadeado.png"/>
                         </div>
                         <input name="confirmaSenha" type="text" id="confirmaSenha" placeholder="Confirmar Senha">                  
                     </div> 

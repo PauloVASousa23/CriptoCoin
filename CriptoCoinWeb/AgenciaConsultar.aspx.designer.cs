@@ -11,16 +11,7 @@ namespace CriptoCoinWeb
 {
 
 
-    public partial class ClienteMaximizado
+    public partial class AgenciaConsultar
     {
-
-        /// <summary>
-        /// Controle form1.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
     }
 }

@@ -1,0 +1,16 @@
+Amarelo do logo- #ffd945
+Azul padrao botões- #2d71b1
+Azul claro fundo da tela - #bdd7ee
+Azul Escuro menu esquerdo e cards- #10406c
+Azul sombreado #165896
+
+
+
+
+
+
+
+border-radius: 50px;
+border: none;
+padding: 5px 20px;
+box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);

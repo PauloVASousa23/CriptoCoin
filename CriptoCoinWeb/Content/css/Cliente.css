@@ -1,10 +1,10 @@
 ﻿body {
-    background-color: #0f0227;
+    background-color: #ffffff;
 }
 
 .imagem {
     background: #160f4e;
-    background-color: #000;
+    background-color: #040332;
     width: 280px;
     height: 50px;
     position: absolute;
@@ -14,7 +14,7 @@
 }
 
 .perfis {
-    background-color: #000;
+    background-color: #040332;
     width: 280px;
     height: 887px;
     text-align: center;
@@ -24,7 +24,7 @@
 }
 
 .btnConta {
-    background-color: #270202;
+    background-color: #2b62fb;
     color: #fff;
     border-radius: 50px;
     border: none;
@@ -36,7 +36,7 @@
 }
 
 .btnMovimentar {
-    background-color: #270202;
+    background-color: #2b62fb;
     color: #fff;
     border-radius: 50px;
     border: none;
@@ -49,7 +49,7 @@
 }
 
 .btnConsultar {
-    background-color: #270202;
+    background-color: #2b62fb;
     color: #fff;
     border-radius: 50px;
     border: none;
@@ -62,7 +62,7 @@
 }
 
 .btnRelatórios {
-    background-color: #270202;
+    background-color: #2b62fb;
     color: #fff;
     border-radius: 50px;
     border: none;
@@ -74,7 +74,7 @@
 }
 
 .btnIndicações {
-    background-color: #270202;
+    background-color: #2b62fb;
     color: #fff;
     border-radius: 50px;
     border: none;
@@ -86,7 +86,7 @@
 }
 
 .btnMonitoramento {
-    background-color: #270202;
+    background-color: #2b62fb;
     color: #fff;
     border-radius: 50px;
     border: none;
@@ -98,7 +98,7 @@
 }
 
 .conteudo {
-    color: #fff;
+    color: #000;
     display: flex;
     justify-content: center;
     align-items: flex-start;
