@@ -10,7 +10,7 @@ namespace CriptoCoinApi.Models
         public int Id { get; set; }
         public string Criptomoeda { get; set; }
         public string Motivo { get; set; }
-        public DateTime Data_Indicacao { get; set; }
+        public string Data_Indicacao { get; set; }
         public int Perfil_Agencia { get; set; }
     }
 }

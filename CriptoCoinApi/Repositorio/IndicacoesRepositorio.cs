@@ -63,7 +63,7 @@ namespace CriptoCoinApi.Repositorio
                         indicacao.Id = (int)reader[0];
                         indicacao.Criptomoeda= reader[1].ToString();
                         indicacao.Motivo = reader[2].ToString();
-                        indicacao.Data_Indicacao = (DateTime) reader[3];
+                        indicacao.Data_Indicacao = reader[3].ToString();
                         indicacao.Perfil_Agencia = (int) reader[4];
                     }
 
@@ -102,7 +102,7 @@ namespace CriptoCoinApi.Repositorio
                         indicacao.Id = (int)reader[0];
                         indicacao.Criptomoeda = reader[1].ToString();
                         indicacao.Motivo = reader[2].ToString();
-                        indicacao.Data_Indicacao = (DateTime)reader[3];
+                        indicacao.Data_Indicacao = reader[3].ToString();
                         indicacao.Perfil_Agencia = (int)reader[4];
                         listaIndicacoes.Add(indicacao);
                     }
