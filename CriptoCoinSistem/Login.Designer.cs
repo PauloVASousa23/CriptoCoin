@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -43,7 +44,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -62,6 +62,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(275, 384);
             this.panel2.TabIndex = 18;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Transparent;
+            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
+            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel10.Location = new System.Drawing.Point(44, 6);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(195, 90);
+            this.panel10.TabIndex = 19;
             // 
             // panel1
             // 
@@ -202,16 +212,6 @@
             this.label5.Size = new System.Drawing.Size(184, 25);
             this.label5.TabIndex = 16;
             this.label5.Text = "Não tem uma conta?";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Transparent;
-            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
-            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel10.Location = new System.Drawing.Point(44, 6);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(195, 90);
-            this.panel10.TabIndex = 19;
             // 
             // Login
             // 
