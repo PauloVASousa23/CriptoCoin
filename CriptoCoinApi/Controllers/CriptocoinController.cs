@@ -110,12 +110,23 @@ namespace CriptoCoinApi.Controllers
 
         }
 
+
         [HttpPost]
         public JsonResult SetPerfil(Perfil perfil)
         {
 
             PerfilRepositorio perfilRepos = new PerfilRepositorio();
             bool result = perfilRepos.inserirPerfil(perfil);
+            return Json(result, JsonRequestBehavior.AllowGet);
+
+        }
+
+        [HttpPost]
+        public JsonResult UpdatePerfil(Perfil perfil)
+        {
+
+            PerfilRepositorio perfilRepos = new PerfilRepositorio();
+            bool result = perfilRepos.atualizarPerfil(perfil);
             return Json(result, JsonRequestBehavior.AllowGet);
 
         }

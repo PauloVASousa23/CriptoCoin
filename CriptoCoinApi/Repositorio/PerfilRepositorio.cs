@@ -145,6 +145,41 @@ namespace CriptoCoinApi.Repositorio
             }
         }
 
+        public bool atualizarPerfil(Perfil perfil)
+        {
+            string query = "UPDATE Perfil SET Nome=@Nome, Email=@Email, Cep=@Cep, Cidade=@Cidade, Bairro=@Bairro, Endereco=@Endereco WHERE Id=@Id";
+            using (SqlConnection cnx = dao.getConnection())
+            {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand(query, cnx);
+                    cmd.Parameters.AddWithValue("@Id", perfil.Id);
+                    cmd.Parameters.AddWithValue("@Nome", perfil.Nome);
+                    cmd.Parameters.AddWithValue("@Email", perfil.Email);
+                    cmd.Parameters.AddWithValue("@Cep", perfil.Cep);
+                    cmd.Parameters.AddWithValue("@Cidade", perfil.Cidade);
+                    cmd.Parameters.AddWithValue("@Bairro", perfil.Bairro);
+                    cmd.Parameters.AddWithValue("@Endereco", perfil.Endereco);
+
+                    cnx.Open();
+                    int i = 0;
+
+                    i = cmd.ExecuteNonQuery();
+
+                    return i > 0;
+                }
+                catch (Exception e)
+                {
+
+                }
+                finally
+                {
+                    cnx.Close();
+                }
+                return false;
+            }
+        }
+
         public bool deletarPerfil(int id)
         {
             string query = "DELETE FROM Perfil WHERE Id = @Id";
