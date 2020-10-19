@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CriptoCoinApi.Models;
+using Flurl.Http;
+using Newtonsoft.Json;
 
 namespace CriptoCoinSistem
 {
@@ -17,9 +20,13 @@ namespace CriptoCoinSistem
             InitializeComponent();
         }
 
-        private void panel6_Click(object sender, EventArgs e)
+        async private void panel6_Click(object sender, EventArgs e)
         {
+
             textBox1.Text = "Funcionou o clique";
+            List<Indicacoes> indicacoes = await "https://criptocoinapi.azurewebsites.net/criptocoin/getIndicacoes"
+            .GetJsonAsync<List<Indicacoes>>();
+
         }
 
         private void panel7_Click(object sender, EventArgs e)
@@ -29,4 +36,6 @@ namespace CriptoCoinSistem
             this.Visible = false;
         }
     }
+
+    
 }
