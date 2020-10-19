@@ -11,7 +11,7 @@ namespace CriptoCoinWeb
 {
 
 
-    public partial class TransaçõesAgencia
+    public partial class AgenciaTransações
     {
     }
 }
