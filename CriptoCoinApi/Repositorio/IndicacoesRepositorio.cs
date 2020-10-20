@@ -43,9 +43,9 @@ namespace CriptoCoinApi.Repositorio
             return false;
         }
 
-        public Indicacoes selecionarIndicacao(int id)
+        public List<Indicacoes> selecionarIndicacao(int id)
         {
-            string query = "SELECT * FROM Indicacoes WHERE Id = @Id";
+            string query = "SELECT * FROM Indicacoes WHERE Perfil_Agencia = @Id";
             using (SqlConnection cnx = dao.getConnection())
             {
                 try
@@ -56,18 +56,19 @@ namespace CriptoCoinApi.Repositorio
                     cnx.Open();
 
                     SqlDataReader reader = cmd.ExecuteReader();
-
-                    Indicacoes indicacao = new Indicacoes();
+                    List<Indicacoes> indicacoes = new List<Indicacoes>();
                     while (reader.Read())
                     {
+                        Indicacoes indicacao = new Indicacoes();
                         indicacao.Id = (int)reader[0];
                         indicacao.Criptomoeda= reader[1].ToString();
                         indicacao.Motivo = reader[2].ToString();
                         indicacao.Data_Indicacao = reader[3].ToString();
                         indicacao.Perfil_Agencia = (int) reader[4];
+                        indicacoes.Add(indicacao);
                     }
 
-                    return indicacao;
+                    return indicacoes;
                 }
                 catch (Exception e)
                 {

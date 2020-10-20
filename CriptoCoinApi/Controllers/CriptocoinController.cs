@@ -100,12 +100,32 @@ namespace CriptoCoinApi.Controllers
 
         }
 
+        [HttpPost]
+        public JsonResult AutenticarPerfil(string email = "", string senha = "")
+        {
+
+            PerfilRepositorio perfilRepos = new PerfilRepositorio();
+            Perfil perfil = perfilRepos.autenticarPerfil(email,senha);
+            return Json(perfil, JsonRequestBehavior.AllowGet);
+
+        }
+
         [HttpGet]
         public JsonResult GetPerfis()
         {
 
             PerfilRepositorio perfilRepos = new PerfilRepositorio();
             List<Perfil> perfis = perfilRepos.selecionarPerfis();
+            return Json(perfis, JsonRequestBehavior.AllowGet);
+
+        }
+
+        [HttpGet]
+        public JsonResult GetPerfisAgencia(int id)
+        {
+
+            PerfilRepositorio perfilRepos = new PerfilRepositorio();
+            List<Perfil> perfis = perfilRepos.selecionarPerfis(id);
             return Json(perfis, JsonRequestBehavior.AllowGet);
 
         }
@@ -145,8 +165,8 @@ namespace CriptoCoinApi.Controllers
         {
 
             CarteiraRepositorio carteiraRepos = new CarteiraRepositorio();
-            Carteira carteira = carteiraRepos.selecionarCarteira(id);
-            return Json(carteira, JsonRequestBehavior.AllowGet);
+            List<Carteira> carteiras = carteiraRepos.selecionarCarteira(id);
+            return Json(carteiras, JsonRequestBehavior.AllowGet);
 
         }
 
@@ -159,6 +179,7 @@ namespace CriptoCoinApi.Controllers
             return Json(carteira, JsonRequestBehavior.AllowGet);
 
         }
+
 
         [HttpPost]
         public JsonResult SetCarteira(Carteira carteira)
@@ -184,7 +205,7 @@ namespace CriptoCoinApi.Controllers
         {
 
             IndicacoesRepositorio indicacaoRepos = new IndicacoesRepositorio();
-            Indicacoes indicacao = indicacaoRepos.selecionarIndicacao(id);
+            List<Indicacoes> indicacao = indicacaoRepos.selecionarIndicacao(id);
             return Json(indicacao, JsonRequestBehavior.AllowGet);
 
         }

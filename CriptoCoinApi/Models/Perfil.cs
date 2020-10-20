@@ -17,8 +17,7 @@ namespace CriptoCoinApi.Models
         public String Cidade{ get; set; }
         public String Bairro{ get; set; }
         public String Endereco{ get; set; }
-        public int Conta{ get; set; }
-        public String Agencia{ get; set; }
+        public int Agencia{ get; set; }
         public int Permissao{ get; set; }
 
         

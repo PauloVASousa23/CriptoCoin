@@ -12,7 +12,7 @@ namespace CriptoCoinApi.Repositorio
         DAO dao = new DAO();
         public bool inserirPerfil(Perfil perfil)
         {
-            String query = "INSERT INTO Perfil VALUES(@Nome,@Senha,@Email,@Rg,@Cpf,@Cep,@Cidade,@Bairro,@Endereco,@Conta,@Agencia,@Permissao)";
+            String query = "INSERT INTO Perfil VALUES(@Nome,@Senha,@Email,@Rg,@Cpf,@Cep,@Cidade,@Bairro,@Endereco,@Agencia,@Permissao)";
             using (SqlConnection cnx = dao.getConnection())
             {
                 SqlCommand cmd = new SqlCommand(query, cnx);
@@ -25,7 +25,6 @@ namespace CriptoCoinApi.Repositorio
                 cmd.Parameters.AddWithValue("@Cidade", perfil.Cidade);
                 cmd.Parameters.AddWithValue("@Bairro", perfil.Bairro);
                 cmd.Parameters.AddWithValue("@Endereco", perfil.Endereco);
-                cmd.Parameters.AddWithValue("@Conta", perfil.Conta);
                 cmd.Parameters.AddWithValue("@Agencia", perfil.Agencia);
                 cmd.Parameters.AddWithValue("@Permissao", perfil.Permissao);
 
@@ -53,7 +52,7 @@ namespace CriptoCoinApi.Repositorio
 
         public Perfil selecionarPerfil(int id)
         {
-            string query = "SELECT * FROM Perfil WHERE Id = @Id";
+                string query = "SELECT * FROM Perfil WHERE Id = @Id";
             using (SqlConnection cnx = dao.getConnection())
             {
                 try
@@ -78,9 +77,54 @@ namespace CriptoCoinApi.Repositorio
                         perfil.Cidade= reader[7].ToString();
                         perfil.Bairro= reader[8].ToString();
                         perfil.Endereco= reader[9].ToString();
-                        perfil.Conta = (int) reader[10];
-                        perfil.Agencia = reader[11].ToString();
-                        perfil.Permissao = (int) reader[12];
+                        perfil.Agencia = (int)reader[10];
+                        perfil.Permissao = (int) reader[11];
+                    }
+
+                    return perfil;
+                }
+                catch (Exception e)
+                {
+
+                }
+                finally
+                {
+                    cnx.Close();
+                }
+                return null;
+            }
+        }
+
+        public Perfil autenticarPerfil(string email, string senha)
+        {
+            string query = "SELECT * FROM Perfil WHERE Email = @Id AND Senha=@Senha";
+            using (SqlConnection cnx = dao.getConnection())
+            {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand(query, cnx);
+                    cmd.Parameters.AddWithValue("@Id", email);
+                    cmd.Parameters.AddWithValue("@Senha", senha);
+
+                    cnx.Open();
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    Perfil perfil = new Perfil();
+                    while (reader.Read())
+                    {
+                        perfil.Id = (int)reader[0];
+                        perfil.Nome = reader[1].ToString();
+                        perfil.Senha = reader[2].ToString();
+                        perfil.Email = reader[3].ToString();
+                        perfil.Rg = reader[4].ToString();
+                        perfil.Cpf = reader[5].ToString();
+                        perfil.Cep = reader[6].ToString();
+                        perfil.Cidade = reader[7].ToString();
+                        perfil.Bairro = reader[8].ToString();
+                        perfil.Endereco = reader[9].ToString();
+                        perfil.Agencia = (int)reader[10];
+                        perfil.Permissao = (int)reader[11];
                     }
 
                     return perfil;
@@ -125,9 +169,56 @@ namespace CriptoCoinApi.Repositorio
                         perfil.Cidade = reader[7].ToString();
                         perfil.Bairro = reader[8].ToString();
                         perfil.Endereco = reader[9].ToString();
-                        perfil.Conta = (int)reader[10];
-                        perfil.Agencia = reader[11].ToString();
-                        perfil.Permissao = (int)reader[12];
+                        perfil.Agencia = (int)reader[10];
+                        perfil.Permissao = (int)reader[11];
+                        listaPerfil.Add(perfil);
+                    }
+
+                    return listaPerfil;
+                }
+                catch (Exception e)
+                {
+
+                }
+                finally
+                {
+                    cnx.Close();
+                }
+                return null;
+            }
+        }
+
+        public List<Perfil> selecionarPerfis(int id)
+        {
+            string query = "SELECT * FROM Perfil WHERE Agencia=@Id";
+            using (SqlConnection cnx = dao.getConnection())
+            {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand(query, cnx);
+                    cmd.Parameters.AddWithValue("@Id",id);
+
+                    cnx.Open();
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    List<Perfil> listaPerfil = new List<Perfil>();
+
+                    while (reader.Read())
+                    {
+                        Perfil perfil = new Perfil();
+                        perfil.Id = (int)reader[0];
+                        perfil.Nome = reader[1].ToString();
+                        perfil.Senha = reader[2].ToString();
+                        perfil.Email = reader[3].ToString();
+                        perfil.Rg = reader[4].ToString();
+                        perfil.Cpf = reader[5].ToString();
+                        perfil.Cep = reader[6].ToString();
+                        perfil.Cidade = reader[7].ToString();
+                        perfil.Bairro = reader[8].ToString();
+                        perfil.Endereco = reader[9].ToString();
+                        perfil.Agencia = (int)reader[10];
+                        perfil.Permissao = (int)reader[11];
                         listaPerfil.Add(perfil);
                     }
 

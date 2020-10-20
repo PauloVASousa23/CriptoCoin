@@ -44,9 +44,9 @@ namespace CriptoCoinApi.Repositorio
             return false;
         }
 
-        public Carteira selecionarCarteira(int id)
+        public List<Carteira> selecionarCarteira(int id)
         {
-            string query = "SELECT * FROM Carteira WHERE Id = @Id";
+            string query = "SELECT * FROM Carteira WHERE Perfil = @Id";
             using (SqlConnection cnx = dao.getConnection())
             {
                 try
@@ -58,18 +58,20 @@ namespace CriptoCoinApi.Repositorio
 
                     SqlDataReader reader = cmd.ExecuteReader();
 
-                    Carteira carteira = new Carteira();
+                    List<Carteira> carteiras = new List<Carteira>();
                     while (reader.Read())
                     {
+                        Carteira carteira = new Carteira();
                         carteira.Id = (int)reader[0];
                         carteira.Perfil= (int) reader[1];
                         carteira.Criptomoeda = reader[2].ToString();
                         carteira.Valor = float.Parse(reader[3].ToString());
                         carteira.Data = reader[4].ToString();
                         carteira.Operacao = reader[5].ToString();
+                        carteiras.Add(carteira);
                     }
 
-                    return carteira;
+                    return carteiras;
                 }
                 catch (Exception e)
                 {
