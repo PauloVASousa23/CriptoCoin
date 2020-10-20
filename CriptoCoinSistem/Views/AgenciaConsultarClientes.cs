@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CriptoCoinApi.Models;
+using Flurl.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,15 +24,32 @@ namespace CriptoCoinSistem
 
         }
 
-        private void Form4_Load(object sender, EventArgs e)
+        private async void Form4_LoadAsync(object sender, EventArgs e)
         {
             /*DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
             row.Cells[0].Value = "Id";
             row.Cells[1].Value = "Nome";
             row.Cells[2].Value = "CPF";
             row.Cells[3].Value = "Cidade";*/
+            
+            List<Perfil> perfis = await "https://criptocoinapi.azurewebsites.net/criptocoin/getPerfis"
+            .GetJsonAsync<List<Perfil>>();
 
-            dataGridView1.Rows.Add("Id","Nome","CPF","Cidade");
+            for (int i=0;i < perfis.Count;i++)
+            {
+
+                dataGridView1.Rows.Add(perfis[i].Id, perfis[i].Nome, perfis[i].Cpf, perfis[i].Cidade);
+            }
+            dataGridView1.Rows.Add("001", "Teste", "000.000.000-00", "São Paulo");
+            dataGridView1.Rows.Add("001", "Teste", "000.000.000-00", "São Paulo");
+            dataGridView1.Rows.Add("001", "Teste", "000.000.000-00", "São Paulo");
+            dataGridView1.Rows.Add("001", "Teste", "000.000.000-00", "São Paulo");
+            dataGridView1.Rows.Add("001", "Teste", "000.000.000-00", "São Paulo");
+            dataGridView1.Rows.Add("001", "Teste", "000.000.000-00", "São Paulo");
+            dataGridView1.Rows.Add("001", "Teste", "000.000.000-00", "São Paulo");
+            dataGridView1.Rows.Add("001", "Teste", "000.000.000-00", "São Paulo");
+            dataGridView1.Rows.Add("001", "Teste", "000.000.000-00", "São Paulo");
+            dataGridView1.Rows.Add("001", "Teste", "000.000.000-00", "São Paulo");
 
         }
 

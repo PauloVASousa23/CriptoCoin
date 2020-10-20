@@ -415,7 +415,7 @@
             this.Name = "AgenciaConsultarClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
-            this.Load += new System.EventHandler(this.Form4_Load);
+            this.Load += new System.EventHandler(this.Form4_LoadAsync);
             this.panel1.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

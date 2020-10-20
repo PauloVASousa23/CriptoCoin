@@ -347,7 +347,6 @@
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "AgenciaHome";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form10";
             this.Load += new System.EventHandler(this.Form10_Load);
             this.panel1.ResumeLayout(false);
