@@ -33,8 +33,8 @@
             this.panel28 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
+            this.btnCadastrar = new System.Windows.Forms.Panel();
+            this.btnLimpar = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.inputReSenha = new System.Windows.Forms.TextBox();
@@ -112,8 +112,8 @@
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.panel16);
-            this.panel2.Controls.Add(this.panel15);
+            this.panel2.Controls.Add(this.btnCadastrar);
+            this.panel2.Controls.Add(this.btnLimpar);
             this.panel2.Controls.Add(this.panel14);
             this.panel2.Controls.Add(this.panel12);
             this.panel2.Controls.Add(this.panel13);
@@ -142,25 +142,26 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Cadastre-se";
             // 
-            // panel16
+            // btnCadastrar
             // 
-            this.panel16.BackColor = System.Drawing.Color.Transparent;
-            this.panel16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel16.BackgroundImage")));
-            this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel16.Location = new System.Drawing.Point(274, 295);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(117, 34);
-            this.panel16.TabIndex = 7;
+            this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCadastrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.BackgroundImage")));
+            this.btnCadastrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCadastrar.Location = new System.Drawing.Point(274, 295);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(117, 34);
+            this.btnCadastrar.TabIndex = 7;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // panel15
+            // btnLimpar
             // 
-            this.panel15.BackColor = System.Drawing.Color.Transparent;
-            this.panel15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel15.BackgroundImage")));
-            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel15.Location = new System.Drawing.Point(142, 295);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(117, 34);
-            this.panel15.TabIndex = 6;
+            this.btnLimpar.BackColor = System.Drawing.Color.Transparent;
+            this.btnLimpar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpar.BackgroundImage")));
+            this.btnLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLimpar.Location = new System.Drawing.Point(142, 295);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(117, 34);
+            this.btnLimpar.TabIndex = 6;
             // 
             // panel14
             // 
@@ -583,8 +584,8 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel btnCadastrar;
+        private System.Windows.Forms.Panel btnLimpar;
         private System.Windows.Forms.TextBox inputReSenha;
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.TextBox inputSenha;

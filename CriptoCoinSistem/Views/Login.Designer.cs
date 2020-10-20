@@ -33,12 +33,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.btnEntrar = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.inputSenha = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.inputEmail = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -78,7 +78,7 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.btnEntrar);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.label2);
@@ -88,39 +88,39 @@
             this.panel1.Size = new System.Drawing.Size(275, 274);
             this.panel1.TabIndex = 11;
             // 
-            // panel6
+            // btnEntrar
             // 
-            this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel6.Location = new System.Drawing.Point(80, 146);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(115, 41);
-            this.panel6.TabIndex = 19;
-            this.panel6.Click += new System.EventHandler(this.panel6_Click);
+            this.btnEntrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEntrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEntrar.BackgroundImage")));
+            this.btnEntrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEntrar.Location = new System.Drawing.Point(80, 146);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(115, 41);
+            this.btnEntrar.TabIndex = 19;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.inputSenha);
             this.panel5.Controls.Add(this.panel9);
             this.panel5.Location = new System.Drawing.Point(16, 96);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(242, 35);
             this.panel5.TabIndex = 20;
             // 
-            // textBox2
+            // inputSenha
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.textBox2.Location = new System.Drawing.Point(57, 7);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(173, 22);
-            this.textBox2.TabIndex = 21;
+            this.inputSenha.BackColor = System.Drawing.Color.White;
+            this.inputSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.inputSenha.Location = new System.Drawing.Point(57, 7);
+            this.inputSenha.Name = "inputSenha";
+            this.inputSenha.PasswordChar = '*';
+            this.inputSenha.Size = new System.Drawing.Size(173, 22);
+            this.inputSenha.TabIndex = 21;
             // 
             // panel9
             // 
@@ -137,22 +137,22 @@
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.inputEmail);
             this.panel4.Controls.Add(this.panel8);
             this.panel4.Location = new System.Drawing.Point(16, 50);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(242, 35);
             this.panel4.TabIndex = 19;
             // 
-            // textBox1
+            // inputEmail
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.textBox1.Location = new System.Drawing.Point(57, 7);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(173, 22);
-            this.textBox1.TabIndex = 20;
+            this.inputEmail.BackColor = System.Drawing.Color.White;
+            this.inputEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.inputEmail.Location = new System.Drawing.Point(57, 7);
+            this.inputEmail.Name = "inputEmail";
+            this.inputEmail.Size = new System.Drawing.Size(173, 22);
+            this.inputEmail.TabIndex = 20;
             // 
             // panel8
             // 
@@ -246,15 +246,15 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel btnEntrar;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox inputEmail;
+        private System.Windows.Forms.TextBox inputSenha;
         private System.Windows.Forms.Panel panel10;
     }
 }

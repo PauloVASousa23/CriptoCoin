@@ -901,7 +901,7 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="panel16.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnCadastrar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATAAAABkCAYAAAABk2ymAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAX
         EQAAFxEByibzPwAAE+BJREFUeF7tnQ2QXWV5x1liQIIBgWCNmCBEScAqrJkEwuZjd+9dpFqKVrDSqIgF
@@ -992,7 +992,7 @@
         /wEjzaWOoKpLGgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="panel15.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnLimpar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATAAAABkCAYAAAABk2ymAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAX
         EQAAFxEByibzPwAAEhFJREFUeF7tnXuMXVUVh6lQHhUQpKCgVrAVKIxihVaKQqcoBanjFGuLdAZm6Ezv

@@ -36,8 +36,8 @@
     <Reference Include="Flurl, Version=2.8.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Flurl.2.8.2\lib\net40\Flurl.dll</HintPath>
     </Reference>
-    <Reference Include="Flurl.Http, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Flurl.Http.2.4.2\lib\net46\Flurl.Http.dll</HintPath>
+    <Reference Include="Flurl.Http, Version=2.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Flurl.Http.2.4.1\lib\net46\Flurl.Http.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -171,6 +171,7 @@
     <Content Include="img\backgroundLogin.png" />
     <Content Include="img\background_azul_claro.png" />
     <Content Include="img\background_azul_escuro.png" />
+    <Content Include="img\background_rounded_box_azulClaro_login.png" />
     <Content Include="img\box_grande_rounded_azulPrimary.png" />
     <Content Include="img\box_grande_rounded_branco.png" />
     <Content Include="img\box_grande_rounded_branco_pequeno_clientes.png" />

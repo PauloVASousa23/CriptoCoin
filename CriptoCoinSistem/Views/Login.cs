@@ -20,15 +20,6 @@ namespace CriptoCoinSistem
             InitializeComponent();
         }
 
-        /*async private void panel6_Click(object sender, EventArgs e)
-        {
-
-            textBox1.Text = "Funcionou o clique";
-            List<Indicacoes> indicacoes = await "https://criptocoinapi.azurewebsites.net/criptocoin/getIndicacoes"
-            .GetJsonAsync<List<Indicacoes>>();
-
-        }*/
-
         private void panel7_Click(object sender, EventArgs e)
         {
             Cadastro cadastro = new Cadastro();
@@ -36,11 +27,33 @@ namespace CriptoCoinSistem
             this.Visible = false;
         }
 
-        private void panel6_Click(object sender, EventArgs e)
+        async private void btnEntrar_Click(object sender, EventArgs e)
         {
-            AgenciaHome agenciaHome = new AgenciaHome();
-            this.Visible = false;
-            agenciaHome.Visible = true;
+
+            String email = inputEmail.Text;
+            String senha = inputSenha.Text;
+            try
+            {
+                Perfil perfil = await "https://criptocoinapi.azurewebsites.net/criptocoin/autenticarPerfil"
+                .PostJsonAsync(new { Senha = senha, Email = email }).ReceiveJson<Perfil>();
+                Console.WriteLine(perfil.Id + " | " + perfil.Nome);
+
+                if (perfil.Id == 0)
+                {
+                    MessageBox.Show("Usuario ou senha incorreto!");
+                }
+                else
+                {
+                    AgenciaHome agenciaHome = new AgenciaHome();
+                    this.Visible = false;
+                    agenciaHome.Visible = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
         }
     }
 
