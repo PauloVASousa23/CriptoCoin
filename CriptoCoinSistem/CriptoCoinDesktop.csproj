@@ -55,58 +55,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Login.cs">
+    <Compile Include="Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Views\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="AgenciaHome.cs">
+    <Compile Include="Views\AgenciaHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgenciaHome.Designer.cs">
+    <Compile Include="Views\AgenciaHome.Designer.cs">
       <DependentUpon>AgenciaHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cadastro.cs">
+    <Compile Include="Views\Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastro.Designer.cs">
+    <Compile Include="Views\Cadastro.Designer.cs">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="AgenciaConsultarClientes.cs">
+    <Compile Include="Views\AgenciaConsultarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgenciaConsultarClientes.Designer.cs">
+    <Compile Include="Views\AgenciaConsultarClientes.Designer.cs">
       <DependentUpon>AgenciaConsultarClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="AgenciaTransações.cs">
+    <Compile Include="Views\AgenciaTransações.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgenciaTransações.Designer.cs">
+    <Compile Include="Views\AgenciaTransações.Designer.cs">
       <DependentUpon>AgenciaTransações.cs</DependentUpon>
     </Compile>
-    <Compile Include="AgenciaCadastrarCliente.cs">
+    <Compile Include="Views\AgenciaCadastrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgenciaCadastrarCliente.Designer.cs">
+    <Compile Include="Views\AgenciaCadastrarCliente.Designer.cs">
       <DependentUpon>AgenciaCadastrarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="AgenciaRelatorios.cs">
+    <Compile Include="Views\AgenciaRelatorios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgenciaRelatorios.Designer.cs">
+    <Compile Include="Views\AgenciaRelatorios.Designer.cs">
       <DependentUpon>AgenciaRelatorios.cs</DependentUpon>
     </Compile>
-    <Compile Include="AgenciaMonitoramento.cs">
+    <Compile Include="Views\AgenciaMonitoramento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgenciaMonitoramento.Designer.cs">
+    <Compile Include="Views\AgenciaMonitoramento.Designer.cs">
       <DependentUpon>AgenciaMonitoramento.cs</DependentUpon>
     </Compile>
-    <Compile Include="AgenciaIndicacoes.cs">
+    <Compile Include="Views\AgenciaIndicacoes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgenciaIndicacoes.Designer.cs">
+    <Compile Include="Views\AgenciaIndicacoes.Designer.cs">
       <DependentUpon>AgenciaIndicacoes.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Carteira.cs" />
@@ -116,31 +116,31 @@
     <Compile Include="Models\Permissao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AgenciaHome.resx">
+    <EmbeddedResource Include="Views\AgenciaHome.resx">
       <DependentUpon>AgenciaHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cadastro.resx">
+    <EmbeddedResource Include="Views\Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AgenciaConsultarClientes.resx">
+    <EmbeddedResource Include="Views\AgenciaConsultarClientes.resx">
       <DependentUpon>AgenciaConsultarClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AgenciaTransações.resx">
+    <EmbeddedResource Include="Views\AgenciaTransações.resx">
       <DependentUpon>AgenciaTransações.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AgenciaCadastrarCliente.resx">
+    <EmbeddedResource Include="Views\AgenciaCadastrarCliente.resx">
       <DependentUpon>AgenciaCadastrarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AgenciaRelatorios.resx">
+    <EmbeddedResource Include="Views\AgenciaRelatorios.resx">
       <DependentUpon>AgenciaRelatorios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AgenciaMonitoramento.resx">
+    <EmbeddedResource Include="Views\AgenciaMonitoramento.resx">
       <DependentUpon>AgenciaMonitoramento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AgenciaIndicacoes.resx">
+    <EmbeddedResource Include="Views\AgenciaIndicacoes.resx">
       <DependentUpon>AgenciaIndicacoes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -166,8 +166,69 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="img\" />
+    <Content Include="img\backgroundLogin.png" />
+    <Content Include="img\background_azul_claro.png" />
+    <Content Include="img\background_azul_escuro.png" />
+    <Content Include="img\box_grande_rounded_azulPrimary.png" />
+    <Content Include="img\box_grande_rounded_branco.png" />
+    <Content Include="img\box_grande_rounded_branco_pequeno_clientes.png" />
+    <Content Include="img\box_grande_rounded_branco_pequeno_indicacoes.png" />
+    <Content Include="img\box_grande_rounded_branco_pequeno_monitoramento.png" />
+    <Content Include="img\box_grande_rounded_branco_pequeno_relatorios.png" />
+    <Content Include="img\box_grande_rounded_branco_pequeno_transacoes.png" />
+    <Content Include="img\box_medio_rounded_azulSemiEscuro.png" />
+    <Content Include="img\box_rounded_azulEscuro.png" />
+    <Content Include="img\box_rounded_azulLight.png" />
+    <Content Include="img\box_rounded_azulPrimary.png" />
+    <Content Include="img\box_rounded_branco.png" />
+    <Content Include="img\btnCadastrarse.png" />
+    <Content Include="img\btnCadastrar_amarelo.png" />
+    <Content Include="img\btnEntrar.png" />
+    <Content Include="img\btnLimpar.png" />
+    <Content Include="img\btnRoundedAzul.png" />
+    <Content Include="img\button_menu_cadastrar_off.png" />
+    <Content Include="img\button_menu_cadastrar_on.png" />
+    <Content Include="img\button_menu_clientes_off.png" />
+    <Content Include="img\button_menu_consultar_off.png" />
+    <Content Include="img\button_menu_consultar_on.png" />
+    <Content Include="img\button_menu_indicacoes_off.png" />
+    <Content Include="img\button_menu_indicacoes_on.png" />
+    <Content Include="img\button_menu_monitoramento_off.png" />
+    <Content Include="img\button_menu_monitoramento_on.png" />
+    <Content Include="img\button_menu_relatorios_off.png" />
+    <Content Include="img\button_menu_relatorios_on.png" />
+    <Content Include="img\button_menu_transacoes_off.png" />
+    <Content Include="img\button_menu_transacoes_on.png" />
+    <Content Include="img\button_pesquisar_azul.png" />
+    <Content Include="img\hr_azul.png" />
+    <Content Include="img\iconBasico\icon_cadeado.png" />
+    <Content Include="img\iconBasico\icon_cep.png" />
+    <Content Include="img\iconBasico\icon_cidade.png" />
+    <Content Include="img\iconBasico\icon_clientes.png" />
+    <Content Include="img\iconBasico\icon_email.png" />
+    <Content Include="img\iconBasico\icon_endereco.png" />
+    <Content Include="img\iconBasico\icon_indicacoes.png" />
+    <Content Include="img\iconBasico\icon_monitoramento.png" />
+    <Content Include="img\iconBasico\icon_pesquisar.png" />
+    <Content Include="img\iconBasico\icon_pessoa.png" />
+    <Content Include="img\iconBasico\icon_relatorios.png" />
+    <Content Include="img\iconBasico\icon_telefone.png" />
+    <Content Include="img\iconBasico\icon_transacoes.png" />
+    <Content Include="img\icone_cadeado.png" />
+    <Content Include="img\icone_perfil.png" />
+    <Content Include="img\input_grande_icon.png" />
+    <Content Include="img\input_icon.png" />
+    <Content Include="img\input_med_icon.png" />
+    <Content Include="img\input_pequeno_icon.png" />
+    <Content Include="img\input_rounded_border_grande.png" />
+    <Content Include="img\input_rounded_border_medio.png" />
+    <Content Include="img\input_rounded_border_pequeno.png" />
+    <Content Include="img\Logo_CriptoCoin_texto_transparente_amarelo.png" />
+    <Content Include="img\Logo_CriptoCoin_transparente_amarelo.png" />
+    <Content Include="img\Logo_CriptoCoin_transp_branco.png" />
+    <Content Include="img\perfil_image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

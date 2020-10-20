@@ -24,7 +24,13 @@ namespace CriptoCoinSistem
 
         private void Form4_Load(object sender, EventArgs e)
         {
+            /*DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
+            row.Cells[0].Value = "Id";
+            row.Cells[1].Value = "Nome";
+            row.Cells[2].Value = "CPF";
+            row.Cells[3].Value = "Cidade";*/
 
+            dataGridView1.Rows.Add("Id","Nome","CPF","Cidade");
 
         }
 
