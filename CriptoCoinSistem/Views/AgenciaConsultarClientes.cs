@@ -57,5 +57,24 @@ namespace CriptoCoinSistem
         {
 
         }
+
+        private void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            {
+                string value1 = row.Cells[0].Value.ToString();
+                string value2 = row.Cells[1].Value.ToString();
+                Console.WriteLine(value2);
+                //...
+            }
+            //DataGridViewRow row = dataGridView1.SelectedRows;
+
+            //Console.WriteLine(row.Cells[1].Value.ToString());
+        }
     }
 }

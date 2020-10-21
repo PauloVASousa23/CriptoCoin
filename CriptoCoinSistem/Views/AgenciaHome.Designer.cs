@@ -83,6 +83,7 @@
             this.panel24.BackColor = System.Drawing.Color.Transparent;
             this.panel24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel24.BackgroundImage")));
             this.panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel24.Location = new System.Drawing.Point(12, 371);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(201, 46);
@@ -93,6 +94,7 @@
             this.panel25.BackColor = System.Drawing.Color.Transparent;
             this.panel25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel25.BackgroundImage")));
             this.panel25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel25.Location = new System.Drawing.Point(12, 329);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(201, 46);
@@ -103,6 +105,7 @@
             this.panel23.BackColor = System.Drawing.Color.Transparent;
             this.panel23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel23.BackgroundImage")));
             this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel23.Location = new System.Drawing.Point(13, 287);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(201, 46);
@@ -113,6 +116,7 @@
             this.panel22.BackColor = System.Drawing.Color.Transparent;
             this.panel22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel22.BackgroundImage")));
             this.panel22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel22.Location = new System.Drawing.Point(13, 245);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(201, 46);
@@ -146,6 +150,7 @@
             this.panel21.BackColor = System.Drawing.Color.Transparent;
             this.panel21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel21.BackgroundImage")));
             this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel21.Location = new System.Drawing.Point(5, 82);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(187, 46);
@@ -156,6 +161,7 @@
             this.panel20.BackColor = System.Drawing.Color.Transparent;
             this.panel20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel20.BackgroundImage")));
             this.panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel20.Location = new System.Drawing.Point(4, 41);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(189, 46);
@@ -167,6 +173,7 @@
             this.panel18.BackColor = System.Drawing.Color.Transparent;
             this.panel18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel18.BackgroundImage")));
             this.panel18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel18.Location = new System.Drawing.Point(0, 0);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(197, 46);
@@ -179,6 +186,7 @@
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.panel12);
             this.panel2.Controls.Add(this.panel5);
+            this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel2.Location = new System.Drawing.Point(264, 83);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(150, 150);
@@ -211,6 +219,7 @@
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.panel13);
             this.panel3.Controls.Add(this.panel8);
+            this.panel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel3.Location = new System.Drawing.Point(430, 83);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(150, 150);
@@ -243,6 +252,7 @@
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.panel14);
             this.panel4.Controls.Add(this.panel9);
+            this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel4.Location = new System.Drawing.Point(599, 83);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(150, 150);
@@ -275,6 +285,7 @@
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel6.Controls.Add(this.panel15);
             this.panel6.Controls.Add(this.panel10);
+            this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel6.Location = new System.Drawing.Point(341, 258);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(150, 150);
@@ -307,6 +318,7 @@
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel7.Controls.Add(this.panel16);
             this.panel7.Controls.Add(this.panel11);
+            this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel7.Location = new System.Drawing.Point(510, 258);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(150, 150);

@@ -147,6 +147,7 @@
             this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
             this.btnCadastrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.BackgroundImage")));
             this.btnCadastrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.Location = new System.Drawing.Point(274, 295);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(117, 34);
@@ -158,6 +159,7 @@
             this.btnLimpar.BackColor = System.Drawing.Color.Transparent;
             this.btnLimpar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpar.BackgroundImage")));
             this.btnLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpar.Location = new System.Drawing.Point(142, 295);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(117, 34);

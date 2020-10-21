@@ -93,6 +93,7 @@
             this.btnEntrar.BackColor = System.Drawing.Color.Transparent;
             this.btnEntrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEntrar.BackgroundImage")));
             this.btnEntrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEntrar.Location = new System.Drawing.Point(80, 146);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(115, 41);
@@ -194,6 +195,7 @@
             this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel7.Location = new System.Drawing.Point(80, 37);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(115, 41);
