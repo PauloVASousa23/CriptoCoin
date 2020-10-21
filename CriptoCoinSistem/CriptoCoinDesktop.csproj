@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Views\AgenciaAlterarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AgenciaAlterarCliente.Designer.cs">
+      <DependentUpon>AgenciaAlterarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     <Compile Include="Models\Permissao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\AgenciaAlterarCliente.resx">
+      <DependentUpon>AgenciaAlterarCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,10 +177,12 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="img\aviso_cadastro_cliente.png" />
     <Content Include="img\backgroundLogin.png" />
     <Content Include="img\background_azul_claro.png" />
     <Content Include="img\background_azul_escuro.png" />
     <Content Include="img\background_rounded_box_azulClaro_login.png" />
+    <Content Include="img\background_rounded__grande_box_azulClaro_login.png" />
     <Content Include="img\box_grande_rounded_azulPrimary.png" />
     <Content Include="img\box_grande_rounded_branco.png" />
     <Content Include="img\box_grande_rounded_branco_pequeno_clientes.png" />
@@ -189,6 +200,9 @@
     <Content Include="img\btnEntrar.png" />
     <Content Include="img\btnLimpar.png" />
     <Content Include="img\btnRoundedAzul.png" />
+    <Content Include="img\button_alterar_azul.png" />
+    <Content Include="img\button_cadastrar_azul.png" />
+    <Content Include="img\button_limpar_azul.png" />
     <Content Include="img\button_menu_cadastrar_off.png" />
     <Content Include="img\button_menu_cadastrar_on.png" />
     <Content Include="img\button_menu_clientes_off.png" />
@@ -219,9 +233,13 @@
     <Content Include="img\iconBasico\icon_transacoes.png" />
     <Content Include="img\icone_cadeado.png" />
     <Content Include="img\icone_perfil.png" />
+    <Content Include="img\input_grande_branco_semi_rounded.png" />
     <Content Include="img\input_grande_icon.png" />
     <Content Include="img\input_icon.png" />
+    <Content Include="img\input_medio_branco_semi_rounded.png" />
+    <Content Include="img\input_medio_cinza_semirounded.png" />
     <Content Include="img\input_med_icon.png" />
+    <Content Include="img\input_pequeno_branco_semi_rounded.png" />
     <Content Include="img\input_pequeno_icon.png" />
     <Content Include="img\input_rounded_border_grande.png" />
     <Content Include="img\input_rounded_border_medio.png" />
