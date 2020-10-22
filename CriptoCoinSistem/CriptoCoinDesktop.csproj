@@ -85,11 +85,11 @@
     <Compile Include="Views\AgenciaConsultarClientes.Designer.cs">
       <DependentUpon>AgenciaConsultarClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\AgenciaTransações.cs">
+    <Compile Include="Views\AgenciaTransacoes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\AgenciaTransações.Designer.cs">
-      <DependentUpon>AgenciaTransações.cs</DependentUpon>
+    <Compile Include="Views\AgenciaTransacoes.Designer.cs">
+      <DependentUpon>AgenciaTransacoes.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\AgenciaCadastrarCliente.cs">
       <SubType>Form</SubType>
@@ -137,8 +137,8 @@
     <EmbeddedResource Include="Views\AgenciaConsultarClientes.resx">
       <DependentUpon>AgenciaConsultarClientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\AgenciaTransações.resx">
-      <DependentUpon>AgenciaTransações.cs</DependentUpon>
+    <EmbeddedResource Include="Views\AgenciaTransacoes.resx">
+      <DependentUpon>AgenciaTransacoes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\AgenciaCadastrarCliente.resx">
       <DependentUpon>AgenciaCadastrarCliente.cs</DependentUpon>
@@ -201,6 +201,7 @@
     <Content Include="img\btnLimpar.png" />
     <Content Include="img\btnRoundedAzul.png" />
     <Content Include="img\button_alterar_azul.png" />
+    <Content Include="img\button_alterar_azul_rounded.png" />
     <Content Include="img\button_cadastrar_azul.png" />
     <Content Include="img\button_limpar_azul.png" />
     <Content Include="img\button_menu_cadastrar_off.png" />

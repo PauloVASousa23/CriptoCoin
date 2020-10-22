@@ -26,6 +26,7 @@ namespace CriptoCoinSistem
         }
 
         public List<Perfil> perfis;
+        public List<Perfil> perfisTemp;
 
         private async void Form4_LoadAsync(object sender, EventArgs e)
         {
@@ -99,6 +100,50 @@ namespace CriptoCoinSistem
 
 
             }
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            perfisTemp = new List<Perfil>();
+            dataGridView1.Rows.Clear();
+            String id = inputId.Text;
+            String nome = inputNome.Text;
+            String cpf = inputCpf.Text;
+
+            if (id == "ID" || id == "")
+            {
+                id = "0";
+            }
+
+            if (nome == "Nome" || nome == "")
+            {
+                nome = "|_|";
+            }
+
+            if (cpf == "CPF" || cpf == "")
+            {
+                cpf = "|_|";
+            }
+
+            foreach (Perfil perfil in perfis)
+            {
+                if( perfil.Id == Int32.Parse(id) || id == "0")
+                {
+                    if ( perfil.Nome.Contains(nome) || nome == "|_|" )
+                    {
+                        if ( perfil.Cpf.Contains(cpf) || cpf == "|_|" )
+                        {
+                            perfisTemp.Add(perfil);
+                        }
+                    }
+                }
+            }
+
+            for (int i = 0; i < perfisTemp.Count; i++)
+            {
+                dataGridView1.Rows.Add(perfisTemp[i].Id, perfisTemp[i].Nome, perfisTemp[i].Cpf, perfisTemp[i].Cidade);
+            }
+
         }
     }
 }

@@ -13,5 +13,6 @@ namespace CriptoCoinApi.Models
         public float Valor { get; set; }
         public String Data { get; set; }
         public String Operacao { get; set; }
+        public Perfil PerfilCarteira { get; set; }
     }
 }

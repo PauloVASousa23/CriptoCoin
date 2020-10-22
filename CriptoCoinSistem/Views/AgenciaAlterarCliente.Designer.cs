@@ -40,50 +40,49 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnAlterar = new System.Windows.Forms.Panel();
+            this.btnLimpar = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.btnLimpar = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.btnCadastrar = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.inputNome = new System.Windows.Forms.TextBox();
             this.inputLogradouro = new System.Windows.Forms.TextBox();
-            this.inputRg = new System.Windows.Forms.TextBox();
-            this.inputCpf = new System.Windows.Forms.TextBox();
-            this.inputTelefone = new System.Windows.Forms.TextBox();
-            this.inputEmail = new System.Windows.Forms.TextBox();
-            this.inputCidade = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.inputEstado = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.inputCidade = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.inputCep = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.inputEmail = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.inputTelefone = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.inputCpf = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.inputRg = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.inputNome = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -208,8 +207,7 @@
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.panel15);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.btnCadastrar);
-            this.panel2.Controls.Add(this.panel13);
+            this.panel2.Controls.Add(this.btnAlterar);
             this.panel2.Controls.Add(this.btnLimpar);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.panel11);
@@ -229,186 +227,54 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(252, 33);
+            this.panel2.Location = new System.Drawing.Point(252, 49);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(508, 403);
+            this.panel2.Size = new System.Drawing.Size(508, 365);
             this.panel2.TabIndex = 3;
             // 
-            // panel3
+            // panel15
             // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.inputNome);
-            this.panel3.Location = new System.Drawing.Point(5, 74);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(492, 40);
-            this.panel3.TabIndex = 4;
+            this.panel15.BackColor = System.Drawing.Color.Transparent;
+            this.panel15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel15.BackgroundImage")));
+            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel15.Location = new System.Drawing.Point(117, 36);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(270, 3);
+            this.panel15.TabIndex = 5;
             // 
-            // panel4
+            // label11
             // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Controls.Add(this.inputRg);
-            this.panel4.Location = new System.Drawing.Point(9, 123);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(233, 40);
-            this.panel4.TabIndex = 5;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label11.Location = new System.Drawing.Point(109, 5);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(291, 29);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Alterar dados do cliente";
             // 
-            // label2
+            // btnAlterar
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(9, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 16);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Nome completo:";
+            this.btnAlterar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAlterar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAlterar.BackgroundImage")));
+            this.btnAlterar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAlterar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAlterar.Location = new System.Drawing.Point(264, 324);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(99, 32);
+            this.btnAlterar.TabIndex = 19;
+            this.btnAlterar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // label3
+            // btnLimpar
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(10, 110);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 16);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "RG:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(260, 110);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 16);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "CPF:";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Transparent;
-            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Controls.Add(this.inputCpf);
-            this.panel5.Location = new System.Drawing.Point(259, 123);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(233, 40);
-            this.panel5.TabIndex = 11;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(261, 161);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 16);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Email:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(11, 161);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 16);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Telefone:";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel6.Controls.Add(this.inputEmail);
-            this.panel6.Location = new System.Drawing.Point(260, 174);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(233, 40);
-            this.panel6.TabIndex = 15;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Transparent;
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
-            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel7.Controls.Add(this.inputTelefone);
-            this.panel7.Location = new System.Drawing.Point(10, 174);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(233, 40);
-            this.panel7.TabIndex = 13;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(10, 212);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 16);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "CEP:";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Transparent;
-            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel8.Controls.Add(this.inputCep);
-            this.panel8.Location = new System.Drawing.Point(9, 225);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(109, 40);
-            this.panel8.TabIndex = 15;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label8.Location = new System.Drawing.Point(261, 212);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 16);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Cidade:";
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Transparent;
-            this.panel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel9.BackgroundImage")));
-            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel9.Controls.Add(this.inputCidade);
-            this.panel9.Location = new System.Drawing.Point(260, 225);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(233, 40);
-            this.panel9.TabIndex = 17;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label9.Location = new System.Drawing.Point(133, 212);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(61, 16);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Estado:";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Transparent;
-            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
-            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel10.Controls.Add(this.inputEstado);
-            this.panel10.Location = new System.Drawing.Point(132, 225);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(111, 40);
-            this.panel10.TabIndex = 17;
+            this.btnLimpar.BackColor = System.Drawing.Color.Transparent;
+            this.btnLimpar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpar.BackgroundImage")));
+            this.btnLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLimpar.Location = new System.Drawing.Point(148, 324);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(99, 32);
+            this.btnLimpar.TabIndex = 18;
             // 
             // label10
             // 
@@ -432,69 +298,6 @@
             this.panel11.Size = new System.Drawing.Size(492, 40);
             this.panel11.TabIndex = 19;
             // 
-            // btnLimpar
-            // 
-            this.btnLimpar.BackColor = System.Drawing.Color.Transparent;
-            this.btnLimpar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpar.BackgroundImage")));
-            this.btnLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpar.Location = new System.Drawing.Point(148, 359);
-            this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(99, 32);
-            this.btnLimpar.TabIndex = 18;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Transparent;
-            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
-            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel13.Location = new System.Drawing.Point(12, 315);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(482, 33);
-            this.panel13.TabIndex = 20;
-            // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
-            this.btnCadastrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.BackgroundImage")));
-            this.btnCadastrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCadastrar.Location = new System.Drawing.Point(264, 359);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(99, 32);
-            this.btnCadastrar.TabIndex = 19;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label11.Location = new System.Drawing.Point(133, 5);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(240, 29);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Cadastro de cliente";
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.Transparent;
-            this.panel15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel15.BackgroundImage")));
-            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel15.Location = new System.Drawing.Point(117, 36);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(270, 3);
-            this.panel15.TabIndex = 5;
-            // 
-            // inputNome
-            // 
-            this.inputNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputNome.Location = new System.Drawing.Point(11, 11);
-            this.inputNome.Name = "inputNome";
-            this.inputNome.Size = new System.Drawing.Size(466, 15);
-            this.inputNome.TabIndex = 0;
-            // 
             // inputLogradouro
             // 
             this.inputLogradouro.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -504,16 +307,193 @@
             this.inputLogradouro.Size = new System.Drawing.Size(466, 15);
             this.inputLogradouro.TabIndex = 1;
             // 
-            // inputRg
+            // label9
             // 
-            this.inputRg.BackColor = System.Drawing.Color.Gainsboro;
-            this.inputRg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputRg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputRg.Location = new System.Drawing.Point(10, 12);
-            this.inputRg.Name = "inputRg";
-            this.inputRg.ReadOnly = true;
-            this.inputRg.Size = new System.Drawing.Size(217, 15);
-            this.inputRg.TabIndex = 1;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label9.Location = new System.Drawing.Point(133, 212);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(61, 16);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Estado:";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Transparent;
+            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
+            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel10.Controls.Add(this.inputEstado);
+            this.panel10.Location = new System.Drawing.Point(132, 225);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(111, 40);
+            this.panel10.TabIndex = 17;
+            // 
+            // inputEstado
+            // 
+            this.inputEstado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputEstado.Location = new System.Drawing.Point(10, 12);
+            this.inputEstado.Name = "inputEstado";
+            this.inputEstado.Size = new System.Drawing.Size(91, 15);
+            this.inputEstado.TabIndex = 6;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label8.Location = new System.Drawing.Point(261, 212);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(62, 16);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Cidade:";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Transparent;
+            this.panel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel9.BackgroundImage")));
+            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel9.Controls.Add(this.inputCidade);
+            this.panel9.Location = new System.Drawing.Point(260, 225);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(233, 40);
+            this.panel9.TabIndex = 17;
+            // 
+            // inputCidade
+            // 
+            this.inputCidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputCidade.Location = new System.Drawing.Point(10, 12);
+            this.inputCidade.Name = "inputCidade";
+            this.inputCidade.Size = new System.Drawing.Size(217, 15);
+            this.inputCidade.TabIndex = 5;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label7.Location = new System.Drawing.Point(10, 212);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(42, 16);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "CEP:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(261, 161);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 16);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Email:";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
+            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel8.Controls.Add(this.inputCep);
+            this.panel8.Location = new System.Drawing.Point(9, 225);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(109, 40);
+            this.panel8.TabIndex = 15;
+            // 
+            // inputCep
+            // 
+            this.inputCep.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputCep.Location = new System.Drawing.Point(9, 12);
+            this.inputCep.Name = "inputCep";
+            this.inputCep.Size = new System.Drawing.Size(91, 15);
+            this.inputCep.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label6.Location = new System.Drawing.Point(11, 161);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(74, 16);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Telefone:";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel6.Controls.Add(this.inputEmail);
+            this.panel6.Location = new System.Drawing.Point(260, 174);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(233, 40);
+            this.panel6.TabIndex = 15;
+            // 
+            // inputEmail
+            // 
+            this.inputEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputEmail.Location = new System.Drawing.Point(9, 12);
+            this.inputEmail.Name = "inputEmail";
+            this.inputEmail.Size = new System.Drawing.Size(217, 15);
+            this.inputEmail.TabIndex = 4;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
+            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel7.Controls.Add(this.inputTelefone);
+            this.panel7.Location = new System.Drawing.Point(10, 174);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(233, 40);
+            this.panel7.TabIndex = 13;
+            // 
+            // inputTelefone
+            // 
+            this.inputTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputTelefone.Location = new System.Drawing.Point(9, 12);
+            this.inputTelefone.Name = "inputTelefone";
+            this.inputTelefone.Size = new System.Drawing.Size(217, 15);
+            this.inputTelefone.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(260, 110);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 16);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "CPF:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label3.Location = new System.Drawing.Point(10, 110);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 16);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "RG:";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Controls.Add(this.inputCpf);
+            this.panel5.Location = new System.Drawing.Point(259, 123);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(233, 40);
+            this.panel5.TabIndex = 11;
             // 
             // inputCpf
             // 
@@ -526,50 +506,58 @@
             this.inputCpf.Size = new System.Drawing.Size(217, 15);
             this.inputCpf.TabIndex = 2;
             // 
-            // inputTelefone
+            // label2
             // 
-            this.inputTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputTelefone.Location = new System.Drawing.Point(9, 12);
-            this.inputTelefone.Name = "inputTelefone";
-            this.inputTelefone.Size = new System.Drawing.Size(217, 15);
-            this.inputTelefone.TabIndex = 3;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(9, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(121, 16);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Nome completo:";
             // 
-            // inputEmail
+            // panel4
             // 
-            this.inputEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputEmail.Location = new System.Drawing.Point(9, 12);
-            this.inputEmail.Name = "inputEmail";
-            this.inputEmail.Size = new System.Drawing.Size(217, 15);
-            this.inputEmail.TabIndex = 4;
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Controls.Add(this.inputRg);
+            this.panel4.Location = new System.Drawing.Point(9, 123);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(233, 40);
+            this.panel4.TabIndex = 5;
             // 
-            // inputCidade
+            // inputRg
             // 
-            this.inputCidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputCidade.Location = new System.Drawing.Point(10, 12);
-            this.inputCidade.Name = "inputCidade";
-            this.inputCidade.Size = new System.Drawing.Size(217, 15);
-            this.inputCidade.TabIndex = 5;
+            this.inputRg.BackColor = System.Drawing.Color.Gainsboro;
+            this.inputRg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputRg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputRg.Location = new System.Drawing.Point(10, 12);
+            this.inputRg.Name = "inputRg";
+            this.inputRg.ReadOnly = true;
+            this.inputRg.Size = new System.Drawing.Size(217, 15);
+            this.inputRg.TabIndex = 1;
             // 
-            // inputEstado
+            // panel3
             // 
-            this.inputEstado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputEstado.Location = new System.Drawing.Point(10, 12);
-            this.inputEstado.Name = "inputEstado";
-            this.inputEstado.Size = new System.Drawing.Size(91, 15);
-            this.inputEstado.TabIndex = 6;
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Controls.Add(this.inputNome);
+            this.panel3.Location = new System.Drawing.Point(5, 74);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(492, 40);
+            this.panel3.TabIndex = 4;
             // 
-            // inputCep
+            // inputNome
             // 
-            this.inputCep.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputCep.Location = new System.Drawing.Point(9, 12);
-            this.inputCep.Name = "inputCep";
-            this.inputCep.Size = new System.Drawing.Size(91, 15);
-            this.inputCep.TabIndex = 7;
+            this.inputNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputNome.Location = new System.Drawing.Point(11, 11);
+            this.inputNome.Name = "inputNome";
+            this.inputNome.Size = new System.Drawing.Size(466, 15);
+            this.inputNome.TabIndex = 0;
             // 
             // AgenciaAlterarCliente
             // 
@@ -586,24 +574,24 @@
             this.panel19.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -639,8 +627,7 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel btnCadastrar;
-        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel btnAlterar;
         private System.Windows.Forms.Panel btnLimpar;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label11;

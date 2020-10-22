@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgenciaConsultarClientes));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel24 = new System.Windows.Forms.Panel();
             this.panel25 = new System.Windows.Forms.Panel();
@@ -42,16 +42,16 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.inputId = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.inputNome = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.inputCpf = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.btnPesquisar = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,6 +69,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.btnAlterar = new System.Windows.Forms.Panel();
             this.lblId = new System.Windows.Forms.Label();
             this.lblCidade = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -82,13 +83,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.btnAlterar = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.btnPesquisar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel9.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -209,23 +209,23 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.inputId);
             this.panel2.Controls.Add(this.panel8);
             this.panel2.Location = new System.Drawing.Point(237, 14);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(105, 34);
             this.panel2.TabIndex = 7;
             // 
-            // textBox1
+            // inputId
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(32, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(60, 19);
-            this.textBox1.TabIndex = 21;
-            this.textBox1.Text = "ID";
+            this.inputId.BackColor = System.Drawing.Color.White;
+            this.inputId.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputId.Location = new System.Drawing.Point(32, 8);
+            this.inputId.Name = "inputId";
+            this.inputId.Size = new System.Drawing.Size(60, 19);
+            this.inputId.TabIndex = 21;
+            this.inputId.Text = "ID";
             // 
             // panel8
             // 
@@ -242,23 +242,23 @@
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.inputNome);
             this.panel3.Controls.Add(this.panel11);
             this.panel3.Location = new System.Drawing.Point(348, 14);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(206, 34);
             this.panel3.TabIndex = 8;
             // 
-            // textBox2
+            // inputNome
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(31, 8);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 19);
-            this.textBox2.TabIndex = 22;
-            this.textBox2.Text = "Nome";
+            this.inputNome.BackColor = System.Drawing.Color.White;
+            this.inputNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputNome.Location = new System.Drawing.Point(31, 8);
+            this.inputNome.Name = "inputNome";
+            this.inputNome.Size = new System.Drawing.Size(166, 19);
+            this.inputNome.TabIndex = 22;
+            this.inputNome.Text = "Nome";
             // 
             // panel11
             // 
@@ -275,7 +275,7 @@
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Controls.Add(this.textBox3);
+            this.panel4.Controls.Add(this.inputCpf);
             this.panel4.Controls.Add(this.panel10);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Location = new System.Drawing.Point(559, 14);
@@ -283,16 +283,16 @@
             this.panel4.Size = new System.Drawing.Size(105, 34);
             this.panel4.TabIndex = 8;
             // 
-            // textBox3
+            // inputCpf
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(31, 8);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(60, 19);
-            this.textBox3.TabIndex = 22;
-            this.textBox3.Text = "CPF";
+            this.inputCpf.BackColor = System.Drawing.Color.White;
+            this.inputCpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputCpf.Location = new System.Drawing.Point(31, 8);
+            this.inputCpf.Name = "inputCpf";
+            this.inputCpf.Size = new System.Drawing.Size(60, 19);
+            this.inputCpf.TabIndex = 22;
+            this.inputCpf.Text = "CPF";
             // 
             // panel10
             // 
@@ -314,17 +314,18 @@
             this.panel5.Size = new System.Drawing.Size(105, 34);
             this.panel5.TabIndex = 9;
             // 
-            // panel6
+            // btnPesquisar
             // 
-            this.panel6.BackColor = System.Drawing.Color.Transparent;
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel6.Location = new System.Drawing.Point(669, 11);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(105, 46);
-            this.panel6.TabIndex = 9;
+            this.btnPesquisar.BackColor = System.Drawing.Color.Transparent;
+            this.btnPesquisar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.BackgroundImage")));
+            this.btnPesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPesquisar.Controls.Add(this.panel7);
+            this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPesquisar.Location = new System.Drawing.Point(669, 11);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(105, 46);
+            this.btnPesquisar.TabIndex = 9;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // panel7
             // 
@@ -343,15 +344,15 @@
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -359,16 +360,16 @@
             this.CPF,
             this.Cidade});
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.GridColor = System.Drawing.Color.Black;
-            this.dataGridView1.Location = new System.Drawing.Point(-40, -17);
+            this.dataGridView1.Location = new System.Drawing.Point(-42, -18);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
@@ -455,7 +456,7 @@
             // panel28
             // 
             this.panel28.BackColor = System.Drawing.Color.White;
-            this.panel28.Location = new System.Drawing.Point(388, -1);
+            this.panel28.Location = new System.Drawing.Point(385, -1);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(2, 50);
             this.panel28.TabIndex = 5;
@@ -463,7 +464,7 @@
             // panel27
             // 
             this.panel27.BackColor = System.Drawing.Color.White;
-            this.panel27.Location = new System.Drawing.Point(267, 2);
+            this.panel27.Location = new System.Drawing.Point(265, 2);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(2, 50);
             this.panel27.TabIndex = 5;
@@ -471,7 +472,7 @@
             // panel26
             // 
             this.panel26.BackColor = System.Drawing.Color.White;
-            this.panel26.Location = new System.Drawing.Point(54, 1);
+            this.panel26.Location = new System.Drawing.Point(53, 1);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(2, 50);
             this.panel26.TabIndex = 4;
@@ -539,6 +540,17 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(532, 130);
             this.panel13.TabIndex = 13;
+            // 
+            // btnAlterar
+            // 
+            this.btnAlterar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAlterar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAlterar.BackgroundImage")));
+            this.btnAlterar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAlterar.Location = new System.Drawing.Point(442, 89);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(80, 40);
+            this.btnAlterar.TabIndex = 6;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // lblId
             // 
@@ -681,17 +693,6 @@
             this.panel14.Size = new System.Drawing.Size(80, 80);
             this.panel14.TabIndex = 6;
             // 
-            // btnAlterar
-            // 
-            this.btnAlterar.BackColor = System.Drawing.Color.Transparent;
-            this.btnAlterar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAlterar.BackgroundImage")));
-            this.btnAlterar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAlterar.Location = new System.Drawing.Point(442, 89);
-            this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(80, 40);
-            this.btnAlterar.TabIndex = 6;
-            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
-            // 
             // AgenciaConsultarClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -701,7 +702,7 @@
             this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel12);
-            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -719,7 +720,7 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel6.ResumeLayout(false);
+            this.btnPesquisar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
@@ -750,11 +751,11 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel btnPesquisar;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox inputId;
+        private System.Windows.Forms.TextBox inputNome;
+        private System.Windows.Forms.TextBox inputCpf;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
