@@ -156,6 +156,7 @@
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(187, 46);
             this.panel21.TabIndex = 8;
+            this.panel21.Click += new System.EventHandler(this.panel21_Click);
             // 
             // panel20
             // 

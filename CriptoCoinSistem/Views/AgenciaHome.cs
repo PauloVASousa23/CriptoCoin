@@ -35,5 +35,12 @@ namespace CriptoCoinSistem
             agenciaTransacoes.Visible = true;
             this.Visible = false;
         }
+
+        private void panel21_Click(object sender, EventArgs e)
+        {
+            AgenciaCadastrarCliente agenciaCadastrarCliente = new AgenciaCadastrarCliente();
+            agenciaCadastrarCliente.Visible = true;
+            this.Visible = false;
+        }
     }
 }
