@@ -37,7 +37,7 @@ namespace CriptoCoinSistem
                 Perfil perfil = await ("https://criptocoinapi.azurewebsites.net/criptocoin/getPerfil/"+carteira[i].Perfil)
             .GetJsonAsync<Perfil>();
                 carteira[i].PerfilCarteira = perfil;
-                dataGridView1.Rows.Add(carteira[i].Criptomoeda, perfil.Nome, carteira[i].Valor, carteira[i].Operacao, carteira[i].Data);
+                dataGridView1.Rows.Add(carteira[i].Criptomoeda, perfil.Nome, "R$ " + carteira[i].Valor, carteira[i].Operacao, carteira[i].Data);
             }
         }
 
@@ -80,7 +80,7 @@ namespace CriptoCoinSistem
 
             for (int i = 0; i < carteiraTemp.Count; i++)
             {
-                dataGridView1.Rows.Add(carteiraTemp[i].Criptomoeda, carteiraTemp[i].PerfilCarteira.Nome, carteiraTemp[i].Valor, carteiraTemp[i].Operacao, carteiraTemp[i].Data);
+                dataGridView1.Rows.Add(carteiraTemp[i].Criptomoeda, carteiraTemp[i].PerfilCarteira.Nome, ("R$ " + carteiraTemp[i].Valor), carteiraTemp[i].Operacao, carteiraTemp[i].Data);
             }
         }
     }
