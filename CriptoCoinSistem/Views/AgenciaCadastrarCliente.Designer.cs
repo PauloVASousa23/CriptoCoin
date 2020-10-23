@@ -30,14 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgenciaCadastrarCliente));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.inputSenha = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.inputReSenha = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.btnLimpar = new System.Windows.Forms.Panel();
@@ -79,8 +73,6 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel14.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -99,12 +91,8 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.panel12);
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.panel15);
-            this.panel2.Controls.Add(this.panel14);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.btnCadastrar);
             this.panel2.Controls.Add(this.panel13);
             this.panel2.Controls.Add(this.btnLimpar);
@@ -126,41 +114,10 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(252, 6);
+            this.panel2.Location = new System.Drawing.Point(252, 28);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(508, 449);
+            this.panel2.Size = new System.Drawing.Size(508, 403);
             this.panel2.TabIndex = 5;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.Transparent;
-            this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
-            this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel12.Controls.Add(this.inputSenha);
-            this.panel12.Location = new System.Drawing.Point(12, 322);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(233, 40);
-            this.panel12.TabIndex = 17;
-            // 
-            // inputSenha
-            // 
-            this.inputSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputSenha.Location = new System.Drawing.Point(9, 12);
-            this.inputSenha.Name = "inputSenha";
-            this.inputSenha.Size = new System.Drawing.Size(217, 15);
-            this.inputSenha.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(13, 309);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 16);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Senha:";
             // 
             // panel15
             // 
@@ -171,26 +128,6 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(270, 3);
             this.panel15.TabIndex = 5;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.Transparent;
-            this.panel14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel14.BackgroundImage")));
-            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel14.Controls.Add(this.inputReSenha);
-            this.panel14.Location = new System.Drawing.Point(262, 322);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(233, 40);
-            this.panel14.TabIndex = 19;
-            // 
-            // inputReSenha
-            // 
-            this.inputReSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputReSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputReSenha.Location = new System.Drawing.Point(9, 12);
-            this.inputReSenha.Name = "inputReSenha";
-            this.inputReSenha.Size = new System.Drawing.Size(217, 15);
-            this.inputReSenha.TabIndex = 4;
             // 
             // label11
             // 
@@ -203,24 +140,13 @@
             this.label11.TabIndex = 21;
             this.label11.Text = "Cadastro de cliente";
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label12.Location = new System.Drawing.Point(263, 309);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(117, 16);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "Repita a senha:";
-            // 
             // btnCadastrar
             // 
             this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
             this.btnCadastrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.BackgroundImage")));
             this.btnCadastrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCadastrar.Location = new System.Drawing.Point(264, 405);
+            this.btnCadastrar.Location = new System.Drawing.Point(264, 358);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(99, 32);
             this.btnCadastrar.TabIndex = 19;
@@ -231,7 +157,7 @@
             this.panel13.BackColor = System.Drawing.Color.Transparent;
             this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
             this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel13.Location = new System.Drawing.Point(12, 367);
+            this.panel13.Location = new System.Drawing.Point(12, 320);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(482, 33);
             this.panel13.TabIndex = 20;
@@ -242,7 +168,7 @@
             this.btnLimpar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpar.BackgroundImage")));
             this.btnLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpar.Location = new System.Drawing.Point(148, 405);
+            this.btnLimpar.Location = new System.Drawing.Point(148, 358);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(99, 32);
             this.btnLimpar.TabIndex = 18;
@@ -553,6 +479,7 @@
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(201, 46);
             this.panel24.TabIndex = 10;
+            this.panel24.Click += new System.EventHandler(this.panel24_Click);
             // 
             // panel25
             // 
@@ -564,6 +491,7 @@
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(201, 46);
             this.panel25.TabIndex = 9;
+            this.panel25.Click += new System.EventHandler(this.panel25_Click);
             // 
             // panel23
             // 
@@ -575,6 +503,7 @@
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(201, 46);
             this.panel23.TabIndex = 8;
+            this.panel23.Click += new System.EventHandler(this.panel23_Click);
             // 
             // panel22
             // 
@@ -586,6 +515,7 @@
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(201, 46);
             this.panel22.TabIndex = 7;
+            this.panel22.Click += new System.EventHandler(this.panel22_Click);
             // 
             // panel17
             // 
@@ -631,6 +561,7 @@
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(189, 46);
             this.panel20.TabIndex = 7;
+            this.panel20.Click += new System.EventHandler(this.panel20_Click);
             // 
             // panel18
             // 
@@ -652,13 +583,10 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AgenciaCadastrarCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form6";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -686,14 +614,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.TextBox inputSenha;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.TextBox inputReSenha;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel btnCadastrar;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel btnLimpar;

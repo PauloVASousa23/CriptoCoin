@@ -445,36 +445,43 @@
             this.panel24.BackColor = System.Drawing.Color.Transparent;
             this.panel24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel24.BackgroundImage")));
             this.panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel24.Location = new System.Drawing.Point(12, 371);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(201, 46);
             this.panel24.TabIndex = 10;
+            this.panel24.Click += new System.EventHandler(this.panel24_Click);
             // 
             // panel25
             // 
             this.panel25.BackColor = System.Drawing.Color.Transparent;
             this.panel25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel25.BackgroundImage")));
             this.panel25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel25.Location = new System.Drawing.Point(12, 329);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(201, 46);
             this.panel25.TabIndex = 9;
+            this.panel25.Click += new System.EventHandler(this.panel25_Click);
             // 
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.Color.Transparent;
             this.panel23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel23.BackgroundImage")));
             this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel23.Location = new System.Drawing.Point(13, 287);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(201, 46);
             this.panel23.TabIndex = 8;
+            this.panel23.Click += new System.EventHandler(this.panel23_Click);
             // 
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.Color.Transparent;
             this.panel22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel22.BackgroundImage")));
             this.panel22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel22.Location = new System.Drawing.Point(13, 245);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(201, 46);
@@ -508,20 +515,24 @@
             this.panel21.BackColor = System.Drawing.Color.Transparent;
             this.panel21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel21.BackgroundImage")));
             this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel21.Location = new System.Drawing.Point(5, 82);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(187, 46);
             this.panel21.TabIndex = 8;
+            this.panel21.Click += new System.EventHandler(this.panel21_Click);
             // 
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.Transparent;
             this.panel20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel20.BackgroundImage")));
             this.panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel20.Location = new System.Drawing.Point(4, 41);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(189, 46);
             this.panel20.TabIndex = 7;
+            this.panel20.Click += new System.EventHandler(this.panel20_Click);
             // 
             // panel18
             // 
@@ -547,6 +558,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AgenciaTransacoes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.panel12.ResumeLayout(false);

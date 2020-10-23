@@ -14,14 +14,15 @@ namespace CriptoCoinSistem
 {
     public partial class AgenciaTransacoes : Form
     {
+        Perfil perfil = new Perfil();
+
+        public void setSession(Perfil perfil)
+        {
+            this.perfil = perfil;
+        }
         public AgenciaTransacoes()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         List<Carteira> carteira;
@@ -82,6 +83,52 @@ namespace CriptoCoinSistem
             {
                 dataGridView1.Rows.Add(carteiraTemp[i].Criptomoeda, carteiraTemp[i].PerfilCarteira.Nome, ("R$ " + carteiraTemp[i].Valor), carteiraTemp[i].Operacao, carteiraTemp[i].Data);
             }
+        }
+
+        private void panel20_Click(object sender, EventArgs e)
+        {
+            AgenciaConsultarClientes agenciaConsultarClientes = new AgenciaConsultarClientes();
+            agenciaConsultarClientes.setSession(this.perfil);
+            agenciaConsultarClientes.Visible = true;
+            this.Visible = false;
+        }
+
+        private void panel21_Click(object sender, EventArgs e)
+        {
+            
+            AgenciaCadastrarCliente agenciaCadastrarCliente = new AgenciaCadastrarCliente();
+            agenciaCadastrarCliente.setSession(this.perfil);
+            agenciaCadastrarCliente.Visible = true;
+            this.Visible = false;
+
+        }
+
+        private void panel23_Click(object sender, EventArgs e)
+        {
+
+            AgenciaRelatorios agenciaRelatorios = new AgenciaRelatorios();
+            agenciaRelatorios.setSession(this.perfil);
+            agenciaRelatorios.Visible = true;
+            this.Visible = false;
+
+        }
+
+        private void panel25_Click(object sender, EventArgs e)
+        {
+
+            AgenciaMonitoramento agenciaMonitoramento = new AgenciaMonitoramento();
+            agenciaMonitoramento.setSession(this.perfil);
+            agenciaMonitoramento.Visible = true;
+            this.Visible = false;
+
+        }
+
+        private void panel24_Click(object sender, EventArgs e)
+        {
+            AgenciaIndicacoes agenciaIndicacoes = new AgenciaIndicacoes();
+            agenciaIndicacoes.setSession(this.perfil);
+            agenciaIndicacoes.Visible = true;
+            this.Visible = false;
         }
     }
 }

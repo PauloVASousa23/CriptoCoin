@@ -36,8 +36,7 @@ namespace CriptoCoinSistem
             string cidade = inputCidade.Text;
             string bairro = inputBairro.Text;
             string logradouro = inputLogradouro.Text;
-            string senha = inputSenha.Text;
-            string reSenha = inputReSenha.Text;
+            string senha = cpf.Replace(".", string.Empty).Replace("-",string.Empty).Substring(0,6);
 
             if (
                 nome.Length < 5 ||
@@ -48,31 +47,15 @@ namespace CriptoCoinSistem
                 cep.Length < 5 ||
                 cidade.Length < 5 ||
                 bairro.Length < 5 ||
-                logradouro.Length < 5 ||
-                senha.Length < 5 ||
-                reSenha.Length < 5
+                logradouro.Length < 5
             )
             {
                 MessageBox.Show("Um dos campos está vazio ou muito pequeno!");
             }
             else
             {
-                if (senha == reSenha)
-                {
-                    Perfil perfil = new Perfil();
-                    perfil.Nome = nome;
-                    perfil.Rg = rg;
-                    perfil.Cpf = cpf;
-                    perfil.Email = email;
-                    perfil.Cep = cep;
-                    perfil.Cidade = cidade;
-                    perfil.Bairro = bairro;
-                    perfil.Endereco = logradouro;
-                    perfil.Senha = senha;
-                    perfil.Permissao = 1;
-                    perfil.Agencia = 1;
-
-                    var resultado = await "https://criptocoinapi.azurewebsites.net/criptocoin/setPerfil"
+                
+                var resultado = await "https://criptocoinapi.azurewebsites.net/criptocoin/setPerfil"
                 .PostJsonAsync(new
                 {
                     Nome = nome,
@@ -85,21 +68,68 @@ namespace CriptoCoinSistem
                     Endereco = logradouro,
                     Senha = senha,
                     Permissao = 1,
-                    Agencia = perfil.Id
+                    Agencia = this.perfil.Id
                 }).ReceiveString();
 
-                    if (resultado == "true")
-                    {
-                        MessageBox.Show("Usuário cadastrado com sucesso!");
-                    }
-                    Console.WriteLine(resultado);
-                }
-                else
+                if (resultado == "true")
                 {
-                    MessageBox.Show("As senhas digitadas não são iguais!");
+                    MessageBox.Show("Usuário cadastrado com sucesso!");
                 }
+                Console.WriteLine(resultado);
+                
             }
 
+        }
+
+        private void panel20_Click(object sender, EventArgs e)
+        {
+            AgenciaConsultarClientes agenciaConsultarClientes = new AgenciaConsultarClientes();
+            agenciaConsultarClientes.Visible = true;
+            this.Visible = false;
+        }
+
+        private void panel21_Click(object sender, EventArgs e)
+        {
+            AgenciaCadastrarCliente agenciaCadastrarCliente = new AgenciaCadastrarCliente();
+            agenciaCadastrarCliente.setSession(this.perfil);
+            agenciaCadastrarCliente.Visible = true;
+            this.Visible = false;
+        }
+
+        private void panel22_Click(object sender, EventArgs e)
+        {
+            AgenciaTransacoes agenciaTransacoes = new AgenciaTransacoes();
+            agenciaTransacoes.setSession(this.perfil);
+            agenciaTransacoes.Visible = true;
+            this.Visible = false;
+        }
+
+        private void panel23_Click(object sender, EventArgs e)
+        {
+
+            AgenciaRelatorios agenciaRelatorios = new AgenciaRelatorios();
+            agenciaRelatorios.setSession(this.perfil);
+            agenciaRelatorios.Visible = true;
+            this.Visible = false;
+
+        }
+
+        private void panel25_Click(object sender, EventArgs e)
+        {
+
+            AgenciaMonitoramento agenciaMonitoramento = new AgenciaMonitoramento();
+            agenciaMonitoramento.setSession(this.perfil);
+            agenciaMonitoramento.Visible = true;
+            this.Visible = false;
+
+        }
+
+        private void panel24_Click(object sender, EventArgs e)
+        {
+            AgenciaIndicacoes agenciaIndicacoes = new AgenciaIndicacoes();
+            agenciaIndicacoes.setSession(this.perfil);
+            agenciaIndicacoes.Visible = true;
+            this.Visible = false;
         }
     }
 }

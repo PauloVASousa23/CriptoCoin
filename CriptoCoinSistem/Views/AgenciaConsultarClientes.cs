@@ -15,6 +15,12 @@ namespace CriptoCoinSistem
 {
     public partial class AgenciaConsultarClientes : Form
     {
+        Perfil perfil = new Perfil();
+
+        public void setSession(Perfil perfil)
+        {
+            this.perfil = perfil;
+        }
         public AgenciaConsultarClientes()
         {
             InitializeComponent();
@@ -144,6 +150,145 @@ namespace CriptoCoinSistem
                 dataGridView1.Rows.Add(perfisTemp[i].Id, perfisTemp[i].Nome, perfisTemp[i].Cpf, perfisTemp[i].Cidade);
             }
 
+        }
+
+        private void inputId_TextChanged(object sender, EventArgs e)
+        {
+            perfisTemp = new List<Perfil>();
+            dataGridView1.Rows.Clear();
+            String id = inputId.Text;
+            String nome = inputNome.Text;
+            String cpf = inputCpf.Text;
+
+            if (id == "ID" || id == "")
+            {
+                id = "0";
+            }
+
+            if (nome == "Nome" || nome == "")
+            {
+                nome = "|_|";
+            }
+
+            if (cpf == "CPF" || cpf == "")
+            {
+                cpf = "|_|";
+            }
+
+            foreach (Perfil perfil in perfis)
+            {
+                if (perfil.Id == Int32.Parse(id) || id == "0")
+                {
+                    if (perfil.Nome.Contains(nome) || nome == "|_|")
+                    {
+                        if (perfil.Cpf.Contains(cpf) || cpf == "|_|")
+                        {
+                            perfisTemp.Add(perfil);
+                        }
+                    }
+                }
+            }
+
+            for (int i = 0; i < perfisTemp.Count; i++)
+            {
+                dataGridView1.Rows.Add(perfisTemp[i].Id, perfisTemp[i].Nome, perfisTemp[i].Cpf, perfisTemp[i].Cidade);
+            }
+        }
+
+        private void inputId_Click(object sender, EventArgs e)
+        {
+            String id = inputId.Text;
+
+            if (id == "ID")
+            {
+                inputId.Text = "";
+            }
+
+        }
+
+        private void inputNome_Click(object sender, EventArgs e)
+        {
+            String nome = inputNome.Text;
+
+            if (nome == "Nome")
+            {
+                inputNome.Text = "";
+            }
+        }
+
+        private void inputCpf_Click(object sender, EventArgs e)
+        {
+            String cpf = inputCpf.Text;
+
+            if (cpf == "CPF" )
+            {
+                inputCpf.Text = "";
+            }
+        }
+
+        private void inputId_Leave(object sender, EventArgs e)
+        {
+            String id = inputId.Text;
+
+            if (id == "")
+            {
+                inputId.Text = "ID";
+            }
+        }
+
+        private void inputNome_Leave(object sender, EventArgs e)
+        {
+            String nome = inputNome.Text;
+
+            if (nome == "")
+            {
+                inputNome.Text = "Nome";
+            }
+        }
+
+        private void inputCpf_Leave(object sender, EventArgs e)
+        {
+            String cpf = inputCpf.Text;
+
+            if (cpf == "")
+            {
+                inputCpf.Text = "CPF";
+            }
+        }
+
+        private void panel21_Click(object sender, EventArgs e)
+        {
+            AgenciaCadastrarCliente agenciaCadastrarCliente = new AgenciaCadastrarCliente();
+            agenciaCadastrarCliente.Visible = true;
+            this.Visible = false;
+        }
+
+        private void panel23_Click(object sender, EventArgs e)
+        {
+            AgenciaRelatorios agenciaRelatorios = new AgenciaRelatorios();
+            agenciaRelatorios.Visible = true;
+            this.Visible = false;
+        }
+
+        private void panel22_Click(object sender, EventArgs e)
+        {
+            AgenciaTransacoes agenciaTransacoes = new AgenciaTransacoes();
+            agenciaTransacoes.Visible = true;
+            this.Visible = false;
+        }
+
+        private void panel25_Click(object sender, EventArgs e)
+        {
+            AgenciaMonitoramento agenciaMonitoramento = new AgenciaMonitoramento();
+            agenciaMonitoramento.Visible = true;
+            this.Visible = false;
+        }
+
+        private void panel24_Click(object sender, EventArgs e)
+        {
+            AgenciaIndicacoes agenciaIndicacoes = new AgenciaIndicacoes();
+            agenciaIndicacoes.Visible = true;
+            this.Visible = false;
         }
     }
 }

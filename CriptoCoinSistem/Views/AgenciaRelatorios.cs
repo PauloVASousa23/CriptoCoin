@@ -14,6 +14,12 @@ namespace CriptoCoinSistem
 {
     public partial class AgenciaRelatorios : Form
     {
+        Perfil perfil = new Perfil();
+
+        public void setSession(Perfil perfil)
+        {
+            this.perfil = perfil;
+        }
         public AgenciaRelatorios()
         {
             InitializeComponent();
@@ -135,6 +141,52 @@ namespace CriptoCoinSistem
             {
                 inputCidade.Text = "";
             }
+        }
+
+        private void panel20_Click(object sender, EventArgs e)
+        {
+            AgenciaConsultarClientes agenciaConsultarClientes = new AgenciaConsultarClientes();
+            agenciaConsultarClientes.setSession(this.perfil);
+            agenciaConsultarClientes.Visible = true;
+            this.Visible = false;
+        }
+
+        private void panel21_Click(object sender, EventArgs e)
+        {
+
+            AgenciaCadastrarCliente agenciaCadastrarCliente = new AgenciaCadastrarCliente();
+            agenciaCadastrarCliente.setSession(this.perfil);
+            agenciaCadastrarCliente.Visible = true;
+            this.Visible = false;
+
+        }
+
+        private void panel22_Click(object sender, EventArgs e)
+        {
+
+            AgenciaTransacoes agenciaTransacoes = new AgenciaTransacoes();
+            agenciaTransacoes.setSession(this.perfil);
+            agenciaTransacoes.Visible = true;
+            this.Visible = false;
+
+        }
+
+        private void panel25_Click(object sender, EventArgs e)
+        {
+
+            AgenciaMonitoramento agenciaMonitoramento = new AgenciaMonitoramento();
+            agenciaMonitoramento.setSession(this.perfil);
+            agenciaMonitoramento.Visible = true;
+            this.Visible = false;
+
+        }
+
+        private void panel24_Click(object sender, EventArgs e)
+        {
+            AgenciaIndicacoes agenciaIndicacoes = new AgenciaIndicacoes();
+            agenciaIndicacoes.setSession(this.perfil);
+            agenciaIndicacoes.Visible = true;
+            this.Visible = false;
         }
     }
 }

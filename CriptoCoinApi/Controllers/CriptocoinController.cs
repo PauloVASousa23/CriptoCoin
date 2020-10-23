@@ -239,5 +239,37 @@ namespace CriptoCoinApi.Controllers
             return Json(result, JsonRequestBehavior.AllowGet);
 
         }
+
+        [HttpGet]
+        public FileContentResult GetRelatorioPerfil() {
+            PerfilRepositorio perfilRepos = new PerfilRepositorio();
+            List<Perfil> perfis = perfilRepos.selecionarPerfis();
+
+
+            string csv = "Matricula;Nome;Email;Rg;Cpf;Cep;Cidade;Bairro;Endereço;Agencia;\n";
+
+            foreach (Perfil perfil in perfis)
+            {
+                csv += perfil.Id + ";" + perfil.Nome + ";" + perfil.Email + ";" + perfil.Rg + ";" + perfil.Cpf + ";" + perfil.Cep + ";" + perfil.Cidade + ";" + perfil.Bairro + ";" + perfil.Cidade + ";" + perfil.Endereco + ";" + perfil.Agencia + ";\n";
+            }
+
+            return File(new System.Text.UTF8Encoding().GetBytes(csv), "text/csv", "RelatorioPerfis.csv");
+        }
+
+        [HttpGet]
+        public FileContentResult GetRelatorioPerfilPorId(int id)
+        {
+            PerfilRepositorio perfilRepos = new PerfilRepositorio();
+            List<Perfil> perfis = perfilRepos.selecionarPerfis(id);
+
+            string csv = "Matricula;Nome;Email;Rg;Cpf;Cep;Cidade;Bairro;Endereço;Agencia;\n";
+
+            foreach (Perfil perfil in perfis)
+            {
+                csv += perfil.Id + ";" + perfil.Nome + ";" + perfil.Email + ";" + perfil.Rg + ";" + perfil.Cpf + ";" + perfil.Cep + ";" + perfil.Cidade + ";" + perfil.Bairro + ";" + perfil.Cidade + ";" + perfil.Endereco + ";" + perfil.Agencia + ";\n";
+            }
+
+            return File(new System.Text.UTF8Encoding().GetBytes(csv), "text/csv", "RelatorioPerfis.csv");
+        }
     }
 }

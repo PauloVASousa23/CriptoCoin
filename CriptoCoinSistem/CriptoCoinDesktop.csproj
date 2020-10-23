@@ -178,6 +178,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="img\aviso_cadastro_cliente.png" />
+    <Content Include="img\aviso_duracao_indicacao.png" />
     <Content Include="img\backgroundLogin.png" />
     <Content Include="img\background_azul_claro.png" />
     <Content Include="img\background_azul_escuro.png" />
@@ -191,6 +192,8 @@
     <Content Include="img\box_grande_rounded_branco_pequeno_relatorios.png" />
     <Content Include="img\box_grande_rounded_branco_pequeno_transacoes.png" />
     <Content Include="img\box_medio_rounded_azulSemiEscuro.png" />
+    <Content Include="img\box_medio_rounded_branco.png" />
+    <Content Include="img\box_pequeno_rounded_branco.png" />
     <Content Include="img\box_rounded_azulEscuro.png" />
     <Content Include="img\box_rounded_azulLight.png" />
     <Content Include="img\box_rounded_azulPrimary.png" />
@@ -212,6 +215,7 @@
     <Content Include="img\button_menu_consultar_on.png" />
     <Content Include="img\button_menu_indicacoes_off.png" />
     <Content Include="img\button_menu_indicacoes_on.png" />
+    <Content Include="img\button_menu_indicacoes_on_2.png" />
     <Content Include="img\button_menu_monitoramento_off.png" />
     <Content Include="img\button_menu_monitoramento_on.png" />
     <Content Include="img\button_menu_relatorios_off.png" />

@@ -73,9 +73,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel29 = new System.Windows.Forms.Panel();
@@ -412,26 +412,31 @@
             this.panel24.BackColor = System.Drawing.Color.Transparent;
             this.panel24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel24.BackgroundImage")));
             this.panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel24.Location = new System.Drawing.Point(12, 371);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(201, 46);
             this.panel24.TabIndex = 10;
+            this.panel24.Click += new System.EventHandler(this.panel24_Click);
             // 
             // panel25
             // 
             this.panel25.BackColor = System.Drawing.Color.Transparent;
             this.panel25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel25.BackgroundImage")));
             this.panel25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel25.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel25.Location = new System.Drawing.Point(12, 329);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(201, 46);
             this.panel25.TabIndex = 9;
+            this.panel25.Click += new System.EventHandler(this.panel25_Click);
             // 
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.Color.Transparent;
             this.panel23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel23.BackgroundImage")));
             this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel23.Location = new System.Drawing.Point(13, 287);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(201, 46);
@@ -442,10 +447,12 @@
             this.panel22.BackColor = System.Drawing.Color.Transparent;
             this.panel22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel22.BackgroundImage")));
             this.panel22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel22.Location = new System.Drawing.Point(13, 245);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(201, 46);
             this.panel22.TabIndex = 7;
+            this.panel22.Click += new System.EventHandler(this.panel22_Click);
             // 
             // panel17
             // 
@@ -475,20 +482,24 @@
             this.panel21.BackColor = System.Drawing.Color.Transparent;
             this.panel21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel21.BackgroundImage")));
             this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel21.Location = new System.Drawing.Point(5, 82);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(187, 46);
             this.panel21.TabIndex = 8;
+            this.panel21.Click += new System.EventHandler(this.panel21_Click);
             // 
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.Transparent;
             this.panel20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel20.BackgroundImage")));
             this.panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel20.Location = new System.Drawing.Point(4, 41);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(189, 46);
             this.panel20.TabIndex = 7;
+            this.panel20.Click += new System.EventHandler(this.panel20_Click);
             // 
             // panel18
             // 
@@ -584,6 +595,18 @@
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.radioButton1.Location = new System.Drawing.Point(3, 17);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(52, 17);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Diario";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
@@ -607,18 +630,6 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Semanal";
             this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.radioButton1.Location = new System.Drawing.Point(3, 17);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(52, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Diario";
-            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // panel14
             // 
@@ -688,6 +699,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AgenciaRelatorios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form7";
             this.Load += new System.EventHandler(this.AgenciaRelatorios_Load);
             this.panel12.ResumeLayout(false);

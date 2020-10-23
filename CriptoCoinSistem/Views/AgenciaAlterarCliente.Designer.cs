@@ -569,6 +569,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AgenciaAlterarCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alterar dados do cliente";
             this.panel1.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
