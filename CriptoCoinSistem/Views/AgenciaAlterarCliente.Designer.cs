@@ -578,7 +578,6 @@
             this.Name = "AgenciaAlterarCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alterar dados do cliente";
-            this.Click += new System.EventHandler(this.AgenciaAlterarCliente_Click);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel11.ResumeLayout(false);
