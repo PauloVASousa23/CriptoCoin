@@ -248,6 +248,7 @@
     <Content Include="img\input_pequeno_branco_semi_rounded.png" />
     <Content Include="img\input_pequeno_icon.png" />
     <Content Include="img\input_rounded_border_grande.png" />
+    <Content Include="img\input_rounded_border_grande_2.png" />
     <Content Include="img\input_rounded_border_medio.png" />
     <Content Include="img\input_rounded_border_pequeno.png" />
     <Content Include="img\Logo_CriptoCoin_texto_transparente_amarelo.png" />

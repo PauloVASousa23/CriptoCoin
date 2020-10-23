@@ -81,14 +81,15 @@ namespace CriptoCoinSistem
 
         }
 
-        private void panel20_Click(object sender, EventArgs e)
+        private void btnConsultar_Click(object sender, EventArgs e)
         {
             AgenciaConsultarClientes agenciaConsultarClientes = new AgenciaConsultarClientes();
-            agenciaConsultarClientes.Visible = true;
+            agenciaConsultarClientes.setSession(this.perfil);
             this.Visible = false;
+            agenciaConsultarClientes.Visible = true;
         }
 
-        private void panel21_Click(object sender, EventArgs e)
+        private void btnTelaCadastrar_Click(object sender, EventArgs e)
         {
             AgenciaCadastrarCliente agenciaCadastrarCliente = new AgenciaCadastrarCliente();
             agenciaCadastrarCliente.setSession(this.perfil);
@@ -96,7 +97,7 @@ namespace CriptoCoinSistem
             this.Visible = false;
         }
 
-        private void panel22_Click(object sender, EventArgs e)
+        private void btnTransacoes_Click(object sender, EventArgs e)
         {
             AgenciaTransacoes agenciaTransacoes = new AgenciaTransacoes();
             agenciaTransacoes.setSession(this.perfil);
@@ -104,27 +105,23 @@ namespace CriptoCoinSistem
             this.Visible = false;
         }
 
-        private void panel23_Click(object sender, EventArgs e)
+        private void btnRelatorios_Click(object sender, EventArgs e)
         {
-
             AgenciaRelatorios agenciaRelatorios = new AgenciaRelatorios();
             agenciaRelatorios.setSession(this.perfil);
             agenciaRelatorios.Visible = true;
             this.Visible = false;
-
         }
 
-        private void panel25_Click(object sender, EventArgs e)
+        private void btnMonitoramento_Click(object sender, EventArgs e)
         {
-
             AgenciaMonitoramento agenciaMonitoramento = new AgenciaMonitoramento();
             agenciaMonitoramento.setSession(this.perfil);
             agenciaMonitoramento.Visible = true;
             this.Visible = false;
-
         }
 
-        private void panel24_Click(object sender, EventArgs e)
+        private void btnIndicacoes_Click(object sender, EventArgs e)
         {
             AgenciaIndicacoes agenciaIndicacoes = new AgenciaIndicacoes();
             agenciaIndicacoes.setSession(this.perfil);

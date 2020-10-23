@@ -73,7 +73,7 @@
             this.panel1.Controls.Add(this.btnTransacoes);
             this.panel1.Controls.Add(this.panel17);
             this.panel1.Controls.Add(this.panel19);
-            this.panel1.Location = new System.Drawing.Point(-2, -2);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 771);
             this.panel1.TabIndex = 0;
@@ -88,7 +88,7 @@
             this.btnIndicacoes.Name = "btnIndicacoes";
             this.btnIndicacoes.Size = new System.Drawing.Size(270, 70);
             this.btnIndicacoes.TabIndex = 10;
-            this.btnIndicacoes.Click += new System.EventHandler(this.panel24_Click);
+            this.btnIndicacoes.Click += new System.EventHandler(this.btnIndicacoes_Click);
             // 
             // btnMonitoramento
             // 
@@ -100,7 +100,7 @@
             this.btnMonitoramento.Name = "btnMonitoramento";
             this.btnMonitoramento.Size = new System.Drawing.Size(270, 70);
             this.btnMonitoramento.TabIndex = 9;
-            this.btnMonitoramento.Click += new System.EventHandler(this.panel25_Click);
+            this.btnMonitoramento.Click += new System.EventHandler(this.btnMonitoramento_Click);
             // 
             // btnRelatorios
             // 
@@ -112,7 +112,7 @@
             this.btnRelatorios.Name = "btnRelatorios";
             this.btnRelatorios.Size = new System.Drawing.Size(270, 70);
             this.btnRelatorios.TabIndex = 8;
-            this.btnRelatorios.Click += new System.EventHandler(this.panel23_Click);
+            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
             // 
             // btnTransacoes
             // 
@@ -124,7 +124,7 @@
             this.btnTransacoes.Name = "btnTransacoes";
             this.btnTransacoes.Size = new System.Drawing.Size(270, 70);
             this.btnTransacoes.TabIndex = 7;
-            this.btnTransacoes.Click += new System.EventHandler(this.panel22_Click);
+            this.btnTransacoes.Click += new System.EventHandler(this.btnTransacoes_Click);
             // 
             // panel17
             // 
@@ -159,7 +159,7 @@
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(270, 70);
             this.btnCadastrar.TabIndex = 8;
-            this.btnCadastrar.Click += new System.EventHandler(this.panel21_Click);
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnConsultar
             // 
@@ -171,7 +171,7 @@
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(270, 70);
             this.btnConsultar.TabIndex = 7;
-            this.btnConsultar.Click += new System.EventHandler(this.panel20_Click);
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // panel18
             // 

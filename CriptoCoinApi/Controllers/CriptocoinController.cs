@@ -250,7 +250,7 @@ namespace CriptoCoinApi.Controllers
 
             foreach (Perfil perfil in perfis)
             {
-                csv += perfil.Id + ";" + perfil.Nome + ";" + perfil.Email + ";" + perfil.Rg + ";" + perfil.Cpf + ";" + perfil.Cep + ";" + perfil.Cidade + ";" + perfil.Bairro + ";" + perfil.Cidade + ";" + perfil.Endereco + ";" + perfil.Agencia + ";\n";
+                csv += perfil.Id + ";" + perfil.Nome.ToString() + " " + string.Empty + string.Empty + ";" + perfil.Email.ToString() + " " + string.Empty + ";" + perfil.Rg.ToString() + " " + string.Empty + ";" + perfil.Cpf.ToString() + " " + string.Empty + ";" + perfil.Cep.ToString() + " " + string.Empty + ";" + perfil.Cidade.ToString() + " " + string.Empty + ";" + perfil.Bairro.ToString() + " " + string.Empty + ";" + perfil.Endereco.ToString() + " " + string.Empty + ";" + perfil.Agencia.ToString() + " " + string.Empty + ";\n";
             }
 
             return File(new System.Text.UTF8Encoding().GetBytes(csv), "text/csv", "RelatorioPerfis.csv");
@@ -266,7 +266,7 @@ namespace CriptoCoinApi.Controllers
 
             foreach (Perfil perfil in perfis)
             {
-                csv += perfil.Id + ";" + perfil.Nome + ";" + perfil.Email + ";" + perfil.Rg + ";" + perfil.Cpf + ";" + perfil.Cep + ";" + perfil.Cidade + ";" + perfil.Bairro + ";" + perfil.Cidade + ";" + perfil.Endereco + ";" + perfil.Agencia + ";\n";
+                csv += perfil.Id + ";" + perfil.Nome.ToString() +" "+ ";" + perfil.Email.ToString() + " " + string.Empty + ";" + perfil.Rg.ToString() + " " + string.Empty + ";" + perfil.Cpf.ToString() + " " + string.Empty + ";" + perfil.Cep.ToString() + " " + string.Empty + ";" + perfil.Cidade.ToString() + " " + string.Empty + ";" + perfil.Bairro.ToString() + " " + string.Empty + ";" + perfil.Endereco.ToString() + " " + string.Empty + ";" + perfil.Agencia.ToString() + " " + string.Empty + ";\n";
             }
 
             return File(new System.Text.UTF8Encoding().GetBytes(csv), "text/csv", "RelatorioPerfis.csv");
