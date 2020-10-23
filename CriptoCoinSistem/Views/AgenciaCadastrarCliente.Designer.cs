@@ -479,6 +479,7 @@
             this.btnIndicacoes.Name = "btnIndicacoes";
             this.btnIndicacoes.Size = new System.Drawing.Size(270, 70);
             this.btnIndicacoes.TabIndex = 10;
+            this.btnIndicacoes.Click += new System.EventHandler(this.btnIndicacoes_Click);
             // 
             // btnMonitoramento
             // 
@@ -490,6 +491,7 @@
             this.btnMonitoramento.Name = "btnMonitoramento";
             this.btnMonitoramento.Size = new System.Drawing.Size(270, 70);
             this.btnMonitoramento.TabIndex = 9;
+            this.btnMonitoramento.Click += new System.EventHandler(this.btnMonitoramento_Click);
             // 
             // btnRelatorios
             // 
@@ -501,6 +503,7 @@
             this.btnRelatorios.Name = "btnRelatorios";
             this.btnRelatorios.Size = new System.Drawing.Size(270, 70);
             this.btnRelatorios.TabIndex = 8;
+            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
             // 
             // btnTransacoes
             // 
@@ -512,6 +515,7 @@
             this.btnTransacoes.Name = "btnTransacoes";
             this.btnTransacoes.Size = new System.Drawing.Size(270, 70);
             this.btnTransacoes.TabIndex = 7;
+            this.btnTransacoes.Click += new System.EventHandler(this.btnTransacoes_Click);
             // 
             // panel17
             // 
