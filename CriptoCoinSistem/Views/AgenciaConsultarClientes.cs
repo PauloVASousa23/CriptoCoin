@@ -15,6 +15,13 @@ namespace CriptoCoinSistem
 {
     public partial class AgenciaConsultarClientes : Form
     {
+
+        Perfil perfil = new Perfil();
+
+        public void setSession(Perfil perfil)
+        {
+            this.perfil = perfil;
+        }
         public AgenciaConsultarClientes()
         {
             InitializeComponent();

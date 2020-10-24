@@ -458,7 +458,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "AgenciaMonitoramento";
             this.Text = "Form8";
-            this.Load += new System.EventHandler(this.Form8_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
