@@ -21,7 +21,7 @@ namespace CriptoCoinSistem.Views
             inputNome.Text = perfil.Nome;
             inputRg.Text = perfil.Rg;
             inputCpf.Text = perfil.Cpf;
-            inputTelefone.Text = "(00) 00000-0000";
+            inputTelefone.Text = perfil.Telefone;
             inputEmail.Text = perfil.Email;
             inputCep.Text = perfil.Cep;
             inputEstado.Text = perfil.Bairro;
@@ -41,7 +41,7 @@ namespace CriptoCoinSistem.Views
             perfilNovo.Nome = inputNome.Text;
             perfilNovo.Rg = inputRg.Text;
             perfilNovo.Cpf = inputCpf.Text;
-            //inputTelefone.Text = "(00) 00000-0000";
+            perfilNovo.Telefone = inputTelefone.Text;
             perfilNovo.Email = inputEmail.Text;
             perfilNovo.Cep = inputCep.Text;
             perfilNovo.Bairro = inputEstado.Text;
@@ -59,6 +59,7 @@ namespace CriptoCoinSistem.Views
                     Rg = perfilNovo.Rg,
                     Cpf = perfilNovo.Cpf,
                     Email = perfilNovo.Email,
+                    Telefone = perfilNovo.Telefone,
                     Cep = perfilNovo.Cep,
                     Cidade = perfilNovo.Cidade,
                     Bairro = perfilNovo.Bairro,

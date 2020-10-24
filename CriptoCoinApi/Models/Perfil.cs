@@ -11,6 +11,7 @@ namespace CriptoCoinApi.Models
         public String Nome { get; set; }
         public String Senha { get; set; }
         public String Email { get; set; }
+        public String Telefone { get; set; }
         public String Rg{ get; set; }
         public String Cpf{ get; set; }
         public String Cep{ get; set; }
@@ -19,7 +20,6 @@ namespace CriptoCoinApi.Models
         public String Endereco{ get; set; }
         public int Agencia{ get; set; }
         public int Permissao{ get; set; }
-
-        
+        public float Saldo { get; set; }
     }
 }

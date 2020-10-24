@@ -62,13 +62,15 @@ namespace CriptoCoinSistem
                     Rg = rg,
                     Cpf = cpf,
                     Email = email,
+                    Telefone = telefone,
                     Cep = cep,
                     Cidade = cidade,
                     Bairro = bairro,
                     Endereco = logradouro,
                     Senha = senha,
                     Permissao = 1,
-                    Agencia = this.perfil.Id
+                    Agencia = this.perfil.Id,
+                    Saldo = 0
                 }).ReceiveString();
 
                 if (resultado == "true")

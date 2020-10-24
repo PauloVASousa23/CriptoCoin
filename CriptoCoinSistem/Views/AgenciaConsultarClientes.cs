@@ -69,7 +69,6 @@ namespace CriptoCoinSistem
                 {
                     achouId = perfis[i].Id == Int32.Parse(value1);
 
-                    Console.WriteLine(perfis[i].Id + " - " + value1);
                     if (achouId)
                     {
                         lblNome.Text = perfis[i].Nome;
@@ -78,6 +77,7 @@ namespace CriptoCoinSistem
                         lblCidade.Text = perfis[i].Cidade;
                         lblSaldo.Text = "R$ 000,00";
                         lblId.Text = perfis[i].Id+"";
+                        lblSaldo.Text = "R$ " + perfis[i].Saldo;
                         achouId = false;
                     }
                 }

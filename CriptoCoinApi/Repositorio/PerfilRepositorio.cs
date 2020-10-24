@@ -12,13 +12,14 @@ namespace CriptoCoinApi.Repositorio
         DAO dao = new DAO();
         public bool inserirPerfil(Perfil perfil)
         {
-            String query = "INSERT INTO Perfil VALUES(@Nome,@Senha,@Email,@Rg,@Cpf,@Cep,@Cidade,@Bairro,@Endereco,@Agencia,@Permissao)";
+            String query = "INSERT INTO Perfil VALUES(@Nome,@Senha,@Email,@Telefone,@Rg,@Cpf,@Cep,@Cidade,@Bairro,@Endereco,@Agencia,@Permissao, 0)";
             using (SqlConnection cnx = dao.getConnection())
             {
                 SqlCommand cmd = new SqlCommand(query, cnx);
                 cmd.Parameters.AddWithValue("@Nome", perfil.Nome);
                 cmd.Parameters.AddWithValue("@Senha", perfil.Senha);
                 cmd.Parameters.AddWithValue("@Email", perfil.Email);
+                cmd.Parameters.AddWithValue("@Telefone", perfil.Telefone);
                 cmd.Parameters.AddWithValue("@Rg", perfil.Rg);
                 cmd.Parameters.AddWithValue("@Cpf", perfil.Cpf);
                 cmd.Parameters.AddWithValue("@Cep", perfil.Cep);
@@ -71,14 +72,16 @@ namespace CriptoCoinApi.Repositorio
                         perfil.Nome = reader[1].ToString();
                         perfil.Senha= reader[2].ToString();
                         perfil.Email= reader[3].ToString();
-                        perfil.Rg= reader[4].ToString();
-                        perfil.Cpf= reader[5].ToString();
-                        perfil.Cep= reader[6].ToString();
-                        perfil.Cidade= reader[7].ToString();
-                        perfil.Bairro= reader[8].ToString();
-                        perfil.Endereco= reader[9].ToString();
-                        perfil.Agencia = (int)reader[10];
-                        perfil.Permissao = (int) reader[11];
+                        perfil.Telefone= reader[4].ToString();
+                        perfil.Rg= reader[5].ToString();
+                        perfil.Cpf= reader[6].ToString();
+                        perfil.Cep= reader[7].ToString();
+                        perfil.Cidade= reader[8].ToString();
+                        perfil.Bairro= reader[9].ToString();
+                        perfil.Endereco= reader[10].ToString();
+                        perfil.Agencia = (int)reader[11];
+                        perfil.Permissao = (int) reader[12];
+                        perfil.Saldo = float.Parse(reader[13].ToString());
                     }
 
                     return perfil;
@@ -117,14 +120,16 @@ namespace CriptoCoinApi.Repositorio
                         perfil.Nome = reader[1].ToString();
                         perfil.Senha = reader[2].ToString();
                         perfil.Email = reader[3].ToString();
-                        perfil.Rg = reader[4].ToString();
-                        perfil.Cpf = reader[5].ToString();
-                        perfil.Cep = reader[6].ToString();
-                        perfil.Cidade = reader[7].ToString();
-                        perfil.Bairro = reader[8].ToString();
-                        perfil.Endereco = reader[9].ToString();
-                        perfil.Agencia = (int)reader[10];
-                        perfil.Permissao = (int)reader[11];
+                        perfil.Telefone = reader[4].ToString();
+                        perfil.Rg = reader[5].ToString();
+                        perfil.Cpf = reader[6].ToString();
+                        perfil.Cep = reader[7].ToString();
+                        perfil.Cidade = reader[8].ToString();
+                        perfil.Bairro = reader[9].ToString();
+                        perfil.Endereco = reader[10].ToString();
+                        perfil.Agencia = (int)reader[11];
+                        perfil.Permissao = (int)reader[12];
+                        perfil.Saldo = float.Parse(reader[13].ToString());
                     }
 
                     return perfil;
@@ -163,14 +168,16 @@ namespace CriptoCoinApi.Repositorio
                         perfil.Nome = reader[1].ToString();
                         perfil.Senha = reader[2].ToString();
                         perfil.Email = reader[3].ToString();
-                        perfil.Rg = reader[4].ToString();
-                        perfil.Cpf = reader[5].ToString();
-                        perfil.Cep = reader[6].ToString();
-                        perfil.Cidade = reader[7].ToString();
-                        perfil.Bairro = reader[8].ToString();
-                        perfil.Endereco = reader[9].ToString();
-                        perfil.Agencia = (int)reader[10];
-                        perfil.Permissao = (int)reader[11];
+                        perfil.Telefone = reader[4].ToString();
+                        perfil.Rg = reader[5].ToString();
+                        perfil.Cpf = reader[6].ToString();
+                        perfil.Cep = reader[7].ToString();
+                        perfil.Cidade = reader[8].ToString();
+                        perfil.Bairro = reader[9].ToString();
+                        perfil.Endereco = reader[10].ToString();
+                        perfil.Agencia = (int)reader[11];
+                        perfil.Permissao = (int)reader[12];
+                        perfil.Saldo = float.Parse(reader[13].ToString());
                         listaPerfil.Add(perfil);
                     }
 
@@ -211,14 +218,16 @@ namespace CriptoCoinApi.Repositorio
                         perfil.Nome = reader[1].ToString();
                         perfil.Senha = reader[2].ToString();
                         perfil.Email = reader[3].ToString();
-                        perfil.Rg = reader[4].ToString();
-                        perfil.Cpf = reader[5].ToString();
-                        perfil.Cep = reader[6].ToString();
-                        perfil.Cidade = reader[7].ToString();
-                        perfil.Bairro = reader[8].ToString();
-                        perfil.Endereco = reader[9].ToString();
-                        perfil.Agencia = (int)reader[10];
-                        perfil.Permissao = (int)reader[11];
+                        perfil.Telefone = reader[4].ToString();
+                        perfil.Rg = reader[5].ToString();
+                        perfil.Cpf = reader[6].ToString();
+                        perfil.Cep = reader[7].ToString();
+                        perfil.Cidade = reader[8].ToString();
+                        perfil.Bairro = reader[9].ToString();
+                        perfil.Endereco = reader[10].ToString();
+                        perfil.Agencia = (int)reader[11];
+                        perfil.Permissao = (int)reader[12];
+                        perfil.Saldo = float.Parse(reader[13].ToString());
                         listaPerfil.Add(perfil);
                     }
 
@@ -238,7 +247,7 @@ namespace CriptoCoinApi.Repositorio
 
         public bool atualizarPerfil(Perfil perfil)
         {
-            string query = "UPDATE Perfil SET Nome=@Nome, Email=@Email, Cep=@Cep, Cidade=@Cidade, Bairro=@Bairro, Endereco=@Endereco WHERE Id=@Id";
+            string query = "UPDATE Perfil SET Nome=@Nome, Email=@Email,Telefone=@Telefone, Cep=@Cep, Cidade=@Cidade, Bairro=@Bairro, Endereco=@Endereco, Saldo=@Saldo WHERE Id=@Id";
             using (SqlConnection cnx = dao.getConnection())
             {
                 try
@@ -247,10 +256,12 @@ namespace CriptoCoinApi.Repositorio
                     cmd.Parameters.AddWithValue("@Id", perfil.Id);
                     cmd.Parameters.AddWithValue("@Nome", perfil.Nome);
                     cmd.Parameters.AddWithValue("@Email", perfil.Email);
+                    cmd.Parameters.AddWithValue("@Telefone", perfil.Telefone);
                     cmd.Parameters.AddWithValue("@Cep", perfil.Cep);
                     cmd.Parameters.AddWithValue("@Cidade", perfil.Cidade);
                     cmd.Parameters.AddWithValue("@Bairro", perfil.Bairro);
                     cmd.Parameters.AddWithValue("@Endereco", perfil.Endereco);
+                    cmd.Parameters.AddWithValue("@Saldo", perfil.Saldo);
 
                     cnx.Open();
                     int i = 0;

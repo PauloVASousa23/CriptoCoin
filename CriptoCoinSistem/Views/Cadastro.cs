@@ -123,6 +123,7 @@ namespace CriptoCoinSistem
                     perfil.Rg = rg;
                     perfil.Cpf = cpf;
                     perfil.Email = email;
+                    perfil.Telefone = telefone;
                     perfil.Cep = cep;
                     perfil.Cidade = cidade;
                     perfil.Bairro = bairro;
@@ -130,6 +131,7 @@ namespace CriptoCoinSistem
                     perfil.Senha = senha;
                     perfil.Permissao = 1;
                     perfil.Agencia = 1;
+                    perfil.Saldo = 0;
 
 
 
@@ -140,13 +142,15 @@ namespace CriptoCoinSistem
                     Rg = rg,
                     Cpf = cpf,
                     Email = email,
+                    Telefone = telefone,
                     Cep = cep,
                     Cidade = cidade,
                     Bairro = bairro,
                     Endereco = logradouro,
                     Senha = senha,
                     Permissao = 1,
-                    Agencia = 1
+                    Agencia = 1,
+                    Saldo = 0
                 }).ReceiveString();
 
                     if (resultado=="true")
