@@ -203,7 +203,6 @@
     <Content Include="img\button_alterar_azul.png" />
     <Content Include="img\button_alterar_azul_rounded.png" />
     <Content Include="img\button_cadastrar_azul.png" />
-    <Content Include="img\button_gerarrelatorio.png" />
     <Content Include="img\button_limpar_azul.png" />
     <Content Include="img\button_menu_cadastrar_off.png" />
     <Content Include="img\button_menu_cadastrar_on.png" />

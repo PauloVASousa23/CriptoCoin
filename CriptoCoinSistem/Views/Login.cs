@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,18 +44,9 @@ namespace CriptoCoinSistem
                 }
                 else
                 {
-                    if (perfil.Permissao == 2)
-                    {
-                        AgenciaHome agenciaHome = new AgenciaHome();
-                        agenciaHome.setSession(perfil);
-                        this.Visible = false;
-                        agenciaHome.Visible = true;
-                    }
-                    else
-                    {
-                        MessageBox.Show("O usuário informado não tem permissão para acesso!");
-                    }
-                    
+                    AgenciaHome agenciaHome = new AgenciaHome();
+                    this.Visible = false;
+                    agenciaHome.Visible = true;
                 }
             }
             catch (Exception ex)

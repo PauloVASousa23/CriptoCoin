@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgenciaCadastrarCliente));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.inputSenha = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.inputReSenha = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Panel();
@@ -46,7 +46,7 @@
             this.inputLogradouro = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.inputBairro = new System.Windows.Forms.TextBox();
+            this.inputEstado = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.inputCidade = new System.Windows.Forms.TextBox();
@@ -126,7 +126,7 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(252, 6);
+            this.panel2.Location = new System.Drawing.Point(252, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(508, 449);
             this.panel2.TabIndex = 5;
@@ -136,20 +136,20 @@
             this.panel12.BackColor = System.Drawing.Color.Transparent;
             this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
             this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel12.Controls.Add(this.inputSenha);
+            this.panel12.Controls.Add(this.textBox1);
             this.panel12.Location = new System.Drawing.Point(12, 322);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(233, 40);
             this.panel12.TabIndex = 17;
             // 
-            // inputSenha
+            // textBox1
             // 
-            this.inputSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputSenha.Location = new System.Drawing.Point(9, 12);
-            this.inputSenha.Name = "inputSenha";
-            this.inputSenha.Size = new System.Drawing.Size(217, 15);
-            this.inputSenha.TabIndex = 3;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(9, 12);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(217, 15);
+            this.textBox1.TabIndex = 3;
             // 
             // label1
             // 
@@ -177,20 +177,20 @@
             this.panel14.BackColor = System.Drawing.Color.Transparent;
             this.panel14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel14.BackgroundImage")));
             this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel14.Controls.Add(this.inputReSenha);
+            this.panel14.Controls.Add(this.textBox2);
             this.panel14.Location = new System.Drawing.Point(262, 322);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(233, 40);
             this.panel14.TabIndex = 19;
             // 
-            // inputReSenha
+            // textBox2
             // 
-            this.inputReSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputReSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputReSenha.Location = new System.Drawing.Point(9, 12);
-            this.inputReSenha.Name = "inputReSenha";
-            this.inputReSenha.Size = new System.Drawing.Size(217, 15);
-            this.inputReSenha.TabIndex = 4;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(9, 12);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(217, 15);
+            this.textBox2.TabIndex = 4;
             // 
             // label11
             // 
@@ -210,9 +210,9 @@
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label12.Location = new System.Drawing.Point(263, 309);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(117, 16);
+            this.label12.Size = new System.Drawing.Size(51, 16);
             this.label12.TabIndex = 20;
-            this.label12.Text = "Repita a senha:";
+            this.label12.Text = "Email:";
             // 
             // btnCadastrar
             // 
@@ -224,7 +224,6 @@
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(99, 32);
             this.btnCadastrar.TabIndex = 19;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // panel13
             // 
@@ -285,29 +284,29 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.label9.Location = new System.Drawing.Point(133, 212);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 16);
+            this.label9.Size = new System.Drawing.Size(61, 16);
             this.label9.TabIndex = 18;
-            this.label9.Text = "Bairro:";
+            this.label9.Text = "Estado:";
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.Transparent;
             this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
             this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel10.Controls.Add(this.inputBairro);
+            this.panel10.Controls.Add(this.inputEstado);
             this.panel10.Location = new System.Drawing.Point(132, 225);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(111, 40);
             this.panel10.TabIndex = 17;
             // 
-            // inputBairro
+            // inputEstado
             // 
-            this.inputBairro.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputBairro.Location = new System.Drawing.Point(10, 12);
-            this.inputBairro.Name = "inputBairro";
-            this.inputBairro.Size = new System.Drawing.Size(91, 15);
-            this.inputBairro.TabIndex = 6;
+            this.inputEstado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inputEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputEstado.Location = new System.Drawing.Point(10, 12);
+            this.inputEstado.Name = "inputEstado";
+            this.inputEstado.Size = new System.Drawing.Size(91, 15);
+            this.inputEstado.TabIndex = 6;
             // 
             // label8
             // 
@@ -473,7 +472,7 @@
             this.inputCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputCpf.Location = new System.Drawing.Point(11, 12);
             this.inputCpf.Name = "inputCpf";
-            this.inputCpf.Size = new System.Drawing.Size(207, 15);
+            this.inputCpf.Size = new System.Drawing.Size(217, 15);
             this.inputCpf.TabIndex = 2;
             // 
             // label2
@@ -648,7 +647,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(784, 461);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AgenciaCadastrarCliente";
@@ -687,11 +686,11 @@
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.TextBox inputSenha;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.TextBox inputReSenha;
+        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel btnCadastrar;
@@ -702,7 +701,7 @@
         private System.Windows.Forms.TextBox inputLogradouro;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox inputBairro;
+        private System.Windows.Forms.TextBox inputEstado;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.TextBox inputCidade;
