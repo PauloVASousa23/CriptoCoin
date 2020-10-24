@@ -54,6 +54,8 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.btnMinimizar = new System.Windows.Forms.Panel();
+            this.btnFechar = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -354,6 +356,30 @@
             this.panel11.Size = new System.Drawing.Size(240, 65);
             this.panel11.TabIndex = 3;
             // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.BackgroundImage")));
+            this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Location = new System.Drawing.Point(1268, 28);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(34, 10);
+            this.btnMinimizar.TabIndex = 23;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.BackColor = System.Drawing.Color.Transparent;
+            this.btnFechar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFechar.BackgroundImage")));
+            this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.Location = new System.Drawing.Point(1317, 13);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(25, 25);
+            this.btnFechar.TabIndex = 22;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
             // AgenciaHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -361,6 +387,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1360, 768);
+            this.Controls.Add(this.btnMinimizar);
+            this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
@@ -410,5 +438,7 @@
         private System.Windows.Forms.Panel btnTransacoes;
         private System.Windows.Forms.Panel btnCadastrar;
         private System.Windows.Forms.Panel btnConsultar;
+        private System.Windows.Forms.Panel btnMinimizar;
+        private System.Windows.Forms.Panel btnFechar;
     }
 }

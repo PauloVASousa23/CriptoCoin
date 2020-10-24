@@ -48,15 +48,17 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.inputTitulo = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.panel22 = new System.Windows.Forms.Panel();
+            this.btnIndicacoes = new System.Windows.Forms.Panel();
+            this.btnMonitoramento = new System.Windows.Forms.Panel();
+            this.btnRelatorios = new System.Windows.Forms.Panel();
+            this.btnTransacoes = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.btnConsultar = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.btnMinimizar = new System.Windows.Forms.Panel();
+            this.btnFechar = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -84,9 +86,9 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(246, 6);
+            this.panel2.Location = new System.Drawing.Point(389, 93);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(508, 449);
+            this.panel2.Size = new System.Drawing.Size(882, 595);
             this.panel2.TabIndex = 7;
             // 
             // panel15
@@ -94,19 +96,19 @@
             this.panel15.BackColor = System.Drawing.Color.Transparent;
             this.panel15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel15.BackgroundImage")));
             this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel15.Location = new System.Drawing.Point(117, 36);
+            this.panel15.Location = new System.Drawing.Point(278, 44);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(270, 3);
+            this.panel15.Size = new System.Drawing.Size(350, 3);
             this.panel15.TabIndex = 5;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label11.Location = new System.Drawing.Point(133, 5);
+            this.label11.Location = new System.Drawing.Point(303, 7);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(245, 29);
+            this.label11.Size = new System.Drawing.Size(294, 33);
             this.label11.TabIndex = 21;
             this.label11.Text = "Cadastrar indicação";
             // 
@@ -116,9 +118,9 @@
             this.btnCadastrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.BackgroundImage")));
             this.btnCadastrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCadastrar.Location = new System.Drawing.Point(264, 396);
+            this.btnCadastrar.Location = new System.Drawing.Point(469, 506);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(99, 32);
+            this.btnCadastrar.Size = new System.Drawing.Size(152, 53);
             this.btnCadastrar.TabIndex = 19;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
@@ -127,9 +129,9 @@
             this.panel13.BackColor = System.Drawing.Color.Transparent;
             this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
             this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel13.Location = new System.Drawing.Point(12, 357);
+            this.panel13.Location = new System.Drawing.Point(47, 446);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(482, 33);
+            this.panel13.Size = new System.Drawing.Size(771, 47);
             this.panel13.TabIndex = 20;
             // 
             // btnLimpar
@@ -138,19 +140,19 @@
             this.btnLimpar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLimpar.BackgroundImage")));
             this.btnLimpar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpar.Location = new System.Drawing.Point(148, 397);
+            this.btnLimpar.Location = new System.Drawing.Point(292, 507);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(99, 32);
+            this.btnLimpar.Size = new System.Drawing.Size(152, 53);
             this.btnLimpar.TabIndex = 18;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(11, 162);
+            this.label6.Location = new System.Drawing.Point(37, 211);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 16);
+            this.label6.Size = new System.Drawing.Size(109, 20);
             this.label6.TabIndex = 14;
             this.label6.Text = "Observação:";
             // 
@@ -160,40 +162,40 @@
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel7.Controls.Add(this.inputObservacao);
-            this.panel7.Location = new System.Drawing.Point(10, 174);
+            this.panel7.Location = new System.Drawing.Point(36, 228);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(484, 183);
+            this.panel7.Size = new System.Drawing.Size(796, 213);
             this.panel7.TabIndex = 13;
             // 
             // inputObservacao
             // 
             this.inputObservacao.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputObservacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputObservacao.Location = new System.Drawing.Point(12, 14);
+            this.inputObservacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputObservacao.Location = new System.Drawing.Point(18, 21);
             this.inputObservacao.Multiline = true;
             this.inputObservacao.Name = "inputObservacao";
-            this.inputObservacao.Size = new System.Drawing.Size(455, 152);
+            this.inputObservacao.Size = new System.Drawing.Size(753, 167);
             this.inputObservacao.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(260, 110);
+            this.label4.Location = new System.Drawing.Point(448, 132);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 16);
+            this.label4.Size = new System.Drawing.Size(116, 20);
             this.label4.TabIndex = 12;
             this.label4.Text = "Criptomoeda:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(10, 110);
+            this.label3.Location = new System.Drawing.Point(36, 132);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 16);
+            this.label3.Size = new System.Drawing.Size(53, 20);
             this.label3.TabIndex = 10;
             this.label3.Text = "Data:";
             // 
@@ -203,29 +205,29 @@
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel5.Controls.Add(this.inputCriptomoeda);
-            this.panel5.Location = new System.Drawing.Point(259, 123);
+            this.panel5.Location = new System.Drawing.Point(447, 150);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(233, 40);
+            this.panel5.Size = new System.Drawing.Size(385, 60);
             this.panel5.TabIndex = 11;
             // 
             // inputCriptomoeda
             // 
             this.inputCriptomoeda.BackColor = System.Drawing.Color.White;
             this.inputCriptomoeda.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputCriptomoeda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputCriptomoeda.Location = new System.Drawing.Point(11, 12);
+            this.inputCriptomoeda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputCriptomoeda.Location = new System.Drawing.Point(17, 19);
             this.inputCriptomoeda.Name = "inputCriptomoeda";
-            this.inputCriptomoeda.Size = new System.Drawing.Size(207, 15);
+            this.inputCriptomoeda.Size = new System.Drawing.Size(343, 19);
             this.inputCriptomoeda.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(9, 61);
+            this.label2.Location = new System.Drawing.Point(35, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 16);
+            this.label2.Size = new System.Drawing.Size(58, 20);
             this.label2.TabIndex = 9;
             this.label2.Text = "Titulo:";
             // 
@@ -235,19 +237,19 @@
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.inputData);
-            this.panel4.Location = new System.Drawing.Point(9, 123);
+            this.panel4.Location = new System.Drawing.Point(35, 150);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(233, 40);
+            this.panel4.Size = new System.Drawing.Size(385, 60);
             this.panel4.TabIndex = 5;
             // 
             // inputData
             // 
             this.inputData.BackColor = System.Drawing.Color.White;
             this.inputData.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputData.Location = new System.Drawing.Point(10, 12);
+            this.inputData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputData.Location = new System.Drawing.Point(16, 19);
             this.inputData.Name = "inputData";
-            this.inputData.Size = new System.Drawing.Size(214, 15);
+            this.inputData.Size = new System.Drawing.Size(341, 19);
             this.inputData.TabIndex = 1;
             // 
             // panel3
@@ -256,90 +258,91 @@
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.inputTitulo);
-            this.panel3.Location = new System.Drawing.Point(9, 74);
+            this.panel3.Location = new System.Drawing.Point(35, 71);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(483, 40);
+            this.panel3.Size = new System.Drawing.Size(798, 60);
             this.panel3.TabIndex = 4;
             // 
             // inputTitulo
             // 
             this.inputTitulo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.inputTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputTitulo.Location = new System.Drawing.Point(11, 11);
+            this.inputTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputTitulo.Location = new System.Drawing.Point(17, 18);
             this.inputTitulo.Name = "inputTitulo";
-            this.inputTitulo.Size = new System.Drawing.Size(457, 15);
+            this.inputTitulo.Size = new System.Drawing.Size(753, 19);
             this.inputTitulo.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.panel24);
-            this.panel1.Controls.Add(this.panel25);
-            this.panel1.Controls.Add(this.panel23);
-            this.panel1.Controls.Add(this.panel22);
+            this.panel1.Controls.Add(this.btnIndicacoes);
+            this.panel1.Controls.Add(this.btnMonitoramento);
+            this.panel1.Controls.Add(this.btnRelatorios);
+            this.panel1.Controls.Add(this.btnTransacoes);
             this.panel1.Controls.Add(this.panel17);
             this.panel1.Controls.Add(this.panel19);
-            this.panel1.Location = new System.Drawing.Point(-3, -15);
+            this.panel1.Location = new System.Drawing.Point(-1, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 480);
-            this.panel1.TabIndex = 6;
+            this.panel1.Size = new System.Drawing.Size(300, 771);
+            this.panel1.TabIndex = 37;
             // 
-            // panel24
+            // btnIndicacoes
             // 
-            this.panel24.BackColor = System.Drawing.Color.Transparent;
-            this.panel24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel24.BackgroundImage")));
-            this.panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel24.Location = new System.Drawing.Point(12, 371);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(201, 46);
-            this.panel24.TabIndex = 10;
+            this.btnIndicacoes.BackColor = System.Drawing.Color.Transparent;
+            this.btnIndicacoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIndicacoes.BackgroundImage")));
+            this.btnIndicacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnIndicacoes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIndicacoes.Location = new System.Drawing.Point(18, 555);
+            this.btnIndicacoes.Name = "btnIndicacoes";
+            this.btnIndicacoes.Size = new System.Drawing.Size(270, 70);
+            this.btnIndicacoes.TabIndex = 10;
+            this.btnIndicacoes.Click += new System.EventHandler(this.btnIndicacoes_Click);
             // 
-            // panel25
+            // btnMonitoramento
             // 
-            this.panel25.BackColor = System.Drawing.Color.Transparent;
-            this.panel25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel25.BackgroundImage")));
-            this.panel25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel25.Location = new System.Drawing.Point(12, 329);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(201, 46);
-            this.panel25.TabIndex = 9;
-            this.panel25.Click += new System.EventHandler(this.panel25_Click);
+            this.btnMonitoramento.BackColor = System.Drawing.Color.Transparent;
+            this.btnMonitoramento.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMonitoramento.BackgroundImage")));
+            this.btnMonitoramento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMonitoramento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMonitoramento.Location = new System.Drawing.Point(18, 493);
+            this.btnMonitoramento.Name = "btnMonitoramento";
+            this.btnMonitoramento.Size = new System.Drawing.Size(270, 70);
+            this.btnMonitoramento.TabIndex = 9;
+            this.btnMonitoramento.Click += new System.EventHandler(this.btnMonitoramento_Click);
             // 
-            // panel23
+            // btnRelatorios
             // 
-            this.panel23.BackColor = System.Drawing.Color.Transparent;
-            this.panel23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel23.BackgroundImage")));
-            this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel23.Location = new System.Drawing.Point(13, 287);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(201, 46);
-            this.panel23.TabIndex = 8;
-            this.panel23.Click += new System.EventHandler(this.panel23_Click);
+            this.btnRelatorios.BackColor = System.Drawing.Color.Transparent;
+            this.btnRelatorios.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRelatorios.BackgroundImage")));
+            this.btnRelatorios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRelatorios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRelatorios.Location = new System.Drawing.Point(19, 431);
+            this.btnRelatorios.Name = "btnRelatorios";
+            this.btnRelatorios.Size = new System.Drawing.Size(270, 70);
+            this.btnRelatorios.TabIndex = 8;
+            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
             // 
-            // panel22
+            // btnTransacoes
             // 
-            this.panel22.BackColor = System.Drawing.Color.Transparent;
-            this.panel22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel22.BackgroundImage")));
-            this.panel22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel22.Location = new System.Drawing.Point(13, 245);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(201, 46);
-            this.panel22.TabIndex = 7;
-            this.panel22.Click += new System.EventHandler(this.panel22_Click);
+            this.btnTransacoes.BackColor = System.Drawing.Color.Transparent;
+            this.btnTransacoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTransacoes.BackgroundImage")));
+            this.btnTransacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTransacoes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTransacoes.Location = new System.Drawing.Point(19, 369);
+            this.btnTransacoes.Name = "btnTransacoes";
+            this.btnTransacoes.Size = new System.Drawing.Size(270, 70);
+            this.btnTransacoes.TabIndex = 7;
+            this.btnTransacoes.Click += new System.EventHandler(this.btnTransacoes_Click);
             // 
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.Color.Transparent;
             this.panel17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel17.BackgroundImage")));
             this.panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel17.Location = new System.Drawing.Point(64, 24);
+            this.panel17.Location = new System.Drawing.Point(96, 24);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(80, 80);
+            this.panel17.Size = new System.Drawing.Size(120, 120);
             this.panel17.TabIndex = 5;
             // 
             // panel19
@@ -347,37 +350,37 @@
             this.panel19.BackColor = System.Drawing.Color.Transparent;
             this.panel19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel19.BackgroundImage")));
             this.panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel19.Controls.Add(this.panel21);
-            this.panel19.Controls.Add(this.panel20);
+            this.panel19.Controls.Add(this.panel6);
+            this.panel19.Controls.Add(this.btnConsultar);
             this.panel19.Controls.Add(this.panel18);
-            this.panel19.Location = new System.Drawing.Point(15, 114);
+            this.panel19.Location = new System.Drawing.Point(15, 167);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(193, 126);
+            this.panel19.Size = new System.Drawing.Size(270, 189);
             this.panel19.TabIndex = 7;
             // 
-            // panel21
+            // panel6
             // 
-            this.panel21.BackColor = System.Drawing.Color.Transparent;
-            this.panel21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel21.BackgroundImage")));
-            this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel21.Location = new System.Drawing.Point(5, 82);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(187, 46);
-            this.panel21.TabIndex = 8;
-            this.panel21.Click += new System.EventHandler(this.panel21_Click);
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel6.Location = new System.Drawing.Point(3, 122);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(270, 70);
+            this.panel6.TabIndex = 8;
+            this.panel6.Click += new System.EventHandler(this.btnTelaCadastrar_Click);
             // 
-            // panel20
+            // btnConsultar
             // 
-            this.panel20.BackColor = System.Drawing.Color.Transparent;
-            this.panel20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel20.BackgroundImage")));
-            this.panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel20.Location = new System.Drawing.Point(4, 41);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(189, 46);
-            this.panel20.TabIndex = 7;
-            this.panel20.Click += new System.EventHandler(this.panel20_Click);
+            this.btnConsultar.BackColor = System.Drawing.Color.Transparent;
+            this.btnConsultar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConsultar.BackgroundImage")));
+            this.btnConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConsultar.Location = new System.Drawing.Point(3, 61);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(270, 70);
+            this.btnConsultar.TabIndex = 7;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // panel18
             // 
@@ -385,10 +388,34 @@
             this.panel18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel18.BackgroundImage")));
             this.panel18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel18.Location = new System.Drawing.Point(0, 0);
+            this.panel18.Location = new System.Drawing.Point(-2, 0);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(197, 46);
+            this.panel18.Size = new System.Drawing.Size(280, 70);
             this.panel18.TabIndex = 6;
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.BackgroundImage")));
+            this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Location = new System.Drawing.Point(1271, 30);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(34, 10);
+            this.btnMinimizar.TabIndex = 39;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.BackColor = System.Drawing.Color.Transparent;
+            this.btnFechar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFechar.BackgroundImage")));
+            this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.Location = new System.Drawing.Point(1320, 15);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(25, 25);
+            this.btnFechar.TabIndex = 38;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // AgenciaIndicacoes
             // 
@@ -396,9 +423,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(784, 461);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(1360, 768);
+            this.Controls.Add(this.btnMinimizar);
+            this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AgenciaIndicacoes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form9";
@@ -437,16 +467,18 @@
         private System.Windows.Forms.TextBox inputData;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox inputTitulo;
+        private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Panel btnIndicacoes;
+        private System.Windows.Forms.Panel btnMonitoramento;
+        private System.Windows.Forms.Panel btnRelatorios;
+        private System.Windows.Forms.Panel btnTransacoes;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel btnConsultar;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel btnMinimizar;
+        private System.Windows.Forms.Panel btnFechar;
     }
 }

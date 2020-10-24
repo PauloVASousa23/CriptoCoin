@@ -44,6 +44,11 @@
             this.label12 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Criptomoeda = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Operacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.inputData = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -63,11 +68,8 @@
             this.btnCadastrar = new System.Windows.Forms.Panel();
             this.btnConsultar = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.Criptomoeda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Operacao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnMinimizar = new System.Windows.Forms.Panel();
+            this.btnFechar = new System.Windows.Forms.Panel();
             this.panel12.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -253,6 +255,40 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(974, 550);
             this.dataGridView1.TabIndex = 10;
+            // 
+            // Criptomoeda
+            // 
+            this.Criptomoeda.HeaderText = "Criptomoeda";
+            this.Criptomoeda.Name = "Criptomoeda";
+            this.Criptomoeda.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Criptomoeda.Width = 130;
+            // 
+            // Nome
+            // 
+            this.Nome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Nome.FillWeight = 1000F;
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Valor
+            // 
+            this.Valor.HeaderText = "Valor";
+            this.Valor.Name = "Valor";
+            this.Valor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Operacao
+            // 
+            this.Operacao.HeaderText = "Operação";
+            this.Operacao.Name = "Operacao";
+            this.Operacao.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Operacao.Width = 140;
+            // 
+            // Data
+            // 
+            this.Data.HeaderText = "Data";
+            this.Data.Name = "Data";
+            this.Data.Width = 120;
             // 
             // panel4
             // 
@@ -477,39 +513,29 @@
             this.panel18.Size = new System.Drawing.Size(280, 70);
             this.panel18.TabIndex = 6;
             // 
-            // Criptomoeda
+            // btnMinimizar
             // 
-            this.Criptomoeda.HeaderText = "Criptomoeda";
-            this.Criptomoeda.Name = "Criptomoeda";
-            this.Criptomoeda.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Criptomoeda.Width = 130;
+            this.btnMinimizar.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.BackgroundImage")));
+            this.btnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Location = new System.Drawing.Point(1274, 27);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(34, 10);
+            this.btnMinimizar.TabIndex = 25;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
-            // Nome
+            // btnFechar
             // 
-            this.Nome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Nome.FillWeight = 1000F;
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Valor
-            // 
-            this.Valor.HeaderText = "Valor";
-            this.Valor.Name = "Valor";
-            this.Valor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Operacao
-            // 
-            this.Operacao.HeaderText = "Operação";
-            this.Operacao.Name = "Operacao";
-            this.Operacao.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Operacao.Width = 140;
-            // 
-            // Data
-            // 
-            this.Data.HeaderText = "Data";
-            this.Data.Name = "Data";
-            this.Data.Width = 120;
+            this.btnFechar.BackColor = System.Drawing.Color.Transparent;
+            this.btnFechar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFechar.BackgroundImage")));
+            this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.Location = new System.Drawing.Point(1323, 12);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(25, 25);
+            this.btnFechar.TabIndex = 24;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // AgenciaTransacoes
             // 
@@ -518,6 +544,8 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1360, 768);
+            this.Controls.Add(this.btnMinimizar);
+            this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel4);
@@ -584,5 +612,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Operacao;
         private System.Windows.Forms.DataGridViewTextBoxColumn Data;
+        private System.Windows.Forms.Panel btnMinimizar;
+        private System.Windows.Forms.Panel btnFechar;
     }
 }

@@ -224,6 +224,8 @@
     <Content Include="img\button_menu_transacoes_on.png" />
     <Content Include="img\button_pesquisar_azul.png" />
     <Content Include="img\hr_azul.png" />
+    <Content Include="img\iconBasico\icone_fechar.png" />
+    <Content Include="img\iconBasico\icone_minimizar.png" />
     <Content Include="img\iconBasico\icon_cadeado.png" />
     <Content Include="img\iconBasico\icon_cep.png" />
     <Content Include="img\iconBasico\icon_cidade.png" />

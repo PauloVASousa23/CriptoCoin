@@ -92,6 +92,63 @@ namespace CriptoCoinSistem
             lblVolumeLtc.Text = tickerLtc.ticker.vol.ToString();
             lblValorLtc.Text = tickerLtc.ticker.sell.ToString();
         }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            AgenciaConsultarClientes agenciaConsultarClientes = new AgenciaConsultarClientes();
+            agenciaConsultarClientes.setSession(this.perfil);
+            this.Visible = false;
+            agenciaConsultarClientes.Visible = true;
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            AgenciaCadastrarCliente agenciaCadastrarCliente = new AgenciaCadastrarCliente();
+            agenciaCadastrarCliente.setSession(this.perfil);
+            agenciaCadastrarCliente.Visible = true;
+            this.Visible = false;
+        }
+
+        private void btnTransacoes_Click(object sender, EventArgs e)
+        {
+            AgenciaTransacoes agenciaTransacoes = new AgenciaTransacoes();
+            agenciaTransacoes.setSession(this.perfil);
+            agenciaTransacoes.Visible = true;
+            this.Visible = false;
+        }
+
+        private void btnRelatorios_Click(object sender, EventArgs e)
+        {
+            AgenciaRelatorios agenciaRelatorios = new AgenciaRelatorios();
+            agenciaRelatorios.setSession(this.perfil);
+            agenciaRelatorios.Visible = true;
+            this.Visible = false;
+        }
+
+        private void btnMonitoramento_Click(object sender, EventArgs e)
+        {
+            AgenciaMonitoramento agenciaMonitoramento = new AgenciaMonitoramento();
+            agenciaMonitoramento.setSession(this.perfil);
+            agenciaMonitoramento.Visible = true;
+            this.Visible = false;
+        }
+
+        private void btnIndicacoes_Click(object sender, EventArgs e)
+        {
+            AgenciaIndicacoes agenciaIndicacoes = new AgenciaIndicacoes();
+            agenciaIndicacoes.setSession(this.perfil);
+            agenciaIndicacoes.Visible = true;
+            this.Visible = false;
+        }
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 
     public class Ticker
