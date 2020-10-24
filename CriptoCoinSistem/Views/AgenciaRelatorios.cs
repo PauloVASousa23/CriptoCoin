@@ -48,7 +48,59 @@ namespace CriptoCoinSistem
             String cpf = inputCpf.Text;
             String cidade = inputCidade.Text;
 
-            if (id == "ID" || id == "")
+            if (id == "Matricula" || id == "")
+            {
+                id = "0";
+            }
+
+            if (nome == "Nome" || nome == "")
+            {
+                nome = "|_|";
+            }
+
+            if (cpf == "CPF" || cpf == "")
+            {
+                cpf = "|_|";
+            }
+
+            if (cidade == "Cidade" || cidade == "")
+            {
+                cidade = "|_|";
+            }
+
+            foreach (Perfil perfil in perfis)
+            {
+                if (perfil.Id == Int32.Parse(id) || id == "0")
+                {
+                    if (perfil.Nome.Contains(nome) || nome == "|_|")
+                    {
+                        if (perfil.Cpf.Contains(cpf) || cpf == "|_|")
+                        {
+                            if (perfil.Cidade.Contains(cidade) || cidade == "|_|")
+                            {
+                                perfisTemp.Add(perfil);
+                            }
+                        }
+                    }
+                }
+            }
+
+            for (int i = 0; i < perfisTemp.Count; i++)
+            {
+                dataGridView1.Rows.Add(perfisTemp[i].Id, perfisTemp[i].Nome, perfisTemp[i].Cpf, perfisTemp[i].Cidade);
+            }
+        }
+
+        private void filtrar()
+        {
+            perfisTemp = new List<Perfil>();
+            dataGridView1.Rows.Clear();
+            String id = inputId.Text;
+            String nome = inputNome.Text;
+            String cpf = inputCpf.Text;
+            String cidade = inputCidade.Text;
+
+            if (id == "Matricula" || id == "")
             {
                 id = "0";
             }
@@ -143,45 +195,47 @@ namespace CriptoCoinSistem
             }
         }
 
-        private void panel20_Click(object sender, EventArgs e)
+        private void btnConsultar_Click(object sender, EventArgs e)
         {
             AgenciaConsultarClientes agenciaConsultarClientes = new AgenciaConsultarClientes();
             agenciaConsultarClientes.setSession(this.perfil);
-            agenciaConsultarClientes.Visible = true;
             this.Visible = false;
+            agenciaConsultarClientes.Visible = true;
         }
 
-        private void panel21_Click(object sender, EventArgs e)
+        private void btnCadastrar_Click(object sender, EventArgs e)
         {
-
             AgenciaCadastrarCliente agenciaCadastrarCliente = new AgenciaCadastrarCliente();
             agenciaCadastrarCliente.setSession(this.perfil);
             agenciaCadastrarCliente.Visible = true;
             this.Visible = false;
-
         }
 
-        private void panel22_Click(object sender, EventArgs e)
+        private void btnTransacoes_Click(object sender, EventArgs e)
         {
-
             AgenciaTransacoes agenciaTransacoes = new AgenciaTransacoes();
             agenciaTransacoes.setSession(this.perfil);
             agenciaTransacoes.Visible = true;
             this.Visible = false;
-
         }
 
-        private void panel25_Click(object sender, EventArgs e)
+        private void btnRelatorios_Click(object sender, EventArgs e)
         {
+            AgenciaRelatorios agenciaRelatorios = new AgenciaRelatorios();
+            agenciaRelatorios.setSession(this.perfil);
+            agenciaRelatorios.Visible = true;
+            this.Visible = false;
+        }
 
+        private void btnMonitoramento_Click(object sender, EventArgs e)
+        {
             AgenciaMonitoramento agenciaMonitoramento = new AgenciaMonitoramento();
             agenciaMonitoramento.setSession(this.perfil);
             agenciaMonitoramento.Visible = true;
             this.Visible = false;
-
         }
 
-        private void panel24_Click(object sender, EventArgs e)
+        private void btnIndicacoes_Click(object sender, EventArgs e)
         {
             AgenciaIndicacoes agenciaIndicacoes = new AgenciaIndicacoes();
             agenciaIndicacoes.setSession(this.perfil);

@@ -196,6 +196,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(250, 250);
             this.panel2.TabIndex = 1;
+            this.panel2.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // panel12
             // 
@@ -229,6 +230,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(250, 250);
             this.panel3.TabIndex = 2;
+            this.panel3.Click += new System.EventHandler(this.btnTransacoes_Click);
             // 
             // panel13
             // 
@@ -262,6 +264,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(250, 250);
             this.panel4.TabIndex = 2;
+            this.panel4.Click += new System.EventHandler(this.btnRelatorios_Click);
             // 
             // panel14
             // 
@@ -295,6 +298,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(250, 250);
             this.panel6.TabIndex = 2;
+            this.panel6.Click += new System.EventHandler(this.btnMonitoramento_Click);
             // 
             // panel15
             // 
@@ -328,6 +332,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(250, 250);
             this.panel7.TabIndex = 2;
+            this.panel7.Click += new System.EventHandler(this.btnIndicacoes_Click);
             // 
             // panel16
             // 
