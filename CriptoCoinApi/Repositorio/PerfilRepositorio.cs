@@ -245,6 +245,55 @@ namespace CriptoCoinApi.Repositorio
             }
         }
 
+        public List<Perfil> selecionarPerfis(String id)
+        {
+            string query = "SELECT * FROM Perfil WHERE Id IN(" + id + ")";
+            using (SqlConnection cnx = dao.getConnection())
+            {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand(query, cnx);
+                    cmd.Parameters.AddWithValue("@Id", id);
+
+                    cnx.Open();
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    List<Perfil> listaPerfil = new List<Perfil>();
+
+                    while (reader.Read())
+                    {
+                        Perfil perfil = new Perfil();
+                        perfil.Id = (int)reader[0];
+                        perfil.Nome = reader[1].ToString();
+                        perfil.Senha = reader[2].ToString();
+                        perfil.Email = reader[3].ToString();
+                        perfil.Telefone = reader[4].ToString();
+                        perfil.Rg = reader[5].ToString();
+                        perfil.Cpf = reader[6].ToString();
+                        perfil.Cep = reader[7].ToString();
+                        perfil.Cidade = reader[8].ToString();
+                        perfil.Bairro = reader[9].ToString();
+                        perfil.Endereco = reader[10].ToString();
+                        perfil.Agencia = (int)reader[11];
+                        perfil.Permissao = (int)reader[12];
+                        perfil.Saldo = float.Parse(reader[13].ToString());
+                        listaPerfil.Add(perfil);
+                    }
+
+                    return listaPerfil;
+                }
+                catch (Exception e)
+                {
+
+                }
+                finally
+                {
+                    cnx.Close();
+                }
+                return null;
+            }
+        }
         public bool atualizarPerfil(Perfil perfil)
         {
             string query = "UPDATE Perfil SET Nome=@Nome, Email=@Email,Telefone=@Telefone, Cep=@Cep, Cidade=@Cidade, Bairro=@Bairro, Endereco=@Endereco, Saldo=@Saldo WHERE Id=@Id";

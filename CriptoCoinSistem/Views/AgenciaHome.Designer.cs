@@ -209,6 +209,7 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(150, 150);
             this.panel12.TabIndex = 3;
+            this.panel12.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // panel5
             // 
@@ -219,6 +220,7 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(240, 65);
             this.panel5.TabIndex = 2;
+            this.panel5.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // panel3
             // 
@@ -243,6 +245,7 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(150, 150);
             this.panel13.TabIndex = 4;
+            this.panel13.Click += new System.EventHandler(this.btnTransacoes_Click);
             // 
             // panel8
             // 
@@ -253,6 +256,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(240, 65);
             this.panel8.TabIndex = 3;
+            this.panel8.Click += new System.EventHandler(this.btnTransacoes_Click);
             // 
             // panel4
             // 
@@ -277,6 +281,7 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(150, 150);
             this.panel14.TabIndex = 4;
+            this.panel14.Click += new System.EventHandler(this.btnRelatorios_Click);
             // 
             // panel9
             // 
@@ -287,6 +292,7 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(240, 65);
             this.panel9.TabIndex = 3;
+            this.panel9.Click += new System.EventHandler(this.btnRelatorios_Click);
             // 
             // panel6
             // 
@@ -311,6 +317,7 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(150, 150);
             this.panel15.TabIndex = 4;
+            this.panel15.Click += new System.EventHandler(this.btnMonitoramento_Click);
             // 
             // panel10
             // 
@@ -321,6 +328,7 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(240, 65);
             this.panel10.TabIndex = 3;
+            this.panel10.Click += new System.EventHandler(this.btnMonitoramento_Click);
             // 
             // panel7
             // 
@@ -345,6 +353,7 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(150, 150);
             this.panel16.TabIndex = 4;
+            this.panel16.Click += new System.EventHandler(this.btnIndicacoes_Click);
             // 
             // panel11
             // 
@@ -355,6 +364,7 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(240, 65);
             this.panel11.TabIndex = 3;
+            this.panel11.Click += new System.EventHandler(this.btnIndicacoes_Click);
             // 
             // btnMinimizar
             // 

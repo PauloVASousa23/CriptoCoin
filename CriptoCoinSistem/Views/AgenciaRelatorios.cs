@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Flurl.Http;
+using System.IO;
 
 namespace CriptoCoinSistem
 {
@@ -251,5 +252,35 @@ namespace CriptoCoinSistem
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        async private void btnGerarRelatorio_Click(object sender, EventArgs e)
+        {
+            if (perfisTemp == null)
+            {
+                perfisTemp = perfis;
+            }
+
+            List<ObjId> ids = new List<ObjId>();
+            String str = "";
+            foreach (Perfil p in perfisTemp)
+            {
+                ObjId obj = new ObjId();
+                obj.Id = p.Id;
+                ids.Add(obj);
+            }
+
+            var resultado = await "https://criptocoinapi.azurewebsites.net/criptocoin/getRelatorioPerfilPorListaId"
+                .PostJsonAsync(new
+                {
+                    id = ids
+                }).ReceiveString();
+            MessageBox.Show(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName);
+            //File.WriteAllText(@Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName.ToString() + "\teste.csv",resultado);
+        }
+    }
+
+    public class ObjId
+    {
+        public int Id { get; set; }
     }
 }
