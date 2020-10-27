@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Flurl.Http;
+using System.Diagnostics;
 
 namespace CriptoCoinSistem
 {
@@ -91,6 +92,8 @@ namespace CriptoCoinSistem
 
             lblVolumeLtc.Text = tickerLtc.ticker.vol.ToString();
             lblValorLtc.Text = tickerLtc.ticker.sell.ToString();
+
+            lblAtualizado.Text = DateTime.Now.ToString();
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)
@@ -148,6 +151,12 @@ namespace CriptoCoinSistem
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ProcessStartInfo processStart = new ProcessStartInfo("https://www.mercadobitcoin.com.br/");
+            Process.Start(processStart);
         }
     }
 

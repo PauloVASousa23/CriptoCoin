@@ -152,7 +152,7 @@ namespace CriptoCoinSistem
 
         }
 
-        private void inputId_TextChanged(object sender, EventArgs e)
+        private void filtrar()
         {
             perfisTemp = new List<Perfil>();
             dataGridView1.Rows.Clear();
@@ -179,9 +179,9 @@ namespace CriptoCoinSistem
             {
                 if (perfil.Id == Int32.Parse(id) || id == "0")
                 {
-                    if (perfil.Nome.Contains(nome) || nome == "|_|")
+                    if (perfil.Nome.ToLower().Contains(nome.ToLower()) || nome == "|_|")
                     {
-                        if (perfil.Cpf.Contains(cpf) || cpf == "|_|")
+                        if (perfil.Cpf.ToLower().Contains(cpf.ToLower()) || cpf == "|_|")
                         {
                             perfisTemp.Add(perfil);
                         }
@@ -311,6 +311,21 @@ namespace CriptoCoinSistem
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void inputId_KeyUp(object sender, KeyEventArgs e)
+        {
+            filtrar();
+        }
+
+        private void inputNome_KeyUp(object sender, KeyEventArgs e)
+        {
+            filtrar();
+        }
+
+        private void inputCpf_KeyUp(object sender, KeyEventArgs e)
+        {
+            filtrar();
         }
     }
 }

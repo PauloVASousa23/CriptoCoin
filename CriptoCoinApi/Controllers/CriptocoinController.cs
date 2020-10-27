@@ -271,5 +271,38 @@ namespace CriptoCoinApi.Controllers
 
             return File(new System.Text.UTF8Encoding().GetBytes(csv), "text/csv", "RelatorioPerfis.csv");
         }
+
+        [HttpPost]
+        public FileContentResult GetRelatorioPerfilPorListaId(IdObj[] id)
+        {
+            String IdIn = "";
+            for (int i = 0; i < id.Length; i++)
+            {
+                if (i != id.Length - 1)
+                {
+                    IdIn += id[i].Id + ", ";
+                }
+                else
+                {
+                    IdIn += id[i].Id;
+                }
+            }
+            PerfilRepositorio perfilRepos = new PerfilRepositorio();
+            List<Perfil> perfis = perfilRepos.selecionarPerfis(IdIn);
+
+            string csv = "Matricula;Nome;Email;Rg;Cpf;Cep;Cidade;Bairro;Endereço;Agencia;\n";
+
+            foreach (Perfil perfil in perfis)
+            {
+                csv += perfil.Id + ";" + perfil.Nome.ToString() + " " + ";" + perfil.Email.ToString() + " " + string.Empty + ";" + perfil.Rg.ToString() + " " + string.Empty + ";" + perfil.Cpf.ToString() + " " + string.Empty + ";" + perfil.Cep.ToString() + " " + string.Empty + ";" + perfil.Cidade.ToString() + " " + string.Empty + ";" + perfil.Bairro.ToString() + " " + string.Empty + ";" + perfil.Endereco.ToString() + " " + string.Empty + ";" + perfil.Agencia.ToString() + " " + string.Empty + ";\n";
+            }
+
+            return File(new System.Text.UTF8Encoding().GetBytes(csv), "text/csv", "RelatorioPerfis.csv");
+        }
+    }
+
+    public class IdObj
+    {
+        public int Id { get; set; }
     }
 }

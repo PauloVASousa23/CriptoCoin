@@ -62,6 +62,10 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.Panel();
             this.btnFechar = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblAtualizado = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel12.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -80,7 +84,7 @@
             this.panel12.Controls.Add(this.label4);
             this.panel12.Controls.Add(this.label3);
             this.panel12.Controls.Add(this.label2);
-            this.panel12.Location = new System.Drawing.Point(427, 212);
+            this.panel12.Location = new System.Drawing.Point(402, 212);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(250, 250);
             this.panel12.TabIndex = 34;
@@ -168,7 +172,7 @@
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Location = new System.Drawing.Point(693, 212);
+            this.panel2.Location = new System.Drawing.Point(692, 212);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(250, 250);
             this.panel2.TabIndex = 35;
@@ -256,7 +260,7 @@
             this.panel3.Controls.Add(this.label19);
             this.panel3.Controls.Add(this.label16);
             this.panel3.Controls.Add(this.label17);
-            this.panel3.Location = new System.Drawing.Point(961, 212);
+            this.panel3.Location = new System.Drawing.Point(981, 212);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(250, 250);
             this.panel3.TabIndex = 35;
@@ -478,6 +482,57 @@
             this.btnFechar.TabIndex = 37;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(607, 469);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(191, 29);
+            this.label1.TabIndex = 54;
+            this.label1.Text = "Atualizado em: ";
+            // 
+            // lblAtualizado
+            // 
+            this.lblAtualizado.AutoSize = true;
+            this.lblAtualizado.BackColor = System.Drawing.Color.Transparent;
+            this.lblAtualizado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAtualizado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lblAtualizado.Location = new System.Drawing.Point(790, 474);
+            this.lblAtualizado.Name = "lblAtualizado";
+            this.lblAtualizado.Size = new System.Drawing.Size(0, 25);
+            this.lblAtualizado.TabIndex = 55;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.label6.Location = new System.Drawing.Point(605, 680);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(240, 16);
+            this.label6.TabIndex = 56;
+            this.label6.Text = "Dados obtidos e disponiveis em: ";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.linkLabel1.LinkColor = System.Drawing.Color.Blue;
+            this.linkLabel1.Location = new System.Drawing.Point(837, 682);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(182, 13);
+            this.linkLabel1.TabIndex = 57;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "https://www.mercadobitcoin.com.br/";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // AgenciaMonitoramento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -485,6 +540,10 @@
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1344, 729);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblAtualizado);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.panel1);
@@ -505,6 +564,7 @@
             this.panel1.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -542,5 +602,9 @@
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Panel btnMinimizar;
         private System.Windows.Forms.Panel btnFechar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblAtualizado;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
