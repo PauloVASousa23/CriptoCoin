@@ -12,10 +12,11 @@ namespace CriptoCoinApi.Repositorio
         DAO dao = new DAO();
         public bool inserirIndicacoes(Indicacoes indicacoes)
         {
-            String query = "INSERT INTO Indicacoes VALUES(@Criptomoeda,@Motivo,@DataIndicacao,@PerfilAgencia)";
+            String query = "INSERT INTO Indicacoes VALUES(@Titulo,@Criptomoeda,@Motivo,@DataIndicacao,@PerfilAgencia)";
             using (SqlConnection cnx = dao.getConnection())
             {
                 SqlCommand cmd = new SqlCommand(query, cnx);
+                cmd.Parameters.AddWithValue("@Titulo", indicacoes.Titulo);
                 cmd.Parameters.AddWithValue("@Criptomoeda", indicacoes.Criptomoeda);
                 cmd.Parameters.AddWithValue("@Motivo", indicacoes.Motivo);
                 cmd.Parameters.AddWithValue("@DataIndicacao", indicacoes.Data_Indicacao);
@@ -61,10 +62,11 @@ namespace CriptoCoinApi.Repositorio
                     {
                         Indicacoes indicacao = new Indicacoes();
                         indicacao.Id = (int)reader[0];
-                        indicacao.Criptomoeda= reader[1].ToString();
-                        indicacao.Motivo = reader[2].ToString();
-                        indicacao.Data_Indicacao = reader[3].ToString();
-                        indicacao.Perfil_Agencia = (int) reader[4];
+                        indicacao.Titulo = reader[1].ToString();
+                        indicacao.Criptomoeda= reader[2].ToString();
+                        indicacao.Motivo = reader[3].ToString();
+                        indicacao.Data_Indicacao = reader[4].ToString();
+                        indicacao.Perfil_Agencia = (int) reader[5];
                         indicacoes.Add(indicacao);
                     }
 
@@ -101,10 +103,11 @@ namespace CriptoCoinApi.Repositorio
                     {
                         Indicacoes indicacao = new Indicacoes();
                         indicacao.Id = (int)reader[0];
-                        indicacao.Criptomoeda = reader[1].ToString();
-                        indicacao.Motivo = reader[2].ToString();
-                        indicacao.Data_Indicacao = reader[3].ToString();
-                        indicacao.Perfil_Agencia = (int)reader[4];
+                        indicacao.Titulo = reader[1].ToString();
+                        indicacao.Criptomoeda = reader[2].ToString();
+                        indicacao.Motivo = reader[3].ToString();
+                        indicacao.Data_Indicacao = reader[4].ToString();
+                        indicacao.Perfil_Agencia = (int)reader[5];
                         listaIndicacoes.Add(indicacao);
                     }
 

@@ -75,6 +75,24 @@ namespace CriptoCoinSistem
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            int numero = 75;
+
+            if (numero == 25)
+                label1.BackColor = Color.White;
+            if (numero == 50)
+                label1.BackColor = Color.LightGray;
+            if (numero == 75)
+                label1.BackColor = Color.Gray;
+            if (numero == 100)
+                label1.BackColor = Color.Black;
+
+            string[] itens = { "1", "2", "3" };
+
+            checkedListBox1.Items.Add(itens);
+        }
     }
 
     
