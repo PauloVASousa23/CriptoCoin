@@ -1,5 +1,5 @@
 ﻿* {
-    font-family:Calibri;
+    font-family: Calibri;
 }
 
 body {
@@ -29,6 +29,7 @@ body {
     left: 0px;
     padding-top: 20px;
 }
+
 .sombreado {
     margin-top: 5px;
     background-color: #165896;
@@ -167,7 +168,6 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
-    
 }
 
 .TextBotton {
@@ -419,14 +419,14 @@ tbody > tr:last-child > td {
     background-color: #fff;
 }
 
-.inputGrupo > input {
-    width: 100%;
-    height: 100%;
-    outline: none;
-    border: none;
-    flex: 1;
-    padding-left: 15px;
-}
+    .inputGrupo > input {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border: none;
+        flex: 1;
+        padding-left: 15px;
+    }
 
 .Mensagem {
     border-radius: 5px;
@@ -493,9 +493,10 @@ tbody > tr:last-child > td {
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-top: -360px;
+    margin-top: 360px;
 }
 
+/*Aqui começa css da tela agencia Transações */
 .BoxBotton1 {
     display: flex;
     border: 1px solid;
@@ -555,14 +556,175 @@ tbody > tr:last-child > td {
     font-size: 17px;
 }
 
-.TabelTran {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.TabelaTran {
+    width: 100%;
     background-color: #fff;
     border-radius: 25px;
-    width: 340px;
-    margin: 30px 650px;
+    overflow: auto;
+    border: 2px solid #10406c;
 }
+/*Perguntar sobre como editar este table,th,tr e tbody sem afetar os anteriores, mesmos nomes de class, achar um meio de alterar o nome */
+table {                     
+    width: 102%;
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+th {
+    background-color: #10406c;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    border-right: 1px solid #10406c;
+}
+
+    th:nth-child(1) {
+        width: 50px;
+    }
+
+    th:nth-child(3) {
+        width: 200px;
+    }
+
+    th:nth-child(4) {
+        width: 250px;
+    }
+
+tr > td {
+    padding: 10px 20px;
+    font-size: 26px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+tbody > tr:last-child > td {
+    border-bottom: none;
+}
+
+/*Aqui começa o css da tela AgenciaRelatorios*/
+
+.Negrito {
+    color: #10406c;
+}
+
+.RadioRel {
+    font-size: 22px;
+    margin-bottom: -21px;
+    color: #10406c;
+    font-weight: bold;
+    margin-top: -200px;
+}
+
+.TextRel1 {
+    font-size: 22px;
+    margin-bottom: -26px;
+    color: #10406c;
+    font-weight: bold;
+}
+
+.BottonRel {
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+}
+
+.BotõesRel {
+    display: flex;
+    border: 1px solid;
+    border-radius: 55px;
+    overflow: hidden;
+    margin: 10px;
+    height: 40px;
+    background-color: #fff;
+}
+
+.TextRelID {
+    width: 100%;
+    border: none;
+}
+
+.TextNameRel {
+    width: 100%;
+    border: none;
+}
+
+.TextRelCPF {
+    width: 100%;
+    border: none;
+}
+
+.TextRelCid {
+    width: 100%;
+    border: none;
+}
+
+/*Tenho que perguntar depois estes aqui abaixo*/
+
+.TabelaRel {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 2px solid #10406c;
+}
+
+table {
+    width: 102%;
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+th {
+    background-color: #10406c;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    border-right: 1px solid #10406c;
+}
+
+    th:nth-child(1) {
+        width: 50px;
+    }
+
+    th:nth-child(3) {
+        width: 200px;
+    }
+
+    th:nth-child(4) {
+        width: 250px;
+    }
+
+
+
+tr > td {
+    padding: 10px 20px;
+    font-size: 26px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+tbody > tr:last-child > td {
+    border-bottom: none;
+}
+
+/*Este abaixo não precisa perguntar*/
+
+.BtnRelGerar {
+    background-color: #2d71b1;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    height: 40px;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
+    font-family: sans-serif;
+    font-size: 23px;
+    margin: -13px 200px;
+}
+
 

@@ -108,6 +108,7 @@
     <Content Include="AdminMaximizado.aspx" />
     <Content Include="AgenciaCadastrar.aspx" />
     <Content Include="AgenciaConsultar.aspx" />
+    <Content Include="AgenciaRelatórios.aspx" />
     <Content Include="AgenciaTransações.aspx" />
     <Content Include="Cadastro.aspx" />
     <Content Include="DefaultCliente.aspx" />
@@ -219,6 +220,13 @@
     </Compile>
     <Compile Include="AgenciaMaster.Master.designer.cs">
       <DependentUpon>AgenciaMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AgenciaRelatórios.aspx.cs">
+      <DependentUpon>AgenciaRelatórios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenciaRelatórios.aspx.designer.cs">
+      <DependentUpon>AgenciaRelatórios.aspx</DependentUpon>
     </Compile>
     <Compile Include="AgenciaTransações.aspx.cs">
       <DependentUpon>AgenciaTransações.aspx</DependentUpon>
