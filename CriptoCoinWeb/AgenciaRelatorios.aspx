@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AgenciaMaster.Master" AutoEventWireup="true" CodeBehind="AgenciaRelatórios.aspx.cs" Inherits="CriptoCoinWeb.AgenciaRelatórios" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AgenciaMaster.Master" AutoEventWireup="true" CodeBehind="AgenciaRelatorios.aspx.cs" Inherits="CriptoCoinWeb.AgenciaRelatórios" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
@@ -16,25 +16,25 @@
         <P>Filtrar por busca:</P>                  
     </div>
     <div class="BottonRel">            
-            <div class="BotõesRel" style="width:10%">
+            <div class="BotõesRel" style="width:15%">
                 <div class="inputIcone1">  
                     <img class="Localiza1" src="Content/Img/icone_procurar_azul.png"/>
                 </div>
-                <input class="TextRelID" name="TextRelID" type="text" id="TextRelID" placeholder="ID">
+                <input class="TextRelMatri" name="TextRelID" type="text" id="TextRelID" placeholder="Matric.">
             </div>        
-            <div class="BotõesRel" style="width:25%">
+            <div class="BotõesRel" style="width:30%">
                 <div class="inputIcone1"> 
                     <img class="Localiza1" src="Content/Img/icone_procurar_azul.png"/>
                 </div>
                     <input class="TextNameRel" name="TextNameRel" type="text" id="TextNameRel" placeholder="Nome">                             
             </div>
-            <div class="BotõesRel" style="width:20%">
+            <div class="BotõesRel" style="width:21%">
                 <div class="inputIcone1">  
                     <img class="Localiza1" src="Content/Img/icone_procurar_azul.png"/>
                 </div>
                      <input class="TextRelCPF" name="TextRelCPF" type="text" id="TextRelCPF" placeholder="CPF"> 
             </div> 
-            <div class="BotõesRel" style="width:20%">
+            <div class="BotõesRel" style="width:25%">
                 <div class="inputIcone1">  
                     <img class="Localiza1" src="Content/Img/icone_procurar_azul.png"/>
                 </div>
@@ -47,7 +47,7 @@
             <table border="0">
                 <thead>
                     <tr> 
-                        <th>ID</th>
+                        <th>Matricula</th>
                         <th>Nome</th>
                         <th>CPF</th>
                         <th>Cidade</th>

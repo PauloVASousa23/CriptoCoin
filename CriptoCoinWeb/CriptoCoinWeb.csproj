@@ -108,8 +108,10 @@
     <Content Include="AdminMaximizado.aspx" />
     <Content Include="AgenciaCadastrar.aspx" />
     <Content Include="AgenciaConsultar.aspx" />
-    <Content Include="AgenciaRelatórios.aspx" />
-    <Content Include="AgenciaTransações.aspx" />
+    <Content Include="AgenciaIndicacoes.aspx" />
+    <Content Include="AgenciaMonitoramento.aspx" />
+    <Content Include="AgenciaRelatorios.aspx" />
+    <Content Include="AgenciaTransacoes.aspx" />
     <Content Include="Cadastro.aspx" />
     <Content Include="DefaultCliente.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -214,6 +216,13 @@
     <Compile Include="AgenciaConsultar.aspx.designer.cs">
       <DependentUpon>AgenciaConsultar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AgenciaIndicacoes.aspx.cs">
+      <DependentUpon>AgenciaIndicacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenciaIndicacoes.aspx.designer.cs">
+      <DependentUpon>AgenciaIndicacoes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AgenciaMaster.Master.cs">
       <DependentUpon>AgenciaMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -221,19 +230,26 @@
     <Compile Include="AgenciaMaster.Master.designer.cs">
       <DependentUpon>AgenciaMaster.Master</DependentUpon>
     </Compile>
-    <Compile Include="AgenciaRelatórios.aspx.cs">
-      <DependentUpon>AgenciaRelatórios.aspx</DependentUpon>
+    <Compile Include="AgenciaMonitoramento.aspx.cs">
+      <DependentUpon>AgenciaMonitoramento.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AgenciaRelatórios.aspx.designer.cs">
-      <DependentUpon>AgenciaRelatórios.aspx</DependentUpon>
+    <Compile Include="AgenciaMonitoramento.aspx.designer.cs">
+      <DependentUpon>AgenciaMonitoramento.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AgenciaTransações.aspx.cs">
-      <DependentUpon>AgenciaTransações.aspx</DependentUpon>
+    <Compile Include="AgenciaRelatorios.aspx.cs">
+      <DependentUpon>AgenciaRelatorios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AgenciaTransações.aspx.designer.cs">
-      <DependentUpon>AgenciaTransações.aspx</DependentUpon>
+    <Compile Include="AgenciaRelatorios.aspx.designer.cs">
+      <DependentUpon>AgenciaRelatorios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgenciaTransacoes.aspx.cs">
+      <DependentUpon>AgenciaTransacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenciaTransacoes.aspx.designer.cs">
+      <DependentUpon>AgenciaTransacoes.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />

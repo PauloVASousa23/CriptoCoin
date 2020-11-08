@@ -18,14 +18,15 @@
             </div>
             <div class="perfis">
                 <div class="sombreado">
-                    <input class="btnClientes" type="submit" name="Button2" value="Clientes" id="Button2"/> 
-                <input class="btnConsultar" type="submit" name="Button2" value="Consultar" id="Button2"/>
-                <input class="btnCadastrar" type="submit" name="Button2" value="Cadastrar" id="Button2"/> 
+                    <a href="AgenciaConsultar.aspx" class="btnClientes"  id="btnClientes"> Clientes </a> 
+                    <a href="AgenciaConsultar.aspx" class="btnConsultar" id="btnConsultar"> Consultar </a>
+                    <a href="AgenciaCadastrar.aspx" class="btnTelaCadastrar"   id="btnCadastrar"> Cadastrar </a> 
                 </div>        
-                <input class="btnTransações" type="submit" name="Button2" value="Transações" id="Button2"/> 
-                <input class="btnRelatórios" type="submit" name="Button2" value="Relatórios" id="Button2">             
-                <input class="btnIndicações" type="submit" name="Button2" value="Indicações" id="Button2"/>  
-                <input class="btnMonitoramento" type="submit" name="Button2" value="Monitoramento" id="Button2"/> 
+                    <a href="AgenciaTransacoes.aspx" class="btnTransações"  id="btnTransacoes"> Transações </a> 
+                    <a href="AgenciaRelatorios.aspx" class="btnRelatórios"   id="btnRelatorios"> Relatórios </a>            
+                     <a href="AgenciaMonitoramento.aspx" class="btnMonitoramento" id="btnMonitoramento"> Monitoramento </a> 
+                    <a href="AgenciaIndicacoes.aspx" class="btnIndicações"   id="btnIndicacoes"> Indicações </a> 
+                   
             </div>
     </div>
    <div class="conteudo">

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AgenciaMaster.Master" AutoEventWireup="true" CodeBehind="AgenciaTransações.aspx.cs" Inherits="CriptoCoinWeb.AgenciaTransações" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AgenciaMaster.Master" AutoEventWireup="true" CodeBehind="AgenciaTransacoes.aspx.cs" Inherits="CriptoCoinWeb.AgenciaTransações" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
@@ -27,7 +27,7 @@
     </div>
 	<div class="Tabel">
         <div class="TabelaTran">
-            <table border="0">
+            <table  border="0">
                 <thead>
                     <tr> 
                         <th>Criptomoeda</th>

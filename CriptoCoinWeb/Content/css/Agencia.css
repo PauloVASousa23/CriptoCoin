@@ -38,12 +38,20 @@ body {
     padding-bottom: 8px;
 }
 
+.perfis > .sombreado > a, .perfis > a {
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
 .btnClientes {
     background-color: #2d71b1;
     color: #fff;
     border-radius: 10px;
     border: none;
-    padding: 5px 90px;
+    padding: 15px 90px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
     font-family: sans-serif;
     font-size: larger;
@@ -54,25 +62,27 @@ body {
     color: #fff;
     border-radius: 10px;
     border: none;
-    padding: 5px 90px;
+    padding: 15px 90px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
     margin-top: 5px;
     font-family: sans-serif;
     font-size: larger;
-    width: 220px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
-.btnCadastrar {
+.btnTelaCadastrar {
     background-color: #2d71b1;
     color: #fff;
     border-radius: 10px;
     border: none;
-    padding: 5px 90px;
+    padding: 15px 90px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
     margin-top: 5px;
     font-family: sans-serif;
     font-size: larger;
-    width: 220px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .btnTransações {
@@ -80,11 +90,13 @@ body {
     color: #fff;
     border-radius: 10px;
     border: none;
-    padding: 5px 75px;
+    padding: 15px 75px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
     margin-top: 15px;
     font-family: sans-serif;
     font-size: larger;
+    width: 105px;
+    margin-left: 12px;
 }
 
 .btnRelatórios {
@@ -92,11 +104,13 @@ body {
     color: #fff;
     border-radius: 10px;
     border: none;
-    padding: 5px 81px;
+    padding: 15px 75px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
     margin-top: 15px;
     font-family: sans-serif;
     font-size: larger;
+    width: 105px;
+    margin-left: 12px;
 }
 
 .btnIndicações {
@@ -104,11 +118,13 @@ body {
     color: #fff;
     border-radius: 10px;
     border: none;
-    padding: 5px 78px;
+    padding: 15px 75px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
     margin-top: 15px;
     font-family: sans-serif;
     font-size: larger;
+    width: 105px;
+    margin-left: 12px;
 }
 
 .btnMonitoramento {
@@ -116,11 +132,13 @@ body {
     color: #fff;
     border-radius: 10px;
     border: none;
-    padding: 5px 60px;
+    padding: 15px 75px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
     margin-top: 15px;
     font-family: sans-serif;
     font-size: larger;
+    width: 105px;
+    margin-left: 12px;
 }
 
 .conteudo {
@@ -493,7 +511,6 @@ tbody > tr:last-child > td {
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-top: 360px;
 }
 
 /*Aqui começa css da tela agencia Transações */
@@ -580,17 +597,17 @@ th {
     border-right: 1px solid #10406c;
 }
 
-    th:nth-child(1) {
-        width: 50px;
-    }
+.TabelaTran > table > thead > tr > th:nth-child(1) {
+    width: 100px;
+}
 
-    th:nth-child(3) {
-        width: 200px;
-    }
+.TabelaTran > table > thead > tr > th:nth-child(3) {
+    width: 150px;
+}
 
-    th:nth-child(4) {
-        width: 250px;
-    }
+.TabelaTran > table > thead > tr > th:nth-child(4) {
+    width: 100px;
+}
 
 tr > td {
     padding: 10px 20px;
@@ -641,7 +658,7 @@ tbody > tr:last-child > td {
     background-color: #fff;
 }
 
-.TextRelID {
+.TextRelMatri {
     width: 100%;
     border: none;
 }
@@ -691,13 +708,13 @@ th {
         width: 50px;
     }
 
-    th:nth-child(3) {
-        width: 200px;
-    }
+.TabelaRel > table > thead > tr > th:nth-child(3) {
+    width: 180px;
+}
 
-    th:nth-child(4) {
-        width: 250px;
-    }
+.TabelaRel> table > thead > tr > th:nth-child(4) {
+    width: 200px;
+}
 
 
 
@@ -727,4 +744,86 @@ tbody > tr:last-child > td {
     margin: -13px 200px;
 }
 
+/*Css da tela AgenciaMonitoramento*/
 
+.ContainerMon {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.CardMon {
+    width: 250px;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 30px;
+    box-shadow: 8px 8px 7px 0px rgba(0,0,0,0.3);
+}
+
+.TextSigla {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    bottom: 154px;
+    text-align: center;
+    padding: 19px 0px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: #10406c;
+}
+
+.TextNome {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #000;
+    font-weight: 100;
+}
+
+.VolMon {
+    background-color: transparent;
+    position: absolute;
+    width: 88%;
+    bottom: 52px;
+    text-align: inherit;
+    padding: 22px 1px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #10406c;
+}
+
+.ValorMon {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    bottom: -42px;
+    text-align: inherit;
+    padding: 23px 0px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #10406c;
+}
+
+.DadosMon {
+    margin-top: 30px;
+    font-size: 25px;
+    color: #10406c;
+    font-weight: bold;
+}
