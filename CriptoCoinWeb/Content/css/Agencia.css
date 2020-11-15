@@ -113,7 +113,7 @@ a{
     margin-left: 12px;
 }
 
-.btnIndicações {
+.btnMonitoramento {
     background-color: #2d71b1;
     color: #fff;
     border-radius: 10px;
@@ -127,7 +127,7 @@ a{
     margin-left: 12px;
 }
 
-.btnMonitoramento {
+.btnIndicações {
     background-color: #2d71b1;
     color: #fff;
     border-radius: 10px;
@@ -150,6 +150,15 @@ a{
     align-items: center;
 }
 
+/*Css Tela DefaultAgencia abaixo*/
+
+.ContainerCards {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .card {
     width: 250px;
     height: 250px;
@@ -164,6 +173,11 @@ a{
     box-shadow: 8px 8px 7px 0px rgba(0,0,0,0.3);
 }
 
+.CardImg {
+    width: 130px;
+    margin-top: -50px;
+}
+
 .CardText {
     background-color: #ffff;
     position: absolute;
@@ -175,18 +189,7 @@ a{
     font-family: sans-serif;
     font-size: 18px;
 }
-
-.CardImg {
-    width: 130px;
-    margin-top: -50px;
-}
-
-.ContainerCards {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
+/*Fim DefaultAgencia*/
 
 .TextBotton {
     display: flex;
@@ -678,8 +681,6 @@ tbody > tr:last-child > td {
     border: none;
 }
 
-/*Tenho que perguntar depois estes aqui abaixo*/
-
 .TabelaRel {
     width: 100%;
     background-color: #fff;
@@ -728,8 +729,6 @@ tr > td {
 tbody > tr:last-child > td {
     border-bottom: none;
 }
-
-/*Este abaixo não precisa perguntar*/
 
 .BtnRelGerar {
     background-color: #2d71b1;
@@ -827,3 +826,115 @@ tbody > tr:last-child > td {
     color: #10406c;
     font-weight: bold;
 }
+
+/*Apartir daqui css da Tela Indicações*/
+
+.boxInd {
+    border-radius: 15px;
+    background-color: #e0ebf5;
+    color: #2d71b1;
+    width: 55vw;
+    height: 450px;
+    font-size: 23px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.Titulo {
+    height: 60px;
+    border-bottom: 3px solid #10406c;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.TitInd {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.EsqNomes {
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-top: -5px;
+}
+
+.DirNomes {
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 320px;
+    margin-top: -106px;
+    font-weight: bold;
+}
+
+.SepIndEsq {
+    padding: 14px;
+    font-weight: bold;
+}
+
+.InputIndicacoes {
+    text-align: justify;
+    margin-left: 60px;
+}
+
+.TituloInd {
+    border-radius: 10px;
+    border: none;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -75px;
+    height: 29px;
+    box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.DataInd {
+    border-radius: 10px;
+    border: none;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    height: 29px;
+    box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.ObservacaoInd {
+    border-radius: 15px;
+    border: none;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    height: 130px;
+    box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.Moedas {
+    margin-top: -27%;
+    margin-left: 15%;
+}
+
+.BotoesInd {
+    margin-top: 26%;
+}
+
+.btnLimparInd {
+    color: #fff;
+    background-color: #10406c;
+    border-radius: 150px;
+    padding: 5px 30px;
+    font-size: 18px;
+    margin: 10px 15px;
+}
+
+.btnCadastrarInd {
+    color: #fff;
+    background-color: #10406c;
+    border-radius: 150px;
+    padding: 5px 30px;
+    font-size: 18px;
+}   

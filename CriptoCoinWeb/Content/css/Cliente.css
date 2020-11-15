@@ -1,105 +1,342 @@
-﻿body {
-    background-color: #ffffff;
+﻿/*Fonte paa todas telas*/ 
+* {
+    font-family: Calibri;
+}
+
+/*Apartir daqui começa css da tela ClienteMaster que vai replicar o menu para todas as outras telas do cliente*/
+body {
+    background-color: #bdd7ee;
 }
 
 .imagem {
     background: #160f4e;
-    background-color: #040332;
+    background-color: #10406c;
     width: 280px;
-    height: 50px;
+    height: 150px;
     position: absolute;
     top: 0px;
     left: 0px;
     color: #fff;
+    display: flex;
+    justify-content: center;
 }
 
 .perfis {
-    background-color: #040332;
+    background-color: #10406c;
     width: 280px;
     height: 887px;
     text-align: center;
     position: absolute;
-    top: 50px;
+    top: 150px;
     left: 0px;
+    padding-top: 20px;
 }
 
-.btnConta {
-    background-color: #2b62fb;
+.sombreado {
+    margin-top: 5px;
+    background-color: #165896;
+    margin: 0px 12px;
+    border-radius: 10px;
+    padding-bottom: 8px;
+}
+
+.perfis > .sombreado > a, .perfis > a {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btnContaC {
+    background-color: #2d71b1;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;
-    padding: 5px 99px;
+    padding: 15px 90px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
-    margin-top: 70px;
     font-family: sans-serif;
     font-size: larger;
 }
 
-.btnMovimentar {
-    background-color: #2b62fb;
+.btnMovimentarC {
+    background-color: #2d71b1;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;
-    padding: 5px 90px;
+    padding: 15px 90px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
     margin-top: 5px;
     font-family: sans-serif;
     font-size: larger;
-    width: 220px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
-.btnConsultar {
-    background-color: #2b62fb;
+.btnConsultarC {
+    background-color: #2d71b1;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;
-    padding: 5px 90px;
+    padding: 15px 90px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
     margin-top: 5px;
     font-family: sans-serif;
     font-size: larger;
-    width: 220px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
-.btnRelatórios {
-    background-color: #2b62fb;
+.btnRelatoriosC {
+    background-color: #2d71b1;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;
-    padding: 5px 81px;
+    padding: 15px 75px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
     margin-top: 15px;
     font-family: sans-serif;
     font-size: larger;
+    width: 105px;
+    margin-left: 12px;
 }
 
-.btnIndicações {
-    background-color: #2b62fb;
+.btnMonitoramentoC {
+    background-color: #2d71b1;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;
-    padding: 5px 78px;
+    padding: 15px 75px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
     margin-top: 15px;
     font-family: sans-serif;
     font-size: larger;
+    width: 105px;
+    margin-left: 12px;
 }
 
-.btnMonitoramento {
-    background-color: #2b62fb;
+.btnIndicacoesC {
+    background-color: #2d71b1;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;
-    padding: 5px 60px;
+    padding: 15px 75px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
     margin-top: 15px;
     font-family: sans-serif;
     font-size: larger;
+    width: 105px;
+    margin-left: 12px;
 }
+
 
 .conteudo {
-    color: #000;
     display: flex;
+    height: 100vh;
+    width: calc(100% - 280px);
+    margin-left: 280px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
+
+/*Inicio Css tela DefaultCliente*/
+.ContainerCardsCli {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.CardCli {
+    width: 250px;
+    height: 250px;
+    background-color: #10406c;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 30px;
+    box-shadow: 8px 8px 7px 0px rgba(0,0,0,0.3);
+}
+
+.CardImgCli {
+    width: 130px;
+    margin-top: -50px;
+}
+
+.CardTextCli {
+    background-color: #ffff;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    padding: 25px 0px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+/*Fim */
+
+/*Inicio Css da tela ClienteConta */
+.ContainerMonCli {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.CardMonCli {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 30px;
+    box-shadow: 8px 8px 7px 0px rgba(0,0,0,0.3);
+}
+
+.TextSiglaCli {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    bottom: 116px;
+    text-align: center;
+    padding: 19px 0px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: #10406c;
+}
+
+.TextNomeCli {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #000;
+    font-weight: 100;
+}
+
+.VolMonCli {
+    background-color: transparent;
+    position: absolute;
+    width: 88%;
+    bottom: 39px;
+    text-align: inherit;
+    padding: 22px 1px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #10406c;
+}
+
+.ValorMonCli {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    bottom: -42px;
+    text-align: inherit;
+    padding: 23px 0px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #10406c;
+}
+.ButtonMovCli {
+    background-color: #2d71b1;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 15px 60px;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: larger;
+    width: 270px;
+    margin-left: 250px;
+}
+
+.IndCli {
+    color: #10406c;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 23%;
+    margin-top: 10px;
+}
+
+.BlocoIndicacoes {
+    background-color: #10406c;
+    border-radius: 10px;
+    width: 100%;
+    height: 350px;
+    margin-top: -40px;
+}
+
+.IndConta {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 90%;
+    height: 15%;
+    margin-left: 5%;
+    margin-top: -17%;
+   
+}
+
+.DataConta {
+    font-weight: bold;
+    color: #2d71b1;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 1%;
+}
+
+.CriptomoedaConta {
+    margin-left: 12%;
+    font-weight: bold;
+    color: #2d71b1;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 1%;
+}
+
+.ObservacaoConta {
+    margin-left: 27%;
+    margin-top: 1%;
+    font-weight: bold;
+    color: #2d71b1;
+    font-size: 20px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+.VerConta {
+    background-color: #2d71b1;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 15px 60px;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
+    margin-top: 280px;
+    font-family: sans-serif;
+    font-size: larger;
+    width: 270px;
+    margin-left: 32%;
+}
+/*Fim*/

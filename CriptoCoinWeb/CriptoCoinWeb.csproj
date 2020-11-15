@@ -113,6 +113,7 @@
     <Content Include="AgenciaRelatorios.aspx" />
     <Content Include="AgenciaTransacoes.aspx" />
     <Content Include="Cadastro.aspx" />
+    <Content Include="ClienteConta.aspx" />
     <Content Include="DefaultCliente.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -259,6 +260,13 @@
     </Compile>
     <Compile Include="Cadastro.aspx.designer.cs">
       <DependentUpon>Cadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteConta.aspx.cs">
+      <DependentUpon>ClienteConta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClienteConta.aspx.designer.cs">
+      <DependentUpon>ClienteConta.aspx</DependentUpon>
     </Compile>
     <Compile Include="DefaultCliente.aspx.cs">
       <DependentUpon>DefaultCliente.aspx</DependentUpon>

@@ -10,28 +10,30 @@
     </asp:ContentPlaceHolder>
      <link rel="stylesheet" type="text/css" href="Content/css/Cliente.css" />
 </head>
-<body>
-      
+<body>    
+    <div class="menuAgencia">      
         <div class="imagem">
             <img src="Content/Img/Logo_CriptoCoin_transp_branco.png" alt="Moeda Criptocoin" style="height: 120px; margin-top: auto;" />
-              <!--colocar o logo CriptoCoin depois aqui!-->
-         </div>
-         <div class="perfis">
-             <input class="btnConta" type="submit" name="Button2" value="Conta" id="Button2"/> 
-             <input class="btnMovimentar" type="submit" name="Button2" value="Movimentar" id="Button2"/> 
-             <input class="btnConsultar" type="submit" name="Button2" value="Consultar" id="Button2"/>               
-             <input class="btnRelatórios" type="submit" name="Button2" value="Relatórios" id="Button2">             
-             <input class="btnIndicações" type="submit" name="Button2" value="Indicações" id="Button2"/>  
-             <input class="btnMonitoramento" type="submit" name="Button2" value="Monitoramento" id="Button2"/> 
-         </div>
-
-<div class="conteudo">
-    <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>    
-</div>
-    </form>
+            <!--colocar o logo CriptoCoin depois aqui!-->
+        </div>
+        <div class="perfis">
+            <div class="sombreado">
+                <a href="*" class="btnContaC"  id="btnContaC"> Conta </a> 
+                <a href="*" class="btnMovimentarC" id="btnMovimentarC"> Movimentar </a>
+                <a href="*" class="btnConsultarC"   id="btnConsultarC"> Consultar </a> 
+            </div>        
+            <a href="*" class="btnRelatoriosC"   id="btnRelatoriosC"> Relatórios </a>            
+            <a href="*" class="btnMonitoramentoC" id="btnMonitoramentoC"> Monitoramento </a> 
+            <a href="*" class="btnIndicacoesC"   id="btnIndicacoesC"> Indicações </a>                    
+        </div>
+    </div>
+    <div class="conteudo">
+        <form id="form1" runat="server">
+            <div style="padding: 0px 40px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

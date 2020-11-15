@@ -11,16 +11,16 @@ namespace CriptoCoinWeb
 {
 
 
-    public partial class AgenciaIndicacoes
+    public partial class ClienteConta
     {
 
         /// <summary>
-        /// Controle Moedas.
+        /// Controle ButtonMovCli.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList Moedas;
+        protected global::System.Web.UI.WebControls.Button ButtonMovCli;
     }
 }
