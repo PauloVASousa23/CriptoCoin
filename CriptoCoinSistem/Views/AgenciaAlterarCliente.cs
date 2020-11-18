@@ -51,7 +51,7 @@ namespace CriptoCoinSistem.Views
             perfilNovo.Permissao = perfil.Permissao;
             perfilNovo.Senha = perfil.Senha;
 
-            var resultado = await "https://criptocoinapi.azurewebsites.net/criptocoin/updatePerfil"
+            var resultado = await "https://criptocoin.azurewebsites.net/criptocoin/updatePerfil"
                 .PostJsonAsync(new
                 {
                     Id = perfilNovo.Id,

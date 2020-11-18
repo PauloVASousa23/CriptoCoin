@@ -93,13 +93,15 @@ namespace CriptoCoinSistem
             {
 
                 Indicacoes indicacao = new Indicacoes();
+                indicacao.Titulo = titulo;
                 indicacao.Data_Indicacao = data;
                 indicacao.Criptomoeda = criptomoeda;
                 indicacao.Motivo = observacao;
 
-                var resultado = await "https://criptocoinapi.azurewebsites.net/criptocoin/setIndicacao"
+                var resultado = await "https://criptocoin.azurewebsites.net/criptocoin/setIndicacao"
                 .PostJsonAsync(new
                 {
+                    Titulo = titulo,
                     Criptomoeda = criptomoeda,
                     Motivo = observacao,
                     Data_Indicacao = data,

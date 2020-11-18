@@ -35,7 +35,7 @@ namespace CriptoCoinSistem
             String senha = inputSenha.Text;
             try
             {
-                Perfil perfil = await "https://criptocoinapi.azurewebsites.net/criptocoin/autenticarPerfil"
+                Perfil perfil = await "https://criptocoin.azurewebsites.net/criptocoin/autenticarPerfil"
                 .PostJsonAsync(new { Senha = senha, Email = email }).ReceiveJson<Perfil>();
                 Console.WriteLine(perfil.Id + " | " + perfil.Nome);
 
@@ -75,6 +75,7 @@ namespace CriptoCoinSistem
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
     }
 
     

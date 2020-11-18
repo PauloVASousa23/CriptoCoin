@@ -180,6 +180,68 @@ namespace CriptoCoinApi.Controllers
 
         }
 
+        [HttpGet]
+        public JsonResult GetValorCarteira(int id)
+        {
+
+            CarteiraRepositorio carteiraRepos = new CarteiraRepositorio();
+            List<Carteira> carteira = carteiraRepos.selecionarCarteira(id);
+            Carteira bitcoin = new Carteira();
+            bitcoin.Valor = 0;
+            bitcoin.Criptomoeda = "Bitcoin";
+            Carteira ethereum = new Carteira();
+            ethereum.Valor = 0;
+            ethereum.Criptomoeda = "Ethereum";
+            Carteira litecoin = new Carteira();
+            litecoin.Valor = 0;
+            litecoin.Criptomoeda = "Litecoin";
+            foreach (Carteira c in carteira)
+            {
+                switch (c.Criptomoeda)
+                {
+                    case "Bitcoin":
+                        if (c.Operacao == "Compra")
+                        {
+                            bitcoin.Valor = bitcoin.Valor + c.Valor;
+                        }
+                        else if(c.Operacao == "Venda")
+                        {
+                            bitcoin.Valor = bitcoin.Valor - c.Valor;
+                        }
+                        break;
+                    case "Litecoin":
+                        if (c.Operacao == "Compra")
+                        {
+                            litecoin.Valor = litecoin.Valor + c.Valor;
+                        }
+                        else if (c.Operacao == "Venda")
+                        {
+                            litecoin.Valor = litecoin.Valor - c.Valor;
+                        }
+                        break;
+                    case "Ethereum":
+                        if (c.Operacao == "Compra")
+                        {
+                            ethereum.Valor = ethereum.Valor + c.Valor;
+                        }
+                        else if (c.Operacao == "Venda")
+                        {
+                            ethereum.Valor = ethereum.Valor - c.Valor;
+                        }
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            List<Carteira> saldo = new List<Carteira>();
+            saldo.Add(bitcoin);
+            saldo.Add(ethereum);
+            saldo.Add(litecoin);
+
+            return Json(saldo, JsonRequestBehavior.AllowGet);
+
+        }
 
         [HttpPost]
         public JsonResult SetCarteira(Carteira carteira)

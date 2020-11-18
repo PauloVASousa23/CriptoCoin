@@ -184,6 +184,7 @@
     <Content Include="img\background_azul_escuro.png" />
     <Content Include="img\background_rounded_box_azulClaro_login.png" />
     <Content Include="img\background_rounded__grande_box_azulClaro_login.png" />
+    <Content Include="img\bg_icon_input.png" />
     <Content Include="img\box_grande_rounded_azulPrimary.png" />
     <Content Include="img\box_grande_rounded_branco.png" />
     <Content Include="img\box_grande_rounded_branco_pequeno_clientes.png" />
@@ -206,6 +207,7 @@
     <Content Include="img\button_alterar_azul.png" />
     <Content Include="img\button_alterar_azul_rounded.png" />
     <Content Include="img\button_cadastrar_azul.png" />
+    <Content Include="img\button_entrar_azul_rounded.png" />
     <Content Include="img\button_gerarrelatorio.png" />
     <Content Include="img\button_limpar_azul.png" />
     <Content Include="img\button_menu_cadastrar_off.png" />
@@ -243,10 +245,13 @@
     <Content Include="img\icone_perfil.png" />
     <Content Include="img\input_grande_branco_semi_rounded.png" />
     <Content Include="img\input_grande_icon.png" />
+    <Content Include="img\input_grande_icon_2.png" />
     <Content Include="img\input_icon.png" />
+    <Content Include="img\input_icon_2.png" />
     <Content Include="img\input_medio_branco_semi_rounded.png" />
     <Content Include="img\input_medio_cinza_semirounded.png" />
     <Content Include="img\input_med_icon.png" />
+    <Content Include="img\input_med_icon_2.png" />
     <Content Include="img\input_pequeno_branco_semi_rounded.png" />
     <Content Include="img\input_pequeno_icon.png" />
     <Content Include="img\input_rounded_border_grande.png" />

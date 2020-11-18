@@ -8,6 +8,7 @@ namespace CriptoCoinApi.Models
     public class Indicacoes
     {
         public int Id { get; set; }
+        public string Titulo { get; set; }
         public string Criptomoeda { get; set; }
         public string Motivo { get; set; }
         public string Data_Indicacao { get; set; }

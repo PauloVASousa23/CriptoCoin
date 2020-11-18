@@ -55,7 +55,7 @@ namespace CriptoCoinSistem
             else
             {
                 
-                var resultado = await "https://criptocoinapi.azurewebsites.net/criptocoin/setPerfil"
+                var resultado = await "https://criptocoin.azurewebsites.net/criptocoin/setPerfil"
                 .PostJsonAsync(new
                 {
                     Nome = nome,

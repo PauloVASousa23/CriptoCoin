@@ -37,7 +37,7 @@ namespace CriptoCoinSistem
         private async void Form4_LoadAsync(object sender, EventArgs e)
         {
             
-            perfis = await "https://criptocoinapi.azurewebsites.net/criptocoin/getPerfis"
+            perfis = await "https://criptocoin.azurewebsites.net/criptocoin/getPerfis"
             .GetJsonAsync<List<Perfil>>();
 
             for (int i=0;i < perfis.Count;i++)
