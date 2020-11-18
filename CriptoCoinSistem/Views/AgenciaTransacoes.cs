@@ -30,12 +30,12 @@ namespace CriptoCoinSistem
 
         async private void Form5_Load(object sender, EventArgs e)
         {
-            carteira = await "https://criptocoinapi.azurewebsites.net/criptocoin/getCarteiras"
+            carteira = await "https://criptocoin.azurewebsites.net/criptocoin/getCarteiras"
             .GetJsonAsync<List<Carteira>>();
 
             for (int i = 0; i < carteira.Count; i++)
             {
-                Perfil perfil = await ("https://criptocoinapi.azurewebsites.net/criptocoin/getPerfil/"+carteira[i].Perfil)
+                Perfil perfil = await ("https://criptocoin.azurewebsites.net/criptocoin/getPerfil/"+carteira[i].Perfil)
             .GetJsonAsync<Perfil>();
                 carteira[i].PerfilCarteira = perfil;
                 dataGridView1.Rows.Add(carteira[i].Criptomoeda, perfil.Nome, "R$ " + carteira[i].Valor, carteira[i].Operacao, carteira[i].Data);

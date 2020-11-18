@@ -31,7 +31,7 @@ namespace CriptoCoinSistem
 
         async private void AgenciaRelatorios_Load(object sender, EventArgs e)
         {
-            perfis = await "https://criptocoinapi.azurewebsites.net/criptocoin/getPerfis"
+            perfis = await "https://criptocoin.azurewebsites.net/criptocoin/getPerfis"
             .GetJsonAsync<List<Perfil>>();
 
             for (int i = 0; i < perfis.Count; i++)
@@ -269,7 +269,7 @@ namespace CriptoCoinSistem
                 ids.Add(obj);
             }
 
-            var resultado = await "https://criptocoinapi.azurewebsites.net/criptocoin/getRelatorioPerfilPorListaId"
+            var resultado = await "https://criptocoin.azurewebsites.net/criptocoin/getRelatorioPerfilPorListaId"
                 .PostJsonAsync(new
                 {
                     id = ids

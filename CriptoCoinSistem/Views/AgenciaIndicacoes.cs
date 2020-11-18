@@ -98,7 +98,7 @@ namespace CriptoCoinSistem
                 indicacao.Criptomoeda = criptomoeda;
                 indicacao.Motivo = observacao;
 
-                var resultado = await "https://criptocoinapi.azurewebsites.net/criptocoin/setIndicacao"
+                var resultado = await "https://criptocoin.azurewebsites.net/criptocoin/setIndicacao"
                 .PostJsonAsync(new
                 {
                     Titulo = titulo,
