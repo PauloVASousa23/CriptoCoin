@@ -191,6 +191,8 @@ a{
 }
 /*Fim DefaultAgencia*/
 
+/*Inicio Css AgenciaConsultar*/
+
 .TextBotton {
     display: flex;
     width: 100%;
@@ -516,7 +518,7 @@ tbody > tr:last-child > td {
     display: flex;
 }
 
-/*Aqui começa css da tela agencia Transações */
+/*Inicio css da tela agencia Transações */
 .BoxBotton1 {
     display: flex;
     border: 1px solid;
@@ -583,7 +585,7 @@ tbody > tr:last-child > td {
     overflow: auto;
     border: 2px solid #10406c;
 }
-/*Perguntar sobre como editar este table,th,tr e tbody sem afetar os anteriores, mesmos nomes de class, achar um meio de alterar o nome */
+
 table {                     
     width: 102%;
     margin-left: -2px;

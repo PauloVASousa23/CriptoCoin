@@ -113,7 +113,12 @@
     <Content Include="AgenciaRelatorios.aspx" />
     <Content Include="AgenciaTransacoes.aspx" />
     <Content Include="Cadastro.aspx" />
+    <Content Include="ClienteConsultar.aspx" />
     <Content Include="ClienteConta.aspx" />
+    <Content Include="ClienteIndicacoes.aspx" />
+    <Content Include="ClienteMonitoramento.aspx" />
+    <Content Include="ClienteMovimentar.aspx" />
+    <Content Include="ClienteRelatorios.aspx" />
     <Content Include="DefaultCliente.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -261,12 +266,47 @@
     <Compile Include="Cadastro.aspx.designer.cs">
       <DependentUpon>Cadastro.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ClienteConsultar.aspx.cs">
+      <DependentUpon>ClienteConsultar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClienteConsultar.aspx.designer.cs">
+      <DependentUpon>ClienteConsultar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ClienteConta.aspx.cs">
       <DependentUpon>ClienteConta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ClienteConta.aspx.designer.cs">
       <DependentUpon>ClienteConta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteIndicacoes.aspx.cs">
+      <DependentUpon>ClienteIndicacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClienteIndicacoes.aspx.designer.cs">
+      <DependentUpon>ClienteIndicacoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteMonitoramento.aspx.cs">
+      <DependentUpon>ClienteMonitoramento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClienteMonitoramento.aspx.designer.cs">
+      <DependentUpon>ClienteMonitoramento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteMovimentar.aspx.cs">
+      <DependentUpon>ClienteMovimentar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClienteMovimentar.aspx.designer.cs">
+      <DependentUpon>ClienteMovimentar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteRelatorios.aspx.cs">
+      <DependentUpon>ClienteRelatorios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClienteRelatorios.aspx.designer.cs">
+      <DependentUpon>ClienteRelatorios.aspx</DependentUpon>
     </Compile>
     <Compile Include="DefaultCliente.aspx.cs">
       <DependentUpon>DefaultCliente.aspx</DependentUpon>

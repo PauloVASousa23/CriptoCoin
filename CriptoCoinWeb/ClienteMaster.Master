@@ -18,13 +18,13 @@
         </div>
         <div class="perfis">
             <div class="sombreado">
-                <a href="*" class="btnContaC"  id="btnContaC"> Conta </a> 
-                <a href="*" class="btnMovimentarC" id="btnMovimentarC"> Movimentar </a>
-                <a href="*" class="btnConsultarC"   id="btnConsultarC"> Consultar </a> 
+                <a href="ClienteConta.aspx" class="btnContaC"  id="btnContaC"> Conta </a> 
+                <a href="ClienteMovimentar.aspx" class="btnMovimentarC" id="btnMovimentarC"> Movimentar </a>
+                <a href="ClienteConsultar.aspx" class="btnConsultarC"   id="btnConsultarC"> Consultar </a> 
             </div>        
-            <a href="*" class="btnRelatoriosC"   id="btnRelatoriosC"> Relatórios </a>            
-            <a href="*" class="btnMonitoramentoC" id="btnMonitoramentoC"> Monitoramento </a> 
-            <a href="*" class="btnIndicacoesC"   id="btnIndicacoesC"> Indicações </a>                    
+            <a href="ClienteRelatorios.aspx" class="btnRelatoriosC"   id="btnRelatoriosC"> Relatórios </a>            
+            <a href="ClienteMonitoramento.aspx" class="btnMonitoramentoC" id="btnMonitoramentoC"> Monitoramento </a> 
+            <a href="ClienteIndicacoes.aspx" class="btnIndicacoesC"   id="btnIndicacoesC"> Indicações </a>                    
         </div>
     </div>
     <div class="conteudo">

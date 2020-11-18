@@ -180,14 +180,14 @@ a {
 /*Fim */
 
 /*Inicio Css da tela ClienteConta */
-.ContainerMonCli {
+.ContainerMonCon {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-.CardMonCli {
+.CardMonCon {
     width: 200px;
     height: 200px;
     background-color: #ffffff;
@@ -201,7 +201,7 @@ a {
     box-shadow: 8px 8px 7px 0px rgba(0,0,0,0.3);
 }
 
-.TextSiglaCli {
+.TextSiglaCon {
     background-color: transparent;
     position: absolute;
     width: 100%;
@@ -215,7 +215,7 @@ a {
     color: #10406c;
 }
 
-.TextNomeCli {
+.TextNomeCon {
     background-color: transparent;
     position: absolute;
     width: 100%;
@@ -227,7 +227,7 @@ a {
     font-weight: 100;
 }
 
-.VolMonCli {
+.VolMonCon {
     background-color: transparent;
     position: absolute;
     width: 88%;
@@ -241,7 +241,7 @@ a {
     color: #10406c;
 }
 
-.ValorMonCli {
+.ValorMonCon {
     background-color: transparent;
     position: absolute;
     width: 100%;
@@ -254,7 +254,7 @@ a {
     font-weight: bold;
     color: #10406c;
 }
-.ButtonMovCli {
+.ButtonMovCon {
     background-color: #2d71b1;
     color: #fff;
     border-radius: 10px;
@@ -268,7 +268,7 @@ a {
     margin-left: 250px;
 }
 
-.IndCli {
+.IndCon {
     color: #10406c;
     font-weight: bold;
     font-size: 40px;
@@ -320,12 +320,6 @@ a {
     position: absolute;
 }
 
-
-
-
-
-
-
 .VerConta {
     background-color: #2d71b1;
     color: #fff;
@@ -339,4 +333,591 @@ a {
     width: 270px;
     margin-left: 32%;
 }
+/*Fim*/
+
+/*Inicio css tela ClienteMovimentar */
+
+.TitleMov {
+    color: #10406c;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.ContainerMonMov {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: inherit;
+    width: calc(100vw - 400px);
+}
+
+.CardMonMov {
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    margin: 10px;
+    box-shadow: 8px 8px 7px 0px rgba(0,0,0,0.3);
+}
+
+.CardInfo {
+    width: 300px;
+    height: 100%;
+}
+
+    .CardInfo::before {
+        content: '';
+        width: 5px;
+        height: 80%;
+        background-color: #10406c;
+        position: absolute;
+        left: 280px;
+        margin-top: 16px;
+    }
+
+.CardMovimentacao {
+    height: 100%;
+    margin-left: 20px;
+}
+
+    .CardMovimentacao > h2 {
+        text-align: center;
+        margin: 0;
+        color: #10406c;
+    }
+
+.GrupoMovimentar > span, .GrupoValor > span {
+    color: #10406c;
+    font-weight: 700;
+}
+
+.GrupoMovimentar > input, .GrupoValor > input {
+    border: none;
+    box-shadow: 3px 2px 10px -1px rgba(0,0,0,0.7);
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.GrupoMovimentar > button, .GrupoValor > button {
+    width: fit-content;
+    padding: 10px 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #10406c;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.GrupoMovimentar {
+    display: inline-flex;
+    flex-direction: column;
+    width: 45%;
+    margin-right: 30px;
+}
+
+.GrupoValor {
+    display: inline-flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.TextSiglaMov {
+    background-color: transparent;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    color: #10406c;
+    margin-top: 10px;
+}
+
+.TextNomeMov {
+    background-color: transparent;
+    width: 100%;
+    text-align: inherit;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: 100;
+}
+
+.QuanMonMov {
+    background-color: transparent;
+    bottom: 39px;
+    text-align: inherit;
+    padding: 5px 1px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #10406c;
+    margin-top: 10px;
+}
+
+.ValorMonMov {
+    background-color: transparent;
+    text-align: inherit;
+    padding: 9px 0px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #10406c;
+}
+
+.SalMov {
+    color: #10406c;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.CardMonDir {
+    width: 75%;
+    height: 200px;
+    background-color: #2d71b1;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    margin: 10px 30px;
+    box-shadow: 8px 8px 7px 0px rgba(0,0,0,0.3);
+    margin-left: -100%;
+}
+
+
+/*Fim*/
+
+/*Inicio CSS ClienteConsultar */
+
+.TextBottonCon {
+    display: flex;
+    width: 100%;
+}
+
+.BoxBottonCon {
+    display: flex;
+    border: 1px solid;
+    border-radius: 55px;
+    overflow: hidden;
+    margin: 10px;
+    height: 60px;
+    background-color: #fff;
+}
+
+.inputIconeCon {
+    width: 50px;
+    height: 40px;
+    display: block;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.inputGrupo > input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    flex: 1;
+    padding-left: 15px;
+}
+
+.LocalizaCon {
+    height: 35px;
+    margin: 12px;
+}
+
+input[type="text"] {
+    font-size: 28px;
+    padding-left: 7px;
+}
+
+.Codigo {
+    width: 100%;
+    border: none;
+}
+
+.Criptomoeda {
+    width: 100%;
+    border: none;
+}
+
+.Data {
+    width: 100%;
+    border: none;
+}
+
+.BtnPesquisar {
+    background-color: #2d71b1;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.Tabel {
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    margin: 30px 0px;
+    width: 100%;
+}
+
+.TabelaConteudo {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 2px solid #10406c;
+}
+
+table {
+    width: 102%;
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+th {
+    background-color: #10406c;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    border-right: 1px solid #10406c;
+}
+
+    th:nth-child(1) {
+        width: 50px;
+    }
+
+    th:nth-child(3) {
+        width: 200px;
+    }
+
+    th:nth-child(4) {
+        width: 170px;
+    }
+
+
+
+tr > td {
+    padding: 10px 20px;
+    font-size: 26px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+tbody > tr:last-child > td {
+    border-bottom: none;
+}
+
+/*Fim*/
+
+/*Inicio Css tela ClienteRelatorios*/
+
+.NegritoRel {
+    color: #10406c;
+}
+
+.RadioRel {
+    font-size: 22px;
+    margin-bottom: -21px;
+    color: #10406c;
+    font-weight: bold;
+    margin-top: -200px;
+}
+
+.TextRel {
+    font-size: 22px;
+    margin-bottom: -26px;
+    color: #10406c;
+    font-weight: bold;
+}
+
+.BottonRel {
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+}
+
+.BotoesRel {
+    display: flex;
+    border: 1px solid;
+    border-radius: 55px;
+    overflow: hidden;
+    margin: 10px;
+    height: 40px;
+    background-color: #fff;
+}
+
+.inputIcone1 {
+    width: 50px;
+    height: 40px;
+    display: block;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.Localiza1 {
+    height: 25px;
+    margin: 7px;
+}
+
+.TextRelCod {
+    width: 100%;
+    border: none;
+}
+
+.TextNameCrip {
+    width: 100%;
+    border: none;
+}
+
+.TextRelOpe {
+    width: 100%;
+    border: none;
+}
+
+.TextRelData {
+    width: 100%;
+    border: none;
+}
+
+.TabelaRel {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 2px solid #10406c;
+}
+
+table {
+    width: 102%;
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+th {
+    background-color: #10406c;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    border-right: 1px solid #10406c;
+}
+
+    th:nth-child(1) {
+        width: 50px;
+    }
+
+.TabelaRel > table > thead > tr > th:nth-child(3) {
+    width: 180px;
+}
+
+.TabelaRel > table > thead > tr > th:nth-child(4) {
+    width: 200px;
+}
+
+
+
+tr > td {
+    padding: 10px 20px;
+    font-size: 26px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+tbody > tr:last-child > td {
+    border-bottom: none;
+}
+
+.BtnRelGerar {
+    background-color: #2d71b1;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    height: 40px;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.5);
+    font-family: sans-serif;
+    font-size: 23px;
+    margin: -13px 200px;
+}
+
+
+/*Fim*/
+
+/*Inico Css tela ClienteMonitoramento*/
+
+.ContainerMon {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.CardMon {
+    width: 250px;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 30px;
+    box-shadow: 8px 8px 7px 0px rgba(0,0,0,0.3);
+}
+
+.TextSigla {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    bottom: 154px;
+    text-align: center;
+    padding: 19px 0px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: #10406c;
+}
+
+.TextNome {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #000;
+    font-weight: 100;
+}
+
+.VolMon {
+    background-color: transparent;
+    position: absolute;
+    width: 88%;
+    bottom: 52px;
+    text-align: inherit;
+    padding: 22px 1px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #10406c;
+}
+
+.ValorMon {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    bottom: -42px;
+    text-align: inherit;
+    padding: 23px 0px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #10406c;
+}
+
+.DadosMon {
+    margin-top: 30px;
+    font-size: 25px;
+    color: #10406c;
+    font-weight: bold;
+}
+
+/*Fim*/
+
+/*Inicio Css tela ClienteIndicações*/
+
+.TitleInd {
+    color: #10406c;
+    font-size: 41px;
+    font-weight: bold;
+    margin-top: -100px;
+}
+
+.BordarInd {
+    background-color: #10406c;
+    border-radius: 10px;
+    width: 200%;
+    height: 600px;
+    margin-left: -200px;
+    margin-top: -35px;
+    position: relative;
+    display: inline-table;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Indicacoes {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 90%;
+    height: 250px;
+    margin: 34px 0px 0px 5%;
+    display: block;
+}
+
+.DataEsqInd {
+    color: #10406c;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: inherit;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 16px;
+}
+
+.ObsEsqInd {
+    color: #10406c;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: inherit;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 60px;
+}
+
+.CriptCentral {
+    color: #10406c;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 17px;
+    margin-left: 200px;
+    position: absolute;
+}
+
+.TextInd {
+    background-color: #bdd7ee;
+    border-radius: 10px;
+    position: absolute;
+    width: 85%;
+    height: 140px;
+    margin: 90px 0px 0px 17px;
+}
+
 /*Fim*/
