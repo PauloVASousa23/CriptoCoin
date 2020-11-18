@@ -20,22 +20,22 @@
                 Acesse<br />
                 <div class="inputGrupo">
                     <div class="inputIcone">
-
+                        <img class="Person" src="Content/Img/icone_person.png"/>
                     </div>
-                    <input name="Usuário" type="text" value="" id="Usuário">
+                    <input name="Usuário" type="text" value="Usuário" id="Usuário">
                 </div>          
                 <div class="inputGrupo">
                     <div class="inputIcone">
-
+                        <img class="Cadeado" src="Content/Img/icone_cadeado.png"/>
                     </div>
-                    <input name="Senha" type="text" id="Senha">
+                    <input name="Senha" type="text" value="Senha" id="Senha">
                 </div>                             
                 <input class="btnEntrar" type="submit" name="Button1" value="Entrar" id="Button1">
          </div>
 
          <div class="Cadastrar">
-                Não tem uma conta, cadastre-se<br/>
-                <input class="btnCadastrar" type="submit" name="Button2" value="Cadastrar-se" id="Button2">       
+                Não tem uma conta? Cadastre-se<br/>
+                <input class="btnCadastrar" type="submit" name="Button2" value="Cadastre-se" id="Button2">       
          </div>						
        
         </div>

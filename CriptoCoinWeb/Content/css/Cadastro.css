@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: #1d0202;
+    background-color: #2d71b1;
 }
 
 .formCadastrar {
@@ -11,7 +11,7 @@
 .boxCriptoCoin {
     border-radius: 15px;
     background-color: #000000;
-    color: #fff;
+    color: #ffd945;
     width: 55vw;
     height: 50px;
     margin-top: 30px;
@@ -23,13 +23,14 @@
 
 .boxCadastro {
     border-radius: 15px;
-    background-color: #000000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #2d71b1;
     width: 55vw;
     height: 520px;
     font-size: 23px;
     font-family: sans-serif;
     text-align: center;
+    font-weight: bold;
 }
 
 .campos{
@@ -49,7 +50,7 @@
 .inputIcone {
     width: 50px;
     height: 40px;
-    background-color: #1d0202;
+    background-color: #2d71b1;
     display: block;
     border-radius: 0px 50px 50px 0px;
 }
@@ -65,21 +66,58 @@
 
 .btnLimpar {
     color: #fff;
-    background-color: #1d0202;
-    border-radius: 15px;
+    background-color: #2d71b1;
+    border-radius: 150px;
     padding: 10px 30px;
     font-size: 18px;
-    margin: 5px 15px;
+    margin: 30px 15px;
 }
 
 .btnCadastrar {
     color: #fff;
-    background-color: #1d0202;
-    border-radius: 15px;
+    background-color: #2d71b1;
+    border-radius: 150px;
     padding: 10px 30px;
     font-size: 18px;
-    margin: 5px 15px;
+    margin: 30px 15px;
 }
+
+.person {
+    width: 25px;
+    margin-top: 7px;
+}
+
+.Telefone {
+    width: 25px;
+    margin-top: 7px;
+}
+
+.Email {
+    width: 25px;
+    margin-top: 7px;
+}
+
+.Cep {
+    width: 25px;
+    margin-top: 7px;
+}
+
+.Cidade {
+    width: 25px;
+    margin-top: 7px;
+}
+
+.Logradouro {
+    width: 25px;
+    margin-top: 7px;
+}
+
+.Senha {
+    width: 25px;
+    margin-top: 7px;
+}
+
+
 
 
 

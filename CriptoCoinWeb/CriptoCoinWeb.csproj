@@ -106,20 +106,52 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminMaximizado.aspx" />
-    <Content Include="AgenciaMaximizado.aspx" />
+    <Content Include="AgenciaCadastrar.aspx" />
+    <Content Include="AgenciaConsultar.aspx" />
+    <Content Include="AgenciaIndicacoes.aspx" />
+    <Content Include="AgenciaMonitoramento.aspx" />
+    <Content Include="AgenciaRelatorios.aspx" />
+    <Content Include="AgenciaTransacoes.aspx" />
     <Content Include="Cadastro.aspx" />
-    <Content Include="ClienteMaximizado.aspx" />
+    <Content Include="ClienteConsultar.aspx" />
+    <Content Include="ClienteConta.aspx" />
+    <Content Include="ClienteIndicacoes.aspx" />
+    <Content Include="ClienteMonitoramento.aspx" />
+    <Content Include="ClienteMovimentar.aspx" />
+    <Content Include="ClienteRelatorios.aspx" />
+    <Content Include="DefaultCliente.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\AdminMaximizado.css" />
-    <Content Include="Content\css\AgenciaMaximizado.css" />
-    <Content Include="Content\css\ClienteMaximizado.css" />
+    <Content Include="Content\css\Agencia.css" />
+    <Content Include="Content\css\Cliente.css" />
     <Content Include="Content\css\Login.css" />
     <Content Include="Content\css\Cadastro.css" />
+    <Content Include="Content\Img\icone_cadeado.png" />
+    <Content Include="Content\Img\icone_cep.png" />
+    <Content Include="Content\Img\icone_cidade.png" />
+    <Content Include="Content\Img\icone_clientes.png" />
+    <Content Include="Content\Img\icone_conta.png" />
+    <Content Include="Content\Img\icone_editar.png" />
+    <Content Include="Content\Img\icone_email.png" />
+    <Content Include="Content\Img\icone_endereco.png" />
+    <Content Include="Content\Img\icone_fechar.png" />
+    <Content Include="Content\Img\icone_indicacoes.png" />
+    <Content Include="Content\Img\icone_monitoramento.png" />
+    <Content Include="Content\Img\icone_person.png" />
+    <Content Include="Content\Img\icone_person_preto.png" />
+    <Content Include="Content\Img\icone_procurar.png" />
+    <Content Include="Content\Img\icone_procurar_azul.png" />
+    <Content Include="Content\Img\icone_relatorios.png" />
+    <Content Include="Content\Img\icone_telefone.png" />
+    <Content Include="Content\Img\icone_transacoes.png" />
+    <Content Include="Content\Img\Logo_CriptoCoin_transparente_amarelo.png" />
+    <Content Include="Content\Img\Logo_CriptoCoin_transp_branco.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="DefaultAgencia.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -131,6 +163,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="AgenciaMaster.Master" />
+    <Content Include="ClienteMaster.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -174,12 +208,54 @@
     <Compile Include="AdminMaximizado.aspx.designer.cs">
       <DependentUpon>AdminMaximizado.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AgenciaMaximizado.aspx.cs">
-      <DependentUpon>AgenciaMaximizado.aspx</DependentUpon>
+    <Compile Include="AgenciaCadastrar.aspx.cs">
+      <DependentUpon>AgenciaCadastrar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AgenciaMaximizado.aspx.designer.cs">
-      <DependentUpon>AgenciaMaximizado.aspx</DependentUpon>
+    <Compile Include="AgenciaCadastrar.aspx.designer.cs">
+      <DependentUpon>AgenciaCadastrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgenciaConsultar.aspx.cs">
+      <DependentUpon>AgenciaConsultar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenciaConsultar.aspx.designer.cs">
+      <DependentUpon>AgenciaConsultar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgenciaIndicacoes.aspx.cs">
+      <DependentUpon>AgenciaIndicacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenciaIndicacoes.aspx.designer.cs">
+      <DependentUpon>AgenciaIndicacoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgenciaMaster.Master.cs">
+      <DependentUpon>AgenciaMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenciaMaster.Master.designer.cs">
+      <DependentUpon>AgenciaMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AgenciaMonitoramento.aspx.cs">
+      <DependentUpon>AgenciaMonitoramento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenciaMonitoramento.aspx.designer.cs">
+      <DependentUpon>AgenciaMonitoramento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgenciaRelatorios.aspx.cs">
+      <DependentUpon>AgenciaRelatorios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenciaRelatorios.aspx.designer.cs">
+      <DependentUpon>AgenciaRelatorios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgenciaTransacoes.aspx.cs">
+      <DependentUpon>AgenciaTransacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgenciaTransacoes.aspx.designer.cs">
+      <DependentUpon>AgenciaTransacoes.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -190,12 +266,61 @@
     <Compile Include="Cadastro.aspx.designer.cs">
       <DependentUpon>Cadastro.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ClienteMaximizado.aspx.cs">
-      <DependentUpon>ClienteMaximizado.aspx</DependentUpon>
+    <Compile Include="ClienteConsultar.aspx.cs">
+      <DependentUpon>ClienteConsultar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ClienteMaximizado.aspx.designer.cs">
-      <DependentUpon>ClienteMaximizado.aspx</DependentUpon>
+    <Compile Include="ClienteConsultar.aspx.designer.cs">
+      <DependentUpon>ClienteConsultar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteConta.aspx.cs">
+      <DependentUpon>ClienteConta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClienteConta.aspx.designer.cs">
+      <DependentUpon>ClienteConta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteIndicacoes.aspx.cs">
+      <DependentUpon>ClienteIndicacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClienteIndicacoes.aspx.designer.cs">
+      <DependentUpon>ClienteIndicacoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteMonitoramento.aspx.cs">
+      <DependentUpon>ClienteMonitoramento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClienteMonitoramento.aspx.designer.cs">
+      <DependentUpon>ClienteMonitoramento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteMovimentar.aspx.cs">
+      <DependentUpon>ClienteMovimentar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClienteMovimentar.aspx.designer.cs">
+      <DependentUpon>ClienteMovimentar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteRelatorios.aspx.cs">
+      <DependentUpon>ClienteRelatorios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClienteRelatorios.aspx.designer.cs">
+      <DependentUpon>ClienteRelatorios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultCliente.aspx.cs">
+      <DependentUpon>DefaultCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultCliente.aspx.designer.cs">
+      <DependentUpon>DefaultCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteMaster.Master.cs">
+      <DependentUpon>ClienteMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClienteMaster.Master.designer.cs">
+      <DependentUpon>ClienteMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -203,6 +328,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultAgencia.aspx.cs">
+      <DependentUpon>DefaultAgencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultAgencia.aspx.designer.cs">
+      <DependentUpon>DefaultAgencia.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

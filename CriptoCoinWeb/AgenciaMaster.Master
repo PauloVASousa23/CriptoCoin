@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AgenciaMaster.master.cs" Inherits="CriptoCoinWeb.AgenciaMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="Content/css/Agencia.css" />
+</head>
+<body>
+    <div class="menuAgencia">      
+        <div class="imagem">
+            <img src="Content/Img/Logo_CriptoCoin_transp_branco.png" alt="Moeda Criptocoin" style="height: 120px; margin-top: auto;" />
+                <!--colocar o logo CriptoCoin depois aqui!-->
+            </div>
+            <div class="perfis">
+                <div class="sombreado">
+                    <a href="AgenciaConsultar.aspx" class="btnClientes"  id="btnClientes"> Clientes </a> 
+                    <a href="AgenciaConsultar.aspx" class="btnConsultar" id="btnConsultar"> Consultar </a>
+                    <a href="AgenciaCadastrar.aspx" class="btnTelaCadastrar"   id="btnCadastrar"> Cadastrar </a> 
+                </div>        
+                    <a href="AgenciaTransacoes.aspx" class="btnTransações"  id="btnTransacoes"> Transações </a> 
+                    <a href="AgenciaRelatorios.aspx" class="btnRelatórios"   id="btnRelatorios"> Relatórios </a>            
+                     <a href="AgenciaMonitoramento.aspx" class="btnMonitoramento" id="btnMonitoramento"> Monitoramento </a> 
+                    <a href="AgenciaIndicacoes.aspx" class="btnIndicações"   id="btnIndicacoes"> Indicações </a> 
+                   
+            </div>
+    </div>
+   <div class="conteudo">
+        <form id="form1" runat="server">
+            <div style="padding: 0px 40px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+  </div>
+</body>
+</html>
