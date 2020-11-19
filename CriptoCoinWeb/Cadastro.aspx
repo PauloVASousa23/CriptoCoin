@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="Content/css/Cadastro.css" />
 </head>
 <body>
+    <div class="topoBranco"></div>
     <form class="formCadastrar" id="form1" runat="server">
         <div class="boxCadastrar">
             <div class="boxCriptoCoin">
@@ -90,7 +91,7 @@
                         <input name="confirmaSenha" type="text" id="confirmaSenha" placeholder="Confirmar Senha">                  
                     </div> 
                 </div>
-                <input class="btnLimpar" type="submit" name="Button1" value="Limpar" id="Button1">
+                <input class="btnLimpar" type="submit" name="Button1" value="Limpar" id="Button1" style="background-color:#5295d4">
                 <input class="btnCadastrar" type="submit" name="Button1" value="Cadastrar" id="Button1">
                          
             </div>

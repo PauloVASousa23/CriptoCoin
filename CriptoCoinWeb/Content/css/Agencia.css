@@ -143,7 +143,6 @@ a{
 
 .conteudo {
     display: flex;
-    height: 100vh;
     width: calc(100% - 280px);
     margin-left: 280px;
     justify-content: center;
@@ -633,15 +632,12 @@ tbody > tr:last-child > td {
 
 .RadioRel {
     font-size: 22px;
-    margin-bottom: -21px;
     color: #10406c;
     font-weight: bold;
-    margin-top: -200px;
 }
 
 .TextRel1 {
     font-size: 22px;
-    margin-bottom: -26px;
     color: #10406c;
     font-weight: bold;
 }

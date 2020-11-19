@@ -2,6 +2,17 @@
     background-color: #2d71b1;
 }
 
+.topoBranco {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: -280px;
+    margin-left: -8px;
+    z-index: -1;
+}
+
 .formCadastrar {
     display: flex;
     justify-content: center;
@@ -10,11 +21,12 @@
 
 .boxCriptoCoin {
     border-radius: 15px;
-    background-color: #000000;
+    background-color: #2d71b1;
     color: #ffd945;
     width: 55vw;
-    height: 50px;
+    height: 80px;
     margin-top: 30px;
+    margin-bottom: -30px;
     font-size: 35px;
     font-style: italic;
     font-family: sans-serif;
@@ -31,6 +43,7 @@
     font-family: sans-serif;
     text-align: center;
     font-weight: bold;
+    border: 1px solid #2d71b1;
 }
 
 .campos{
@@ -42,7 +55,7 @@
     border: 1px solid;
     border-radius: 15px;
     overflow: hidden;
-    margin: 10px;
+    margin: 10px 30px;
     height: 40px;
     background-color: #fff;
 }
@@ -71,6 +84,7 @@
     padding: 10px 30px;
     font-size: 18px;
     margin: 30px 15px;
+    border: none;
 }
 
 .btnCadastrar {
@@ -80,6 +94,7 @@
     padding: 10px 30px;
     font-size: 18px;
     margin: 30px 15px;
+    border: none;
 }
 
 .person {
