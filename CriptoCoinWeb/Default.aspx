@@ -9,7 +9,8 @@
     <link rel="stylesheet" type="text/css" href="Content/css/Login.css" />
 </head>
 <body>
-    <form class="formLogin" id="form1" runat="server">
+    <div class="topoBranco"></div>
+    <form class="formLogin" id="form1" runat="server" onsubmit="event.preventDefault()">
         <div class="boxLogin">
             
           <div class="Logo">
@@ -30,15 +31,32 @@
                     </div>
                     <input name="Senha" type="text" value="Senha" id="Senha">
                 </div>                             
-                <input class="btnEntrar" type="submit" name="Button1" value="Entrar" id="Button1">
+                <input class="btnEntrar" type="submit" name="Button1" value="Entrar" id="Button1" onclick="entrar()">
          </div>
 
          <div class="Cadastrar">
                 Não tem uma conta? Cadastre-se<br/>
-                <input class="btnCadastrar" type="submit" name="Button2" value="Cadastre-se" id="Button2">       
+                <input class="btnCadastrar" type="submit" name="Button2" value="Cadastre-se" id="Button2" onclick="cadastro()">       
          </div>						
        
         </div>
     </form>
+
+    <script>
+        function entrar() {
+            $.ajax({
+                url: "",
+                type: "",
+                data: {},
+                success: function (data) {
+                    console.log(data);
+                }
+            });
+        }
+
+        function cadastro() {
+            window.location = "/Cadastro";
+        }
+    </script>
 </body>
 </html>
